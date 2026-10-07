@@ -1,0 +1,72 @@
+name: Skill failure / Skill 失效
+description: Report a concrete failure in scientific reasoning or formulation / 报告科研推理或表述中的具体失败
+title: "[Failure / 失效]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use Chinese or English. Give this issue a short, descriptive title above. No Core/OAC diagnosis is needed. Share only material you may publish; omit secrets and private information.
+        可用中文或英文。请在上方填写简短、具体的标题。无需诊断 Core/OAC。请只分享有权公开的材料，去除密钥和私人信息。
+  - type: input
+    id: domain
+    attributes:
+      label: Scientific domain / 科学领域
+      placeholder: e.g. plasma transport / 例如等离子体输运
+  - type: textarea
+    id: prompt
+    attributes:
+      label: Original prompt / 原始提示词
+      description: Include relevant supplied evidence or premises that can be shared publicly. / 请附上可公开的相关证据或前提。
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Model, provider, harness (if known) / 模型、提供商、运行工具（如已知）
+  - type: input
+    id: version
+    attributes:
+      label: Skill version (if known) / Skill 版本（如已知）
+  - type: dropdown
+    id: activation
+    attributes:
+      label: Was the Skill explicitly activated? / 是否显式激活 Skill？
+      options:
+        - Yes / 是
+        - No / 否
+        - Unknown / 不确定
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior or output / 实际行为或输出
+      description: Paste the output or relevant excerpt. / 请粘贴输出或相关片段。
+    validations:
+      required: true
+  - type: textarea
+    id: failure
+    attributes:
+      label: Why is this a failure? / 为什么认为这是失败？
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior / 预期行为
+      description: Describe what would help, if known. / 如有想法，请说明怎样的行为更有帮助。
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproducibility / 复现信息
+      description: Steps, relevant context, and whether it recurred. A single observed case is welcome; no rerun is required. / 请说明步骤、相关上下文及是否重复出现。欢迎单次观察，无需重跑。
+  - type: dropdown
+    id: regression-use
+    attributes:
+      label: May this example/data be publicly reused for regression development? / 案例或数据是否可公开用于回归开发？
+      options:
+        - Yes / 可以
+        - No / 不可以
+        - Please ask first / 请先联系确认
+    validations:
+      required: true

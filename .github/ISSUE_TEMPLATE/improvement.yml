@@ -1,0 +1,28 @@
+name: Improvement proposal / 改进建议
+description: Suggest methodology, documentation, domain-support, or usability improvements / 提出方法、文档、领域支持或易用性改进
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Chinese or English is welcome. Keep it brief; no full methodology audit or benchmark is required. Share only material you may publish.
+        欢迎中文或英文。简要说明即可，无需完整方法学审计或 benchmark。请只分享有权公开的材料。
+  - type: textarea
+    id: problem
+    attributes:
+      label: Observed problem / 观察到的问题
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed improvement / 建议的改进
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence or example (if available) / 证据或实例（如有）
+  - type: textarea
+    id: downside
+    attributes:
+      label: Possible downside (if known) / 可能的不利影响（如已知）
