@@ -15,6 +15,10 @@ The goal is better scientific-to-mathematical formulation and research reasoning
 
 ## How to participate
 
+Bring a real scientific problem to [Discussions](https://github.com/ZWY-research/physics-to-math-research/discussions) → [Research Problems](https://github.com/ZWY-research/physics-to-math-research/discussions/new?category=general) (currently General). You do not need Core/OAC terminology or a complete formulation. Discuss open methodology questions there and use Issues for reproducible failures or concrete work. The [Casebook](cases/README.md) preserves mature cases; the [welcome draft](.github/WELCOME_DISCUSSION.md) summarizes ways to participate.
+
+Substantive scientific contributions may be credited in case records, release notes, contributor history, or relevant documentation. Credit reflects actual contribution; it does not promise paper authorship or automatic maintainer status.
+
 In the GitHub repository, open **Issues → New issue** and choose **Skill failure** or **Improvement proposal**. Blank issues are also welcome. The [failure form](.github/ISSUE_TEMPLATE/skill-failure.yml) asks for the prompt, observed output, expected behavior, and reproduction context where known. You do not need to identify a Core rule or OAC item. Use the [improvement form](.github/ISSUE_TEMPLATE/improvement.yml) for methodology, documentation, domain-support, or usability suggestions. You may also submit a pull request directly.
 
 For a methodology change, preferably describe:

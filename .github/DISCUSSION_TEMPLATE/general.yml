@@ -1,0 +1,66 @@
+title: "[Research Problem / 科学问题] "
+labels:
+  - research-case
+body:
+  - type: markdown
+    attributes:
+      value: |-
+        Bring a real scientific problem. Write in Chinese or English; no Core/OAC diagnosis, complete derivation, or benchmark is required. Share only material you may publish.
+
+        带一个真实科学问题来即可。可用中文或英文；无需 Core/OAC 诊断、完整推导或 benchmark。请只分享有权公开的材料。
+  - type: input
+    id: domain
+    attributes:
+      label: Scientific domain / 研究领域
+      description: Name your research area. / 说明研究领域。
+    validations:
+      required: false
+  - type: textarea
+    id: facts
+    attributes:
+      label: Observed phenomenon or known facts / 已观测现象或已知事实
+      description: Describe observations and distinguish them from interpretations. / 描述观测，并与解释区分。
+    validations:
+      required: false
+  - type: textarea
+    id: question
+    attributes:
+      label: Scientific question / 科学问题
+      description: What would you like to understand or establish? / 你希望理解或确定什么？
+    validations:
+      required: true
+  - type: textarea
+    id: claim
+    attributes:
+      label: Target claim, if any / 如有，目标 claim
+      description: State the claim you want to examine, if there is one. / 如有，说明希望审查的 claim。
+    validations:
+      required: false
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Available evidence or premises / 已有证据或前提
+      description: Share public data, references, assumptions, or mathematical premises; gaps are welcome. / 分享公开数据、参考资料、假设或数学前提；材料不完整也可参与。
+    validations:
+      required: false
+  - type: textarea
+    id: formulation
+    attributes:
+      label: Current formulation or model, if any / 如有，当前 formulation 或模型
+      description: Include any current mathematical formulation or model. / 可提供当前数学表述或模型。
+    validations:
+      required: false
+  - type: textarea
+    id: uncertainty
+    attributes:
+      label: What remains uncertain / 当前最不确定的地方
+      description: Where would discussion or domain expertise help? / 希望讨论或领域知识帮助解决什么？
+    validations:
+      required: false
+  - type: textarea
+    id: output
+    attributes:
+      label: Optional Skill/model output / 可选的 Skill 或模型输出
+      description: If relevant, include the prompt, output, model, and Skill version where known. / 如相关，可附提示词、输出以及已知的模型与 Skill 版本。
+    validations:
+      required: false

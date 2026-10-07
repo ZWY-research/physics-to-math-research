@@ -15,6 +15,10 @@ English: [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ## 如何参与
 
+带一个真实科学问题到 [Discussions](https://github.com/ZWY-research/physics-to-math-research/discussions) → [Research Problems 科学问题](https://github.com/ZWY-research/physics-to-math-research/discussions/new?category=general)（目前为 General 分类）。无需 Core/OAC 术语或完整 formulation。开放的方法问题可在此讨论，可复现 failure 或具体工作使用 Issues。[Casebook](cases/README.md) 用于沉淀成熟案例；[Welcome 草稿](.github/WELCOME_DISCUSSION.md) 汇总参与方式。
+
+实质性科研贡献可在案例记录、发布说明、贡献历史或相关文档中署名或致谢。认可应与实际贡献相匹配；不承诺论文作者资格或自动授予维护者身份。
+
 在 GitHub 仓库中打开 **Issues → New issue**，选择 **Skill failure（Skill 失效）** 或 **Improvement proposal（改进建议）**，也欢迎使用空白 issue。[失效表单](.github/ISSUE_TEMPLATE/skill-failure.yml) 会询问提示词、实际输出、预期行为，以及已知的复现环境；无需指出是哪条 Core 规则或 OAC 项出了问题。[改进表单](.github/ISSUE_TEMPLATE/improvement.yml) 可用于方法、文档、领域支持或易用性建议，也可以直接提交 pull request。
 
 对于方法变更，最好说明：

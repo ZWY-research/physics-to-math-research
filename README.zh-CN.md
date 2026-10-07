@@ -99,6 +99,14 @@ Claude Code 是一个安装示例：可将目录放入或链接到其用户级 s
 
 ## 参与贡献
 
+**Bring a real scientific problem. You do not need Core/OAC terminology to participate.**
+
+**带一个真实科学问题来。参与无需先理解 Core/OAC 术语。**
+
+Start in [Discussions](https://github.com/ZWY-research/physics-to-math-research/discussions) → [Research Problems](https://github.com/ZWY-research/physics-to-math-research/discussions/new?category=general) (currently General). Report reproducible failures in [Issues](https://github.com/ZWY-research/physics-to-math-research/issues/new/choose), preserve mature cases in the [Casebook](cases/README.md), and see [CONTRIBUTING.md](CONTRIBUTING.md) or [CONTRIBUTING.zh-CN.md](CONTRIBUTING.zh-CN.md). Either Chinese or English is sufficient.
+
+从 [Discussions](https://github.com/ZWY-research/physics-to-math-research/discussions) → [Research Problems 科学问题](https://github.com/ZWY-research/physics-to-math-research/discussions/new?category=general)（目前为 General 分类）开始。在 [Issues](https://github.com/ZWY-research/physics-to-math-research/issues/new/choose) 报告可复现 failure，在 [Casebook](cases/README.md) 沉淀成熟案例；详见 [CONTRIBUTING.md](CONTRIBUTING.md) 或 [CONTRIBUTING.zh-CN.md](CONTRIBUTING.zh-CN.md)。可使用中文或英文。
+
 **Issue 和 Pull Request 均可使用中文或英文提交，贡献者无需同时提供两种语言。**
 
 **现阶段最有价值的贡献，是一个真实、可复现的科学问题失败案例。**
