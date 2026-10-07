@@ -148,9 +148,9 @@ We welcome real scientific problems, reproducible Skill failures, domain-specifi
 
 欢迎分享真实科学问题、可复现的 Skill 失败、特定学科边界案例、过度怀疑、过早停止、无依据的 claim 升级，以及方法论或文档改进。参与不要求先理解 Core/OAC 术语。
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) or [CONTRIBUTING.zh-CN.md](CONTRIBUTING.zh-CN.md). Open the [issue chooser](https://github.com/zhai14569/physics-to-math-research/issues/new/choose) for a Skill failure, improvement proposal, or blank issue. Maintainers may synchronize languages; material normative Skill changes require bilingual semantic-equivalence review before merge.
+See [CONTRIBUTING.md](CONTRIBUTING.md) or [CONTRIBUTING.zh-CN.md](CONTRIBUTING.zh-CN.md). Open the [issue chooser](https://github.com/ZWY-research/physics-to-math-research/issues/new/choose) for a Skill failure, improvement proposal, or blank issue. Maintainers may synchronize languages; material normative Skill changes require bilingual semantic-equivalence review before merge.
 
-详见 [CONTRIBUTING.md](CONTRIBUTING.md) 或 [CONTRIBUTING.zh-CN.md](CONTRIBUTING.zh-CN.md)。打开 [Issue 入口](https://github.com/zhai14569/physics-to-math-research/issues/new/choose)，可报告 Skill 失效、提出改进建议或提交空白 issue。维护者可协助同步语言；Skill 的实质性规范变更须在合并前完成双语语义等价性审查。
+详见 [CONTRIBUTING.md](CONTRIBUTING.md) 或 [CONTRIBUTING.zh-CN.md](CONTRIBUTING.zh-CN.md)。打开 [Issue 入口](https://github.com/ZWY-research/physics-to-math-research/issues/new/choose)，可报告 Skill 失效、提出改进建议或提交空白 issue。维护者可协助同步语言；Skill 的实质性规范变更须在合并前完成双语语义等价性审查。
 
 Licensed under [Apache License 2.0](LICENSE). Version changes are listed in [CHANGELOG.md](CHANGELOG.md).
 
