@@ -1,6 +1,6 @@
 # Git 版本管理恢复与科研应用登记同步记录
 
-日期：2026-10-08。状态：应用文档 commit 已完成；本轮复查仍被 GitHub CLI 登录环境缺失阻塞。本记录已准备为独立文档提交，尚未同步到 GitHub。
+日期：2026-10-08。当前状态：GitHub 认证与普通推送成功，原 OneDrive 路径已恢复 Git 管理。下文保留前期阻塞记录；最终恢复结果见末节。
 
 ## 背景与目标
 
@@ -56,3 +56,41 @@
 当前环境没有可调用的已登录 gh，不能核验 GitHub 身份或写权限；这不代表远程拒绝权限。用户可能在其他 Windows 用户、WSL、远程终端或自定义路径登录，需要明确路径与环境。请勿在聊天中提供密码或 token。
 
 下一步仅为定位已登录 CLI，核验身份及 canonical 写权限，再重新查询远程 HEAD；如有新增提交则安全整合并检查，随后普通推送两个 commit。推送成功后，备份、比较并恢复原路径 Git 元数据，使用 `.git/info/exclude` 防止私有资料误入提交。认证未解决前不改原目录的 canonical 文件，不启动科研测试。
+
+
+## 最终恢复结果（2026-10-08）
+
+### 执行环境与认证
+
+安装后的 `gh.exe` 已在 Windows 标准安装位置存在，但 Codex 继承了安装前 PATH。仅刷新检查进程 PATH 后，`gh --version` 返回 2.102.0，`git --version` 返回 2.55.0.windows.3。当前为同一 Windows 用户环境，无 WSL 标记；无需搜索其他机器或重新生成仓库。
+
+`gh auth status` 两次出现账号验证超时；随后已认证 API 请求成功确认账号 `ZWY-research`，canonical 默认分支为 main，具有 push/admin 权限。实际普通 push 也成功。后续文件 API 曾出现 TLS handshake timeout，因此使用 fetch 后的 Git 对象核验文件；不能把上述网络超时解释为身份失效。
+
+Codex 用户配置仍为 GPT-6.1 Sol（`gpt-6.1-sol`）、Reasoning Effort Medium（`medium`），未改写持久配置。
+
+### GitHub 同步及文件核验
+
+重新 fetch 后，远程基线仍为 `dfac626b0e027387084473764f69604edb562787`，是已有提交的祖先，无须冲突整合。使用仓库级 GitHub CLI 凭据助手进行普通 fast-forward push，GitHub 接收以下既有提交：
+
+- `29a8b99adef1a889e1d4529fdd5f9b81ea53130b`：科研应用登记机制。
+- `a8597ec9ea0654a8bf0f53d9982435ad089ec079`：前期复查工程记录。
+
+首次推送后的实际远程 HEAD 为 `a8597ec9ea0654a8bf0f53d9982435ad089ec079`；GitHub commit API 和 ls-remote 均确认该 HEAD。再次 fetch 后，全部 21 个公开文件的原始字节与该提交一致，登记表、两份 README 栏目和工程记录均已进入远程历史。
+
+本节更新纳入单文件文档 commit，再按相同 fast-forward 要求同步；最终完整 HEAD 由 `git log -1 -- docs/git-sync-recovery.zh-CN.md` 查询并列于交付报告，避免把提交自身 hash 写入自身。
+
+`SKILL.md` 本地与 canonical 原始字节一致，SHA-256 为 `aff41be7b14fedf078516087d11f36a80f41f565e6ca36a614187ef463ec6ce8`。Core/OAC、历史测试、benchmark、tag 和 release 未改。没有 force push 或 reset --hard。
+
+### 原路径恢复与原文件保留
+
+恢复前已逐文件保存全部原目录文件和 SHA-256 清单到独立临时备份。检查隐藏文件、路径和符号链接后，新增此前缺失的 `.git` 元数据及四个 canonical 文件（Discussion 模板、Welcome 草稿、community setup 和案例簿）。四份 README/贡献指南只同步已合并版本，原件在备份中保留；没有整目录覆盖或删除。
+
+原私有 `AGENTS.md` 保持原字节，Git 明确显示 `M AGENTS.md`，不隐藏它，也不将其提交到公开仓库。其余公开文件与 canonical 一致。原科研文件、评测和 revisions 保持原样；`PROJECT_STATE.md`、`CLAUDE.md`、候选修订记录、历史评测/revisions 与恢复 bundle 通过本地 `.git/info/exclude` 排除，不进入公开提交。
+
+原路径分支为 main，跟踪 origin/main。完成记录提交和推送后，没有未同步的登记文档或工程记录修改；唯一可见未提交文件为有意保留的私有 AGENTS。本地 bundle 刷新并核验，保存最新提交历史。恢复过程的备份位置在私有 PROJECT_STATE 中登记，不写入公开文档。
+
+### 限制与下一逻辑节点
+
+CLI 认证诊断及部分文件 API 存在网络超时，但身份、写权限、实际推送、远程 HEAD 和 Git 对象验证已经成功。私有 AGENTS 与 canonical 不同是保留原文件的明确结果，未来公开提交应继续使用显式路径，避免误提交它或私有资料。
+
+本轮同步恢复任务到此停止。下一节点由维护者明确指定；不自动启动 HL-3 测试或修改科研理论。
