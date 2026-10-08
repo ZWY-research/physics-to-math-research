@@ -31,6 +31,10 @@ English: [CONTRIBUTING.md](CONTRIBUTING.md)
 
 不要求建立完整 benchmark。仅修正错字或文档的变更无需提供方法学证据。请只分享有权公开的材料，去除密钥和私人信息，并说明案例是否可以公开用于回归开发。
 
+## 科研应用与验证
+
+登记实际 Skill 使用时，可提交 issue 或 pull request 更新 [RESEARCH_APPLICATIONS.md](RESEARCH_APPLICATIONS.md)。按其八字段格式填写，将背景参考文献、经作者确认的论文和验证证据分开。仅分享获准公开的材料及经确认的姓名。论文须提供作者明确确认的来源与日期；验证须说明具体能力、版本、可复现材料、结果与限制。证据缺失可以明确标注；登记应用不要求完整 benchmark。登记不改变运行规则。
+
 ## 各类文件的效力
 
 - `SKILL.md` 是运行行为的规范性来源。

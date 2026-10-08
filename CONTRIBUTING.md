@@ -31,6 +31,10 @@ For a methodology change, preferably describe:
 
 A complete benchmark is not required. Typo fixes and documentation-only changes do not need methodology evidence. Share only material you may publish, omit secrets and private information, and indicate whether an example may be publicly reused for regression development.
 
+## Research applications and validation
+
+To register actual Skill use, submit an issue or pull request updating [RESEARCH_APPLICATIONS.md](RESEARCH_APPLICATIONS.md). Follow its eight-field format and keep background references, author-confirmed publications, and validation evidence separate. Share only authorized material and confirmed names. Publications require an explicit author confirmation source and date; validation requires a specified capability, version, reproducible materials, results, and limits. Missing evidence is welcome when clearly marked; a complete benchmark is not required to register an application. Registration does not change runtime rules.
+
 ## Sources of authority
 
 - `SKILL.md` is the normative source for runtime behavior.

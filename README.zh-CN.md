@@ -117,6 +117,10 @@ Start in [Discussions](https://github.com/ZWY-research/physics-to-math-research/
 
 采用 [Apache License 2.0](LICENSE)。版本变更见 [CHANGELOG.md](CHANGELOG.md)。
 
+## 科研应用与验证
+
+查看[科研应用与验证登记表](RESEARCH_APPLICATIONS.md)，持续记录科研问题、经作者确认使用 Skill 的论文及能力证据。背景参考文献单独登记。使用或发表本身不构成验证；HL-3 候选目前为 `planned`（计划中）。
+
 ## 当前验证状态
 
 ### `v0.1-alpha.1` — 历史证据
@@ -152,6 +156,7 @@ physics-to-math-research/
 ├── SKILL.md
 ├── README.md
 ├── README.zh-CN.md
+├── RESEARCH_APPLICATIONS.md
 ├── LICENSE
 ├── CHANGELOG.md
 ├── CONTRIBUTING.md

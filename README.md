@@ -164,6 +164,12 @@ Licensed under [Apache License 2.0](LICENSE). Version changes are listed in [CHA
 
 采用 [Apache License 2.0](LICENSE)。版本变更见 [CHANGELOG.md](CHANGELOG.md)。
 
+## Research Applications & Validation / 科研应用与验证
+
+See the [Research Applications & Validation register](RESEARCH_APPLICATIONS.md) for research problems, author-confirmed publications using the Skill, and capability evidence. Background references are recorded separately. Use or publication alone does not establish validation; the HL-3 candidate is currently `planned`.
+
+查看[科研应用与验证登记表](RESEARCH_APPLICATIONS.md)，持续记录科研问题、经作者确认使用 Skill 的论文及能力证据。背景参考文献单独登记。使用或发表本身不构成验证；HL-3 候选目前为 `planned`（计划中）。
+
 ## Validation status / 当前验证状态
 
 ### `v0.1-alpha.1` — historical evidence / 历史证据
@@ -215,6 +221,7 @@ physics-to-math-research/
 ├── SKILL.md
 ├── README.md
 ├── README.zh-CN.md
+├── RESEARCH_APPLICATIONS.md
 ├── LICENSE
 ├── CHANGELOG.md
 ├── CONTRIBUTING.md
