@@ -170,6 +170,26 @@ See the [Research Applications & Validation register](RESEARCH_APPLICATIONS.md) 
 
 查看[科研应用与验证登记表](RESEARCH_APPLICATIONS.md)，持续记录科研问题、经作者确认使用 Skill 的论文及能力证据。背景参考文献单独登记。使用或发表本身不构成验证；HL-3 候选目前为 `planned`（计划中）。
 
+## Evaluation Reports & Skill Improvement / 测试与能力改进档案
+
+The [evaluation reports](evaluation-reports/) archive records actual capability tests, ON/OFF comparisons, mathematical failures, paired regressions, behavior before/after repairs, and results with no reliable defect. Each test has one independent Markdown report; evidence already publicly accessible elsewhere is linked rather than duplicated. Incomplete public evidence must state reproduction limits.
+
+[测试档案](evaluation-reports/)记录实际能力测试、ON/OFF 比较、数学失败、成对回归、修复前后行为及未发现可靠缺陷的结果。每项测试对应一个独立 Markdown 报告；已有可公开访问的完整证据优先链接，不重复维护。公开证据不完整时须说明复现限制。
+
+Start with [Constitutive four-cell evaluation / 材料本构四格测试](evaluation-reports/2026-10-09-constitutive-four-cell.md): v0.1-alpha.2, GPT-6.1 Sol / High; both conditions completed the warranted derivations, with no substantive ON/OFF advantage or reliable Skill failure observed. Outcomes may be success, failure, tie, or uncertainty. Every report ends with an optimization decision; a test alone does not validate overall effectiveness.
+
+首项为[材料本构四格测试](evaluation-reports/2026-10-09-constitutive-four-cell.md)：v0.1-alpha.2，GPT-6.1 Sol / High；两种条件均完成有依据的推导，未观察到实质 ON/OFF 优劣或可靠 Skill failure。结果可以是成功、失败、持平或不确定。每份报告须给出最终优化决策；测试本身不构成整体有效性验证。
+
+**Version governance / 版本演化约定：** Test → Evidence → Failure Review → Minimal Revision → Regression → Version Update.
+
+- **No reliable failure:** archive evidence; keep SKILL.md and version unchanged, without unnecessary rules. / **无可靠 failure：**保存报告，不修改 SKILL.md、不新增无必要规则、不升级版本。
+- **Candidate failure:** preserve reproducible conditions, check whether it is a Skill issue and whether existing rules cover it, and design the smallest useful regression. Do not revise Core before confirmation. / **候选 failure：**先记录可复现条件，判断是否属于 Skill 问题、现有规则是否已覆盖，优先设计最小有效 regression；未确认前不改 Core。
+- **Confirmed repair:** prepare the smallest candidate behavior revision and appropriate regression; check Chinese–English semantic equivalence and prior capabilities. After acceptance, apply the canonical SKILL.md change, update the version and [CHANGELOG](CHANGELOG.md), link the original failure ID, revision and before/after regression evidence, then release/tag through the current process. / **确认修复：**先完成最小候选行为修订及适当 regression，检查中英文语义等价性和既有能力是否退化；验收后应用正式 SKILL.md 修改、更新版本与 [CHANGELOG](CHANGELOG.md)，关联原 failure 编号、修改及修复前后回归证据，再按当前流程发布或打 tag。
+
+Only an evidence-supported improvement need followed by an actual runtime-behavior change warrants a Skill version update. A future alpha-stage behavior repair may use v0.1-alpha.3; this archive keeps v0.1-alpha.2 frozen. Reports, explanatory corrections and new cases alone do not advance the behavior version.
+
+只有发现有证据支持的改进需要且实际修改运行行为，才升级 Skill 版本。未来 alpha 阶段行为修复可考虑 v0.1-alpha.3；本次保持 v0.1-alpha.2 冻结。增加报告、修正文档或新增案例本身不触发行为版本升级。
+
 ## Validation status / 当前验证状态
 
 ### `v0.1-alpha.1` — historical evidence / 历史证据
@@ -222,6 +242,8 @@ physics-to-math-research/
 ├── README.md
 ├── README.zh-CN.md
 ├── RESEARCH_APPLICATIONS.md
+├── evaluation-reports/
+│   └── 2026-10-09-constitutive-four-cell.md
 ├── LICENSE
 ├── CHANGELOG.md
 ├── CONTRIBUTING.md

@@ -121,6 +121,20 @@ Start in [Discussions](https://github.com/ZWY-research/physics-to-math-research/
 
 查看[科研应用与验证登记表](RESEARCH_APPLICATIONS.md)，持续记录科研问题、经作者确认使用 Skill 的论文及能力证据。背景参考文献单独登记。使用或发表本身不构成验证；HL-3 候选目前为 `planned`（计划中）。
 
+## Evaluation Reports & Skill Improvement / 测试与能力改进档案
+
+[测试档案](evaluation-reports/)记录 Skill 实际能力测试、ON/OFF 比较、重要数学失败、成对 regression、修复前后行为，以及未发现可靠缺陷的负结果。每项测试对应一个独立 Markdown 报告；已有可公开访问的完整证据优先链接，避免重复维护。公开证据不完整时须说明复现限制。
+
+首项为[材料本构四格测试](evaluation-reports/2026-10-09-constitutive-four-cell.md)：v0.1-alpha.2，GPT-6.1 Sol / High；两种条件均完成有依据的推导，未观察到实质 ON/OFF 优劣或可靠 Skill failure。测试可以得到成功、失败、持平或不确定结果；每份报告须给出最终优化决策。单项测试不构成整体有效性验证。
+
+**版本演化约定：** Test → Evidence → Failure Review → Minimal Revision → Regression → Version Update.
+
+- **无可靠 failure：**保存测试报告，不修改 SKILL.md、不新增无必要规则、不升级版本。
+- **候选 failure：**先记录可复现条件，判断是否属于 Skill 实际问题、现有规则是否已覆盖，优先设计最小有效 regression；未确认前不修改 Core。
+- **确认修复：**先完成最小候选行为修订及适当 regression，检查中英文语义等价性与既有能力是否退化。验收后应用正式 SKILL.md 修改、更新版本标识与 [CHANGELOG](CHANGELOG.md)，关联原 failure 编号、修改和修复前后回归证据，再按当前发布流程创建版本或 tag。
+
+只有发现有证据支持的改进需要且实际修改运行行为，才升级 Skill 版本。未来 alpha 阶段行为修订可考虑 v0.1-alpha.3；本次仍保持 v0.1-alpha.2 冻结。单纯增加测试报告、修正文档或新增案例，不自动触发行为版本升级。
+
 ## 当前验证状态
 
 ### `v0.1-alpha.1` — 历史证据
@@ -157,6 +171,8 @@ physics-to-math-research/
 ├── README.md
 ├── README.zh-CN.md
 ├── RESEARCH_APPLICATIONS.md
+├── evaluation-reports/
+│   └── 2026-10-09-constitutive-four-cell.md
 ├── LICENSE
 ├── CHANGELOG.md
 ├── CONTRIBUTING.md
