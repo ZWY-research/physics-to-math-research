@@ -29,6 +29,8 @@ For a methodology change, preferably describe:
 4. The expected regression risk.
 5. A reproducible prompt and output, when possible.
 
+An experimental capability proposal may instead state a concrete scope/design reason, verifiable mathematical goals, preserved invariants and correctness regressions; it need not invent a failure. Publishing such a change does not establish incremental advantage.
+
 A complete benchmark is not required. Typo fixes and documentation-only changes do not need methodology evidence. Share only material you may publish, omit secrets and private information, and indicate whether an example may be publicly reused for regression development.
 
 ## Research applications and validation

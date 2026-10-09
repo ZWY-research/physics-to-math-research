@@ -1,12 +1,12 @@
 # physics-to-math-research
 
-**Version / 版本：** `0.1-alpha.2`
+**Version / 版本：** `0.2-alpha.0`
 
 **Status / 状态：** Public alpha / 公开 Alpha 测试版
 
-A bilingual Skill for scientific-to-mathematical formulation, claim-integrity auditing, and bounded diagnostic derivation.
+A bilingual Skill for constructive scientific-to-mathematical formulation, task-relevant derivation, and claim-integrity auditing.
 
-一个面向科学问题数学化、claim 完整性审查与有界诊断推导的中英双语 Skill。
+一个面向建设性科学问题数学化、任务相关推导与 claim 完整性审查的中英双语 Skill。
 
 > Before solving a scientific problem mathematically, have we formulated the right mathematical problem, and does the resulting mathematics actually support the scientific claim being made?
 >
@@ -14,9 +14,9 @@ A bilingual Skill for scientific-to-mathematical formulation, claim-integrity au
 
 ## Overview / 项目简介
 
-Use this Skill to examine the bridge between a scientific problem, its mathematical formulation, and the conclusions drawn from it. Alpha users are invited to try real problems and report reproducible failures; current validation is limited.
+Use this Skill to formulate mathematical questions from scientific observations, complete feasible conditional derivations, and examine the bridge from mathematical results to physical conclusions. Alpha users are invited to try real problems and report reproducible failures; current validation is limited.
 
-使用本 Skill 检查科学问题、数学表述及其结论之间的衔接。欢迎 alpha 用户用真实问题试用并报告可复现的失败；当前验证仍然有限。
+使用本 Skill 从科学观察构造数学问题、完成可行的条件性推导，并检查数学结果与物理结论之间的衔接。欢迎 alpha 用户用真实问题试用并报告可复现的失败；当前验证仍然有限。
 
 > Documentation is explanatory. [SKILL.md](SKILL.md) is the single normative runtime source for this version. If documentation conflicts with it, `SKILL.md` prevails.
 >
@@ -28,20 +28,21 @@ For uninterrupted Chinese reading, see [README.zh-CN.md](README.zh-CN.md). Both 
 
 ## What this Skill does / 这个 Skill 做什么
 
-- Audits whether a scientific or physics problem is appropriately formulated mathematically.  
-  审查科学或物理问题是否被恰当地构造成数学问题。
-- Checks material modeling commitments, semantic mappings, and inferential steps for appropriate explicit warrants. A commitment is material when changing it could change the claim's meaning, status, scope, support, or identifiability.  
-  检查实质性建模承诺、语义映射和推断步骤是否有适当且明确的依据（warrant）。如果改变一个承诺可能改变 claim 的含义、状态、范围、支持程度或可识别性，它就是实质性的（material）。
-- Checks whether mathematical conclusions have been improperly upgraded into stronger physical, causal, or mechanistic claims.  
-  检查数学结论是否被无依据地升级为更强的物理、因果或机制性 claim。
-- Uses bounded diagnostic derivation to test claim support and expose the formulation's load-bearing structure.  
-  通过有界诊断性推导检验 claim 的支持程度，并暴露数学表述的关键依赖结构。
-- In `v0.1-alpha.2`, completes the smallest necessary claim-relevant operational step when the stated task would otherwise remain incomplete, provided the step is warranted by available information and feasible within formulation or diagnostic scope. It specifies what and how, rather than merely naming a needed analysis.  
-  在 `v0.1-alpha.2` 中，如果任务仍因缺少与 claim 相关的操作性步骤而未完成，且该步骤由现有信息支持、在表述或诊断范围内可行，则完成其中最小的必要步骤，明确做什么、怎么做，而不是仅指出还需要某项分析。
+- Construct a precise mathematical question from scientific observations or constraints, or audit an existing formulation/claim.
+- Complete feasible task-relevant derivations under explicit premises, delivering checkable results and load-bearing conditions.
+- Check material commitments, semantic correspondence and warrants; separate mathematical consequences, physical applicability and unverified mechanisms.
+- Keep provisional models exploratory; unresolved physical identification alone does not block feasible conditional mathematics.
+- Perform authorized, available tool checks when they can materially affect a consequential result; see [verification limits](references/mathematical-verification.md).
 
-This does not require a quantitative workflow for every problem or authorize solving the full problem. Stop when further progress requires unsupported commitments.
+Not every task needs a new formula or theorem. Stop when the deliverable and conditions reach the support of available information, or a specific blocker prevents justified progress; do not extend into an entire research programme.
 
-这不要求每个问题都给出定量分析流程，也不授权求解完整问题。若进一步推进需要无依据的承诺，则停止。
+- 从科学观察或约束构造明确的数学问题，也可审查已有 formulation/claim。
+- 完成明确前提支持、能推进当前研究问题的任务相关推导，交付可核查的数学成果及关键条件。
+- 检查实质性承诺、语义对应与推理依据，区分数学后果、物理适用性及未经验证的机制解释。
+- 暂定模型保持为探索性假设；物理机制未识别本身不阻断可行条件性数学工作。
+- 当已授权且可用的工具核查能够实质影响关键结果时实际执行；详见[数学核查边界](references/mathematical-verification.md)。
+
+不要求每项任务产生新公式或定理。成果及关键条件达到当前信息支持程度，或具体障碍阻止有依据推进时停止；不扩展为完整研究计划。
 
 ## Why it exists / 为什么建立这个 Skill
 
@@ -60,14 +61,19 @@ Mathematical elegance or rigor does not by itself guarantee scientific correctne
 
 ## When to use it / 什么时候使用
 
-- Formulate a scientific or physics problem mathematically, or audit an existing formulation. / 将科学或物理问题数学化，或审查已有表述。
-- Audit a claim's commitments, mappings, inferential steps, or status. / 审查 claim 的承诺、映射、推断步骤或状态。
-- Perform limited derivation needed to test whether a formulation supports the target claim. / 进行检验数学表述能否支持目标 claim 所需的有限推导。
+- Open scientific-to-mathematical formulation, existing formulation/claim audits, or feasible conditional derivation for the current task.
+- No pre-specified target claim is required. Respect audit-only requests without forcing new modeling.
+
+- 开放式科学数学化、已有 formulation/claim 审查或当前任务所需的可行条件性推导。
+- 用户无需预先给出 target claim。仅要求审查时，尊重原任务，不强制重新建模。
 
 ## When not to use it / 什么时候不适合使用
 
-- Tasks whose purpose is full theorem proving, symbolic algebra, causal discovery, complete statistical methodology, literature review, simulation, experiment optimization, or paper writing. / 以完整定理证明、符号代数、因果发现、完整统计方法学、文献综述、模拟、实验优化或论文写作为目的的任务。
-- Tasks with no scientific problem to formulate and no claim to audit. / 没有需要表述的科学问题，也没有需要审查的 claim 的任务。
+- Tasks primarily requesting unrestricted theorem-proving services, symbolic algebra systems, causal discovery, complete statistical methodology, literature review, simulation, experiment optimization or paper writing. Feasible conditional derivation for the current formulation task remains in scope.
+- Tasks with no scientific-to-mathematical question, task-relevant derivation or formulation/claim to audit.
+
+- 以无限制定理证明服务、符号代数系统、因果发现、完整统计方法学、文献综述、模拟、实验优化或论文写作为主要目的的任务。当前数学化研究所需的可行条件性推导仍在范围内。
+- 没有科学数学化问题、任务相关推导或待审 formulation/claim 的任务。
 
 ## Core idea / 核心思想
 
@@ -90,17 +96,17 @@ OAC 是一个外部可审查性契约，说明审查者应能从相关结果中�
 
 ## Typical input / 典型输入
 
-Provide a short scientific problem, target claim, and available evidence or premises. For example, suppose `y` is measured and `x` is latent, and calibration data show strong correlation. Does the following implication hold in the present experiment?
+Provide scientific observations, research constraints or an existing formulation/claim, with available evidence or premises; an open task need not start with a target claim. For example, suppose `y` is measured and `x` is latent, and calibration data show strong correlation. Does the following implication hold in the present experiment?
 
-提供简短的科学问题、目标 claim 及已有证据或前提。例如，假设 `y` 是测量量，`x` 是潜在量，标定数据中二者高度相关。以下推断在当前实验中是否成立？
+提供科学观察、研究约束或已有 formulation/claim，以及证据或前提；开放任务无需先给 target claim。例如，假设 `y` 是测量量，`x` 是潜在量，标定数据中二者高度相关。以下推断在当前实验中是否成立？
 
 $$y_1 > y_2 \quad\Longrightarrow\quad x_1 > x_2$$
 
 ## Typical output / 典型输出
 
-A claim-by-claim assessment explains each materially distinct claim's meaning and scope, commitments and warrants, support status, and decisive evidence or conditions that could change that status. Where needed, it supplies a warranted bounded operational step.
+The task determines the deliverable: a precise mathematical question and checkable result, with semantic correspondence, material premises, load-bearing conditions and physical applicability boundaries. An audit-only request is respected without forcing new modeling.
 
-按 claim 逐条评估其含义与范围、实质承诺与依据、支持状态，以及可能改变该状态的决定性证据或条件。需要时提供有依据且有界的操作性步骤。
+按任务交付明确的数学问题与可核查成果，说明语义对应、实质前提、关键条件与物理适用边界。仅要求 claim 审查时尊重该任务，不强制重新建模。
 
 Relevant distinctions may include observation, assumption, model choice, mathematical consequence, empirical applicability, physical interpretation, and an unresolved discriminator. These are examples, not a mandatory fixed ontology or output template.
 
@@ -120,7 +126,8 @@ Multi_Skills/
     ├── README.zh-CN.md
     └── references/
         ├── core-principles.md
-        └── observable-audit-contract.md
+        ├── observable-audit-contract.md
+        └── mathematical-verification.md
 ```
 
 Claude Code is one installation example: the directory can be placed in or linked into its user-level skill directory. Other agents may explicitly load `SKILL.md` where their environment supports this form of instruction use. This is not a claim of automatic compatibility; the layout assumes no particular operating system or model provider.
@@ -130,7 +137,7 @@ Claude Code 是一个安装示例：可将目录放入或链接到其用户级 s
 ## Usage / 使用方式
 
 - Explicitly activate or load the Skill. / 显式激活或加载 Skill。
-- Provide the scientific problem, target claim, and available evidence or premises. / 提供科学问题、目标 claim，以及已有证据或前提。
+- Provide scientific observations, a research question or a claim to audit, with available evidence or premises. / 提供科学观察、研究问题或待审 claim，以及已有证据或前提。
 - The Skill applies its rules to what the problem requires; no fixed reasoning pipeline is imposed. / Skill 按问题实际需要应用规则，不强制固定推理流水线。
 - `SKILL.md` defines exact runtime behavior. / `SKILL.md` 定义准确的运行时行为。
 
@@ -196,17 +203,25 @@ The [ITG gradient-scan evaluation](evaluation-reports/2026-10-09-can-itg-gradien
 
 **Evidence Attribution / 证据归因：** 测试报告必须区分独立 Skill ON/OFF 运行产生的证据，以及后续人工指导、额外工具或领域专项流程得到的结果。没有独立证据时，不得将后续科研成果归因于 Skill 的增量作用。
 
-**Version governance / 版本演化约定：** Test → Evidence → Failure Review → Minimal Revision → Regression → Version Update.
+**Version governance:** failure-driven repairs follow Test → Evidence → Failure Review → Minimal Revision → Regression → Version Update. Without a reliable failure, do not invent a repair rationale or unnecessary rules.
 
-- **No reliable failure:** archive evidence; keep SKILL.md and version unchanged, without unnecessary rules. / **无可靠 failure：**保存报告，不修改 SKILL.md、不新增无必要规则、不升级版本。
-- **Candidate failure:** preserve reproducible conditions, check whether it is a Skill issue and whether existing rules cover it, and design the smallest useful regression. Do not revise Core before confirmation. / **候选 failure：**先记录可复现条件，判断是否属于 Skill 问题、现有规则是否已覆盖，优先设计最小有效 regression；未确认前不改 Core。
-- **Confirmed repair:** prepare the smallest candidate behavior revision and appropriate regression; check Chinese–English semantic equivalence and prior capabilities. After acceptance, apply the canonical SKILL.md change, update the version and [CHANGELOG](CHANGELOG.md), link the original failure ID, revision and before/after regression evidence, then release/tag through the current process. / **确认修复：**先完成最小候选行为修订及适当 regression，检查中英文语义等价性和既有能力是否退化；验收后应用正式 SKILL.md 修改、更新版本与 [CHANGELOG](CHANGELOG.md)，关联原 failure 编号、修改及修复前后回归证据，再按当前流程发布或打 tag。
+An experimental capability upgrade with an explicit architectural reason and verifiable goals is also allowed. It must pass the available prior correctness regressions and disclose missing coverage, without lowering existing criteria. A published version must not be described as having proven incremental benefit without independent controlled evidence. Actual runtime changes warrant version updates; reports or explanatory corrections alone do not.
 
-Only an evidence-supported improvement need followed by an actual runtime-behavior change warrants a Skill version update. A future alpha-stage behavior repair may use v0.1-alpha.3; this archive keeps v0.1-alpha.2 frozen. Reports, explanatory corrections and new cases alone do not advance the behavior version.
+Candidate failures require reproducible conditions, rule/necessity review and the smallest confirmed repair. Runtime changes require bilingual review, regressions and a [CHANGELOG](CHANGELOG.md) update. v0.2-alpha.0 is an explicitly authorized constructive capability upgrade, not a confirmed failure repair.
 
-只有发现有证据支持的改进需要且实际修改运行行为，才升级 Skill 版本。未来 alpha 阶段行为修复可考虑 v0.1-alpha.3；本次保持 v0.1-alpha.2 冻结。增加报告、修正文档或新增案例本身不触发行为版本升级。
+**版本治理：**失败驱动修复遵循 Test → Evidence → Failure Review → Minimal Revision → Regression → Version Update。没有可靠 failure 时，不虚构修复理由或新增无必要规则。
+
+也允许基于明确架构理由和可验证能力目标进行实验性能力升级。新版须通过可取得的既有正确性回归，并明确披露缺失的测试覆盖；不得降低原判据。没有独立对照证据，不得宣称发布版本已证明具有增量优势。实际运行行为修改才触发版本更新；增加报告或修改解释文档本身不触发。
+
+候选 failure 须保存可复现条件、核对现有规则及任务必要性，确认后优先最小修复。运行变更均须进行双语语义检查、回归与 [CHANGELOG](CHANGELOG.md) 更新。此次 v0.2-alpha.0 是明确授权的建设性能力升级，不是已确认 failure repair。
 
 ## Validation status / 当前验证状态
+
+### `v0.2-alpha.0` — experimental capability upgrade / 实验性能力升级
+
+The available three historical cases and all six new paired branches passed; YAML/reference validation and native discovery/full loading passed. Older Batch1 inputs are missing, so its historical PASS is not a current rerun. Two held-out B/C/D tasks found no necessary-result advantage for D or reliable stable incremental benefit. Model tool execution was blocked in the nested smoke environment. See the [validation record](docs/v0.2-alpha.0-validation.md) for results, costs and limits.
+
+可取得的三项历史案例及新增三组共六个分支通过；YAML/参考验证、原生发现与完整加载通过。较早Batch1输入缺失，其历史PASS不是本次重跑。两个留出B/C/D任务未发现D的必要成果优势或可靠稳定增量收益；嵌套smoke环境阻挡模型工具执行。详见[验证记录](docs/v0.2-alpha.0-validation.md)中的结果、成本与限制。
 
 ### `v0.1-alpha.1` — historical evidence / 历史证据
 
@@ -232,9 +247,9 @@ Task 01 的实用性弱点经针对性分析后，在两组 Codex 定向复现�
 
 ### `v0.1-alpha.2` — targeted repair / 针对性修复
 
-The current version contains that repair. The accepted candidate passed targeted pre-commit checks for warranted continuation, stopping with insufficient evidence, natural completion of a mathematical-only task, and Chinese–English material semantic equivalence. There was one run per behavioral case; these checks are not reliability estimates.
+That historical version contains the repair. The accepted candidate passed targeted pre-commit checks for warranted continuation, stopping with insufficient evidence, natural completion of a mathematical-only task, and Chinese–English material semantic equivalence. There was one run per behavioral case; these checks are not reliability estimates.
 
-当前版本包含该修复。被接受的候选版本通过了针对性 pre-commit 检查：有依据的继续推进、证据不足时停止、纯数学任务完成后自然停止，以及中英文实质语义等价性。每个行为案例运行一次；这些检查不是可靠性估计。
+该历史版本包含该修复。被接受的候选版本通过了针对性 pre-commit 检查：有依据的继续推进、证据不足时停止、纯数学任务完成后自然停止，以及中英文实质语义等价性。每个行为案例运行一次；这些检查不是可靠性估计。
 
 Current evidence does **not** establish universal scientific correctness, cross-model reliability, broad cross-domain generality, repeated-run stability, or full Chinese–English behavioral equivalence across arbitrary tasks.
 
@@ -269,7 +284,8 @@ physics-to-math-research/
 ├── AGENTS.md
 ├── references/
 │   ├── core-principles.md
-│   └── observable-audit-contract.md
+│   ├── observable-audit-contract.md
+│   └── mathematical-verification.md
 └── .github/
     ├── ISSUE_TEMPLATE/
     │   ├── skill-failure.yml

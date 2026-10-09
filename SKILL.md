@@ -1,33 +1,36 @@
 ---
 name: physics-to-math-research
-description: Use when the user asks to turn a scientific or physics problem into a mathematical problem, audit the integrity of such a formulation or claim (material commitments, semantic mappings, warrants, claim status), or run diagnostic derivation far enough to test whether a formulation supports a target claim. Not for theorem proving, literature review, experiment design, or general scientific reasoning. 当用户要求把科学或物理问题构造成数学问题、审查该 formulation 或 claim 的完整性（material 承诺、语义映射、warrant、claim status）、或做诊断性推导以检验 formulation 能否支持目标 claim 时使用。不用于定理证明、文献综述、实验设计或一般科学推理。
+description: >-
+  Formulate scientific or physical observations as mathematical research questions,
+  develop task-relevant conditional results, and audit mathematical claims and
+  physical applicability. Not an unrestricted theorem-proving or general research service.
 metadata:
-  version: "0.1-alpha.2"
+  version: "0.2-alpha.0"
 ---
 
-# physics-to-math-research — v0.1-alpha
+# physics-to-math-research — v0.2-alpha.0
 
 ## Purpose & Scope / 目的与范围
 
-Scientific-to-mathematical formulation and claim-integrity audit, with purpose-bounded diagnostic derivation.
-科学问题到数学问题的构造与 claim 完整性审查，并允许具有诊断目的的有限数学推导。
+Constructive scientific-to-mathematical formulation, task-relevant derivation, and claim-integrity audit.
+建设性的科学问题数学化、任务相关推导与 claim 完整性审查。
 
-The skill audits whether a problem is correctly formulated mathematically, whether material commitments / semantic mappings / inferential steps have warrants, and whether conclusions have been over-upgraded (e.g., mathematical → physical / causal). Derivation serves only to test a formulation and judge claim status, never to solve the full problem.
-本 Skill 审查问题是否被正确数学化、material 承诺 / 语义映射 / 推理步骤是否有依据，以及结论是否被过度升级（如数学结论 → 物理 / 因果结论）。推导只用于检验 formulation 与判断 claim status，不用于解决完整问题。
+Formulate questions grounded in scientific observations or constraints, define the mathematical objects and their physical correspondence, and complete feasible task-relevant derivations under explicit premises. Check results through their load-bearing conditions and relevant counterexamples; distinguish mathematical consequences from unverified physical interpretations.
+根据科学观察或约束构造问题，定义数学对象及其物理对应，并在明确前提下完成可行的任务相关推导。通过关键成立条件与相关反例核查结果，区分数学后果与未经验证的物理解释。
 
-Not a theorem prover, symbolic algebra system, causal discovery system, statistical methodology framework, literature review workflow, simulation framework, experiment optimizer, universal scientific ontology, publication-writing system, or autonomous research agent.
-不是 theorem prover、symbolic algebra system、causal discovery system、statistical methodology framework、literature review workflow、simulation framework、experiment optimization、universal scientific ontology、publication-writing system，也不是 autonomous research agent。
+This is not an unrestricted theorem-proving service, symbolic algebra system, causal discovery system, complete statistical methodology framework, literature review workflow, simulation framework, experiment optimizer, universal scientific ontology, publication-writing system, or autonomous research agent. Conditional propositions needed for the current mathematical research task may be derived when reasonably feasible; this does not authorize solving an entire research programme.
+本 Skill 不是无限制的定理证明服务、符号代数系统、因果发现系统、完整统计方法学框架、文献综述流程、模拟框架、实验优化器、通用科学本体、论文写作系统或自主科研 Agent。允许合理可行地推导当前数学化研究任务需要的条件性命题；这不授权完成整个研究计划。
 
 ## When to use / 何时使用
 
-- The user asks to formulate a scientific / physics problem mathematically, or to audit an existing formulation. 用户要求把科学 / 物理问题构造成数学问题，或审查已有 formulation。
-- A claim's commitments, mappings, inferential steps, or status need auditing. 需要审计 claim 的建模承诺、语义映射、推理步骤或 status。
-- Limited derivation is needed to test whether a formulation supports the target claim. 需要通过有限推导检验 formulation 能否支持目标 claim。
+- Formulate an open mathematical research question from scientific observations or constraints; the user need not supply a target claim. 根据科学观察或约束构造开放式数学研究问题；用户无需预先提供 target claim。
+- Audit an existing formulation or claim, respecting an audit-only request rather than forcing new modeling. 审查已有 formulation 或 claim；尊重仅审查的任务，不强制重新建模。
+- Derive a feasible conditional mathematical result that advances the current scientific-to-mathematical task. 推导能够推进当前科学数学化任务的可行条件性数学结果。
 
 ## When not to use / 何时不用
 
-- The task is in one of the excluded categories above. 任务属于上述排除类别。
-- No scientific problem to formulate and no claim to audit. 没有需要形式化的科学问题，也没有需要审计的 claim。
+- The task primarily asks for one of the excluded unrestricted services above. 任务主要要求上述排除的无限制服务之一。
+- There is no scientific-to-mathematical question, task-relevant derivation, or formulation/claim to audit. 没有科学数学化问题、任务相关推导或需要审查的 formulation/claim。
 
 ## Core Rules / 核心规则
 
@@ -69,20 +72,30 @@ Audit the load-bearing prerequisites of the inference, mathematical operation, o
 Not a fixed pipeline; apply the Cores to what the problem actually requires.
 不是固定流水线；按问题实际所需应用四条 Core。
 
-### Diagnostic derivation / 诊断性推导
+### Task-relevant derivation / 任务相关推导
 
-Real mathematical derivation is allowed, but only as far as needed to test whether the formulation can support the target claim, expose its load-bearing structure, and determine the relevant claim status. Do not define "bounded" by a fixed line or token count.
-允许真正进行数学推导，但只推导到足以检验 formulation 能否支持目标 claim、暴露其关键依赖结构、并确定相关 claim status 的程度。不要用固定行数或 token 数定义 "bounded"。
+**Productive Mathematical Progress / 建设性数学推进**
+
+For open scientific-to-mathematical tasks, formulate a precise question grounded in the stated observations or constraints. When explicit, task-relevant premises permit a feasible step that materially advances the question, complete it to a checkable mathematical result rather than merely recommending it. Provisional hypotheses are allowed, but their mathematical consequences must not be presented as established physical facts.
+对于开放式科学问题的数学化任务，应根据已有观察或约束构造明确的数学问题。当明确且与任务相关的前提允许完成能够实质推进该问题的数学步骤时，应实际完成至可核查的数学结果，而非仅建议后续分析。允许暂定假设，但不得将其数学后果当作已经证实的物理事实。
+
+Results may include a conditional theorem, bound, counterexample, non-identifiability or impossibility result, useful computational construction, or testable difference between models. These are possibilities, not a checklist; not every task needs a new formula or theorem. A provisional premise must have a stated task-relevant basis and remain an exploratory assumption, not silently become an empirical warrant (Core 2).
+成果可包括条件性定理、数学界、反例、不可识别性或不可能性结果、有用途的计算构造或可检验的模型间差异。这些是可能形式，不是 checklist；并非每项任务都需要新公式或定理。暂定前提须有明确的任务相关依据，并保持为探索性假设，不能静默变成经验依据（Core 2）。
 
 ### Mathematical structure / 数学结构
 
-"Minimal sufficient mathematical structure" is not a Core rule. Avoid mathematical commitments that neither support the target claim nor discriminate among relevant formulations; competing formulations compatible with the evidence may be kept.
-"Minimal sufficient mathematical structure" 不是 Core 规则。避免引入既不支持目标 claim、也不能区分 relevant formulations 的数学承诺；可保留与证据兼容的 competing formulations。
+"Minimal sufficient mathematical structure" is not a Core rule. Use structures with clear definitions, explicit relations to observations, research quantities or constraints, and a practical contribution to the current question. Do not introduce functions, spaces, operators or equations merely to look mathematical. Retain warranted competing formulations and necessary complex structure.
+"Minimal sufficient mathematical structure" 不是 Core 规则。采用定义清楚、与观察、研究量或约束有明确关系、并对当前问题有实际贡献的结构。不得仅为显得数学化而引入函数、空间、算子或方程。保留有依据的竞争性 formulation 及必要的复杂结构。
 
 ### Counterexamples / 反例
 
-No exhaustive counterexample search. Only when relevant, look for adversarial witnesses / counterexamples / alternative explanations that could change the claim status, are domain-compatible, and have diagnostic value — to determine what the conclusion depends on, not to manufacture skepticism.
-不要穷尽式搜索反例。只在相关时寻找能改变 claim status 的、与问题域相容的、具有诊断价值的 adversarial witness / counterexample / alternative explanation——目的是确定结论真正依赖什么，不是制造无限怀疑。
+No exhaustive counterexample search. When relevant, test supplied or newly formulated propositions with domain-compatible witnesses or alternatives that can change the conclusion or expose its dependencies. Do not invent irrelevant alternatives to manufacture skepticism.
+不作穷尽式反例搜索。必要时用与问题域相容、能改变结论或暴露依赖的见证或替代解释，检查给定或新构造的命题。不得虚构不相关备选方案以制造怀疑。
+
+### Conditional verification / 条件性核查
+
+When an authorized, available, reliable tool can materially check a load-bearing mathematical result and the check could change the current conclusion, perform it. Do not treat numerical sampling as a general proof, invent unavailable verification, or use tool-call frequency as a capability metric. For verification limits when relevant, see [references/mathematical-verification.md](references/mathematical-verification.md).
+当已授权、可用且可靠的工具能够实质性核查关键数学结果，且核查可能改变当前结论时，应实际执行。不得将数值抽样当作一般性证明、虚构不可执行的验证，或以工具调用频率衡量能力。需要时参见[数学核查边界](references/mathematical-verification.md)。
 
 ### Prohibited defaults / 禁止的默认结构
 
@@ -118,9 +131,11 @@ OAC 是对结果的 external auditability contract——不是推理流水线，
 
 ## Stop & escalation / 停止与升级
 
-- Stop deriving once the formulation's support for the target claim and its load-bearing structure are clear, unless the stated task remains incomplete because a claim-relevant step that is warranted by the available information and feasible within the current formulation or diagnostic scope is still needed. Complete the smallest such step to an operational level before stopping: specify what is to be estimated, tested, compared, propagated, or derived, and how that step would be carried out at the level supported by the available information. Do not merely name a needed analysis. Do not continue merely to make the analysis more complete or to solve the full problem.  
-  当 formulation 对目标 claim 的支持程度与 load-bearing structure 已清楚时停止推导；但如果由于仍缺少一个与 claim 相关、由现有信息支持、且在当前 formulation 或诊断范围内可行的步骤，使得用户所提出的任务尚未完成，则应在停止前把其中最小的必要步骤推进到可操作层级：明确需要估计、检验、比较、传播或推导什么，并在现有信息所支持的程度上说明该步骤如何实施。不得仅仅指出“还需要某项分析”而停止。不得仅为了使分析更加完整而继续，也不得继续求解完整问题。
-- Report the status of each assessed claim honestly (e.g., refuted or underdetermined). Determining claim status is not by itself a stopping condition when the preceding rule requires a bounded continuation. Otherwise, do not add unwarranted assumptions or change the claim to force further progress or reach a preset conclusion (Core 2); stop and state the missing evidence or condition.  
-  如实报告每项已审查 claim 的 status（如 refuted / underdetermined）。当上一条要求进行有界继续时，仅完成 claim status 的判定本身并不构成停止条件。除此之外，不得为了强行继续推进或得到预设结论而添加无 warrant 的假设或更换 claim（Core 2）；此时应停止并指出缺失的证据或条件。
-- Escalate when the task leaves this skill's scope (full theorem proving, literature review, experiment design, writing): state that it is out of scope and point to the appropriate workflow. 任务超出范围（完整定理证明、文献综述、实验设计、写作等）时升级：说明超出范围并指向相应流程。
-- Escalate to the user when continuing requires a domain decision or new evidence only the user can provide. 继续推进需要用户提供领域判断或新证据时，升级给用户。
+- Stop when the task-relevant mathematical deliverable and its load-bearing conditions have been established to the extent supported by available information, or when a specific blocker prevents further justified progress. Unresolved physical identification does not itself preclude feasible conditional mathematical work. Do not extend the analysis through arbitrary models or irrelevant abstraction.
+  当任务相关的数学成果及其关键成立条件已达到当前信息支持的程度，或具体障碍阻止进一步有依据的推进时，应停止。物理机制尚不可识别，本身不妨碍继续完成可行的条件性数学工作。不得通过任意建模或无关数学抽象强行延长研究。
+- Report the status and scope of each assessed or derived claim honestly. If blocked, state the specific missing premise, evidence or capability; do not add unwarranted assumptions or change the question to force a result.
+  如实报告每项已审查或推导 claim 的状态与范围。遇到障碍时，指出具体缺少的前提、证据或能力；不得添加无依据假设或更换问题来强行得到结果。
+- Escalate when the task requires an excluded service beyond this scope; distinguish that from feasible task-relevant conditional derivation.
+  任务需要超出此范围的排除服务时升级；将其与可行的任务相关条件性推导区分。
+- Escalate to the user when continuing requires a domain decision or new evidence only the user can provide.
+  继续推进需要仅用户能提供的领域判断或新证据时，升级给用户。

@@ -2,7 +2,7 @@ Answer in Chinese or English; both are not required. / 可用中文或英文作�
 
 - What changed, and why? / 改了什么，为什么？
 - Type: runtime behavior, documentation, evaluation, or infrastructure? / 类型：运行行为、文档、评测还是基础设施？
-- For runtime changes only: what demonstrated failure motivates this? / 仅运行行为变更：由什么已观察到的失败推动？
+- For runtime changes only: what demonstrated failure or explicitly justified capability goal motivates this, and what correctness regressions protect it? / 仅运行行为变更：由什么已观察到的失败或明确能力目标推动，哪些正确性回归提供保护？
 - What regression risk exists, if any? / 是否存在回归风险？如有，请说明。
 - Does this affect normative bilingual text? If yes, has Chinese–English semantic equivalence been checked? / 是否影响双语规范文本？如是，是否已检查中英文语义等价性？
 
