@@ -176,9 +176,13 @@ The [evaluation reports](evaluation-reports/) archive records actual capability 
 
 [测试档案](evaluation-reports/)记录实际能力测试、ON/OFF 比较、数学失败、成对回归、修复前后行为及未发现可靠缺陷的结果。每项测试对应一个独立 Markdown 报告；已有可公开访问的完整证据优先链接，不重复维护。公开证据不完整时须说明复现限制。
 
-Start with [Constitutive four-cell evaluation / 材料本构四格测试](evaluation-reports/2026-10-09-constitutive-four-cell.md): v0.1-alpha.2, GPT-6.1 Sol / High; both conditions completed the warranted derivations, with no substantive ON/OFF advantage or reliable Skill failure observed. Outcomes may be success, failure, tie, or uncertainty. Every report ends with an optimization decision; a test alone does not validate overall effectiveness.
+Report filenames use `YYYY-MM-DD-[scientific-topic]-[research-question].md`: the actual completion date and a short lowercase, hyphenated scientific question, rather than the test method. Test IDs, sources, methods, and Skill versions stay inside each report.
 
-首项为[材料本构四格测试](evaluation-reports/2026-10-09-constitutive-four-cell.md)：v0.1-alpha.2，GPT-6.1 Sol / High；两种条件均完成有依据的推导，未观察到实质 ON/OFF 优劣或可靠 Skill failure。结果可以是成功、失败、持平或不确定。每份报告须给出最终优化决策；测试本身不构成整体有效性验证。
+报告文件名采用 `YYYY-MM-DD-[scientific-topic]-[research-question].md`：使用实际完成日期和简短的小写英文连字符科学问题名称，不以测试方法为主要名称。测试 ID、文献、方法及 Skill 版本保留在报告内部。
+
+Start with [Can calibration evidence identify material response? / 标定证据能否识别材料响应？](evaluation-reports/2026-10-09-can-calibration-evidence-identify-material-response.md): v0.1-alpha.2, GPT-6.1 Sol / High; both conditions completed the warranted derivations, with no substantive ON/OFF advantage or reliable Skill failure observed. Outcomes may be success, failure, tie, or uncertainty. Every report ends with an optimization decision; a test alone does not validate overall effectiveness.
+
+首项为[标定证据能否识别材料响应？](evaluation-reports/2026-10-09-can-calibration-evidence-identify-material-response.md)：v0.1-alpha.2，GPT-6.1 Sol / High；两种条件均完成有依据的推导，未观察到实质 ON/OFF 优劣或可靠 Skill failure。结果可以是成功、失败、持平或不确定。每份报告须给出最终优化决策；测试本身不构成整体有效性验证。
 
 **Evidence Attribution:** Test reports must distinguish evidence produced by independent Skill ON/OFF runs from results obtained through subsequent human guidance, additional tools, or domain-specific workflows. Without independent evidence, subsequent research outcomes must not be attributed to the Skill's incremental contribution.
 
@@ -247,7 +251,7 @@ physics-to-math-research/
 ├── README.zh-CN.md
 ├── RESEARCH_APPLICATIONS.md
 ├── evaluation-reports/
-│   └── 2026-10-09-constitutive-four-cell.md
+│   └── 2026-10-09-can-calibration-evidence-identify-material-response.md
 ├── LICENSE
 ├── CHANGELOG.md
 ├── CONTRIBUTING.md

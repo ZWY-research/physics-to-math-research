@@ -125,7 +125,9 @@ Start in [Discussions](https://github.com/ZWY-research/physics-to-math-research/
 
 [测试档案](evaluation-reports/)记录 Skill 实际能力测试、ON/OFF 比较、重要数学失败、成对 regression、修复前后行为，以及未发现可靠缺陷的负结果。每项测试对应一个独立 Markdown 报告；已有可公开访问的完整证据优先链接，避免重复维护。公开证据不完整时须说明复现限制。
 
-首项为[材料本构四格测试](evaluation-reports/2026-10-09-constitutive-four-cell.md)：v0.1-alpha.2，GPT-6.1 Sol / High；两种条件均完成有依据的推导，未观察到实质 ON/OFF 优劣或可靠 Skill failure。测试可以得到成功、失败、持平或不确定结果；每份报告须给出最终优化决策。单项测试不构成整体有效性验证。
+报告文件名采用 `YYYY-MM-DD-[scientific-topic]-[research-question].md`：使用实际完成日期和简短的小写英文连字符科学问题名称，不以测试方法为主要名称。测试 ID、文献、方法及 Skill 版本保留在报告内部。
+
+首项为[标定证据能否识别材料响应？](evaluation-reports/2026-10-09-can-calibration-evidence-identify-material-response.md)：v0.1-alpha.2，GPT-6.1 Sol / High；两种条件均完成有依据的推导，未观察到实质 ON/OFF 优劣或可靠 Skill failure。测试可以得到成功、失败、持平或不确定结果；每份报告须给出最终优化决策。单项测试不构成整体有效性验证。
 
 **Evidence Attribution / 证据归因：** 测试报告必须区分独立 Skill ON/OFF 运行产生的证据，以及后续人工指导、额外工具或领域专项流程得到的结果。没有独立证据时，不得将后续科研成果归因于 Skill 的增量作用。
 
@@ -174,7 +176,7 @@ physics-to-math-research/
 ├── README.zh-CN.md
 ├── RESEARCH_APPLICATIONS.md
 ├── evaluation-reports/
-│   └── 2026-10-09-constitutive-four-cell.md
+│   └── 2026-10-09-can-calibration-evidence-identify-material-response.md
 ├── LICENSE
 ├── CHANGELOG.md
 ├── CONTRIBUTING.md
