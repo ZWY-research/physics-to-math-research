@@ -188,6 +188,10 @@ The [tokamak turbulence evaluation](evaluation-reports/2026-10-09-can-linear-sta
 
 [托卡马克湍流测试](evaluation-reports/2026-10-09-can-linear-stability-rule-out-sustained-tokamak-turbulence.md)检验线性稳定性能否排除有限幅持续湍流。单次 ON/OFF 比较的七维评价均无法区分，未建立增量优势；两答共同缺少显式的小扰动非线性稳定条件分析。
 
+The [ITG gradient-scan evaluation](evaluation-reports/2026-10-09-can-itg-gradient-scans-distinguish-turbulent-states.md) compares open-ended problem discovery and mathematical formulation. ON was slightly better on claim validity; the other six dimensions were indistinguishable. This weak signal does not establish reliable incremental benefit; ON added 3333 input tokens. No core or version change.
+
+[ITG 梯度扫描测试](evaluation-reports/2026-10-09-can-itg-gradient-scans-distinguish-turbulent-states.md)比较开放式问题发现与数学构造：ON 在 claim validity 略优，其余六维无法区分；弱正向信号尚未建立可靠增量价值，额外输入3333 tokens。不修改核心或版本。
+
 **Evidence Attribution:** Test reports must distinguish evidence produced by independent Skill ON/OFF runs from results obtained through subsequent human guidance, additional tools, or domain-specific workflows. Without independent evidence, subsequent research outcomes must not be attributed to the Skill's incremental contribution.
 
 **Evidence Attribution / 证据归因：** 测试报告必须区分独立 Skill ON/OFF 运行产生的证据，以及后续人工指导、额外工具或领域专项流程得到的结果。没有独立证据时，不得将后续科研成果归因于 Skill 的增量作用。
@@ -256,7 +260,8 @@ physics-to-math-research/
 ├── RESEARCH_APPLICATIONS.md
 ├── evaluation-reports/
 │   ├── 2026-10-09-can-calibration-evidence-identify-material-response.md
-│   └── 2026-10-09-can-linear-stability-rule-out-sustained-tokamak-turbulence.md
+│   ├── 2026-10-09-can-linear-stability-rule-out-sustained-tokamak-turbulence.md
+│   └── 2026-10-09-can-itg-gradient-scans-distinguish-turbulent-states.md
 ├── LICENSE
 ├── CHANGELOG.md
 ├── CONTRIBUTING.md
