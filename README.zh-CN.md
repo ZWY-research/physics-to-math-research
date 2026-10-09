@@ -127,6 +127,8 @@ Start in [Discussions](https://github.com/ZWY-research/physics-to-math-research/
 
 首项为[材料本构四格测试](evaluation-reports/2026-10-09-constitutive-four-cell.md)：v0.1-alpha.2，GPT-6.1 Sol / High；两种条件均完成有依据的推导，未观察到实质 ON/OFF 优劣或可靠 Skill failure。测试可以得到成功、失败、持平或不确定结果；每份报告须给出最终优化决策。单项测试不构成整体有效性验证。
 
+**Evidence Attribution / 证据归因：** 测试报告必须区分独立 Skill ON/OFF 运行产生的证据，以及后续人工指导、额外工具或领域专项流程得到的结果。没有独立证据时，不得将后续科研成果归因于 Skill 的增量作用。
+
 **版本演化约定：** Test → Evidence → Failure Review → Minimal Revision → Regression → Version Update.
 
 - **无可靠 failure：**保存测试报告，不修改 SKILL.md、不新增无必要规则、不升级版本。

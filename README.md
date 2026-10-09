@@ -180,6 +180,10 @@ Start with [Constitutive four-cell evaluation / 材料本构四格测试](evalua
 
 首项为[材料本构四格测试](evaluation-reports/2026-10-09-constitutive-four-cell.md)：v0.1-alpha.2，GPT-6.1 Sol / High；两种条件均完成有依据的推导，未观察到实质 ON/OFF 优劣或可靠 Skill failure。结果可以是成功、失败、持平或不确定。每份报告须给出最终优化决策；测试本身不构成整体有效性验证。
 
+**Evidence Attribution:** Test reports must distinguish evidence produced by independent Skill ON/OFF runs from results obtained through subsequent human guidance, additional tools, or domain-specific workflows. Without independent evidence, subsequent research outcomes must not be attributed to the Skill's incremental contribution.
+
+**Evidence Attribution / 证据归因：** 测试报告必须区分独立 Skill ON/OFF 运行产生的证据，以及后续人工指导、额外工具或领域专项流程得到的结果。没有独立证据时，不得将后续科研成果归因于 Skill 的增量作用。
+
 **Version governance / 版本演化约定：** Test → Evidence → Failure Review → Minimal Revision → Regression → Version Update.
 
 - **No reliable failure:** archive evidence; keep SKILL.md and version unchanged, without unnecessary rules. / **无可靠 failure：**保存报告，不修改 SKILL.md、不新增无必要规则、不升级版本。
