@@ -16,6 +16,14 @@ GitHub 主 [README.md](README.md) 现已采用中英文同页对照。本文件�
 
 > 文档用于解释和导航。[SKILL.md](SKILL.md) 是当前版本唯一的运行时规范来源。如果文档与其冲突，以 `SKILL.md` 为准。
 
+## 学科适配层（实验性）
+
+[SKILL.md](SKILL.md) 是现行统一科研协议。学科适配文件仅提供可选的领域语义指导，不是独立 Skill，也不能规定默认数学模型。
+
+首个试点为[物理学适配层](references/disciplines/physics.md)，遵循[学科适配契约](docs/discipline-adapter-contract.md)。只有当物理学特有的测量、边界、源项或尺度条件实质影响当前数学化任务时，才与主 Skill 一起显式提供。目前不支持自动加载。
+
+该扩展尚未完成能力验证。[对照案例](tests/physics-adapter-contrast.md)只完成规格制定，尚未执行，不得宣称存在稳定增量收益。
+
 ## 这个 Skill 做什么
 
 - 从科学观察或约束构造明确的数学问题，也可审查已有 formulation/claim。

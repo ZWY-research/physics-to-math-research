@@ -26,6 +26,20 @@ For uninterrupted Chinese reading, see [README.zh-CN.md](README.zh-CN.md). Both 
 
 如偏好连续中文阅读，可使用 [README.zh-CN.md](README.zh-CN.md)。两个阅读入口解释的是同一个 Skill。
 
+## Discipline adapters (experimental) / 学科适配层（实验性）
+
+The canonical [SKILL.md](SKILL.md) remains the single general research protocol. Domain guidance is optional supporting material, not a separate Skill or a default mathematical model.
+
+现行 [SKILL.md](SKILL.md) 仍是统一科研协议。领域指导是可选支持材料，不是独立 Skill，也不规定默认数学模型。
+
+The first experimental pilot is [Physics](references/disciplines/physics.md), governed by the [Discipline Adapter Contract](docs/discipline-adapter-contract.md). It may be explicitly supplied alongside the Skill when physics-specific distinctions materially affect the task. It is not automatically loaded by the current runtime protocol.
+
+首个实验性试点为[物理学适配层](references/disciplines/physics.md)，受[学科适配契约](docs/discipline-adapter-contract.md)约束。只有在物理学特有的语义或约束实质影响任务时才按需显式提供；当前运行协议不会自动加载。
+
+This is an unvalidated extension. [Contrast fixtures](tests/physics-adapter-contrast.md) are specified but not executed. No demonstrated incremental benefit is claimed.
+
+这是尚未验证的扩展。已制定[对照测试](tests/physics-adapter-contrast.md)，但尚未执行，不宣称已获得增量收益。
+
 ## What this Skill does / 这个 Skill 做什么
 
 - Construct a precise mathematical question from scientific observations or constraints, or audit an existing formulation/claim.
