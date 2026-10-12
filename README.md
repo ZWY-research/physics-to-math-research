@@ -1,6 +1,12 @@
 # physics-to-math-research
 
-**Version / 版本：** `0.2.3` · **Status / 状态：** Experimental / 实验性版本
+**Version / 版本：** `0.2.4` · **Status / 状态：** Experimental / 实验性版本
+
+**[Research Dashboard / Research Observatory — 科研进展与证据看板](https://zwy-research.github.io/physics-to-math-research/)**
+
+Explore completed research audits, mathematical results, Skill validation status and open questions, with evidence traceable to original GitHub records.
+
+展示已完成科研审查、数学成果、Skill 验证状态以及尚未解决的问题；每项证据均可追溯到 GitHub 原始记录。
 
 **Selected Research & Constructive Mathematical Audits / 精选研究与建设性数学审查**
 

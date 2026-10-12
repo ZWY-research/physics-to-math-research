@@ -2,6 +2,20 @@
 
 ## Unreleased
 
+## 0.2.4
+
+- Added a bilingual academic Research Observatory for GitHub Pages, with a README dashboard entry.
+- Presented reviewed papers, traceable mathematical evidence, historical Skill evaluation status and unresolved questions as separate evidence streams.
+- Added source-record links and voluntary community participation channels.
+- Added a standard-library static checker for versions, registered papers, protocol counts, navigation and evidence qualifications.
+- Core/OAC and runtime research rules are unchanged; this release adds no new research capability validation results.
+
+- 新增 GitHub Pages 双语学术科研进展与证据看板，README 增加可视化入口。
+- 分开展示正式审查论文、可追溯数学证据、历史 Skill 能力评估状态及未决问题。
+- 加入原始证据链接及自愿社区参与入口。
+- 新增标准库静态一致性检查，核对版本、登记论文、规范数量、导航及证据限定。
+- 不改变 Core/OAC 或运行时科研规则，本版本未产生新的科研能力验证结果。
+
 ## 0.2.3
 
 - Clarified selected research and constructive, claim-level mathematical audits, with scientific significance stated at report openings.

@@ -1,6 +1,10 @@
 # physics-to-math-research
 
-**版本：** `0.2.3` · **状态：** 实验性版本
+**版本：** `0.2.4` · **状态：** 实验性版本
+
+**[科研进展与证据看板](https://zwy-research.github.io/physics-to-math-research/)**
+
+展示已完成科研审查、数学成果、Skill 验证状态以及尚未解决的问题；每项证据均可追溯到 GitHub 原始记录。
 
 **精选研究与建设性数学审查**
 
