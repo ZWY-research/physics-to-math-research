@@ -2,6 +2,18 @@
 
 ## Unreleased
 
+## 0.2.1
+
+- Aligned the project version with the previously published bilingual research onboarding, community feedback, literature-audit navigation, and mathematical-tool guidance updates.
+- Established a version increment and changelog entry requirement for every future published main-branch update, including documentation-only changes.
+- No mathematical reasoning rule, Core, OAC, or runtime execution behavior was changed beyond version metadata.
+- This release does not claim demonstrated stable incremental Skill capability.
+
+- 将此前已发布的双语科研入口、社区反馈、论文审查导航与数学工具指引纳入 v0.2.1 版本记录。
+- 确立今后每次正式更新 main 分支均同步递增版本号并记录 CHANGELOG 的项目治理规则，包括纯文档更新。
+- 除版本元数据外，不改变数学科研规则、Core、OAC 或运行行为。
+- 本次升级不宣称已证明 Skill 具有稳定的增量能力优势。
+
 ## 0.2-alpha.0
 
 - Constructive mathematical formulation: open observations may lead to new mathematical questions without a pre-specified target claim.

@@ -5,10 +5,10 @@ description: >-
   develop task-relevant conditional results, and audit mathematical claims and
   physical applicability. Not an unrestricted theorem-proving or general research service.
 metadata:
-  version: "0.2-alpha.0"
+  version: "0.2.1"
 ---
 
-# physics-to-math-research — v0.2-alpha.0
+# physics-to-math-research — v0.2.1
 
 ## Purpose & Scope / 目的与范围
 

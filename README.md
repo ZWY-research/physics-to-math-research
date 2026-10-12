@@ -1,6 +1,6 @@
 # physics-to-math-research
 
-**Version / 版本：** `0.2-alpha.0` · **Status / 状态：** Public alpha / 公开 Alpha 测试版
+**Version / 版本：** `0.2.1` · **Status / 状态：** Experimental / 实验性版本
 
 ## Mission / 项目使命
 
@@ -289,13 +289,13 @@ The [ITG gradient-scan evaluation](evaluation-reports/2026-10-09-can-itg-gradien
 
 **Version governance:** failure-driven repairs follow Test → Evidence → Failure Review → Minimal Revision → Regression → Version Update. Without a reliable failure, do not invent a repair rationale or unnecessary rules.
 
-An experimental capability upgrade with an explicit architectural reason and verifiable goals is also allowed. It must pass the available prior correctness regressions and disclose missing coverage, without lowering existing criteria. A published version must not be described as having proven incremental benefit without independent controlled evidence. Actual runtime changes warrant version updates; reports or explanatory corrections alone do not.
+An experimental capability upgrade with an explicit architectural reason and verifiable goals is also allowed. It must pass the available prior correctness regressions and disclose missing coverage, without lowering existing criteria. A published version must not be described as having proven incremental benefit without independent controlled evidence. Every published update to the repository's main branch, including changes to runtime instructions, documentation, tests, references, or research records, requires a project version increment and a CHANGELOG entry. Historical version identifiers and version-specific validation evidence remain unchanged. A version increment alone does not establish a runtime capability improvement.
 
 Candidate failures require reproducible conditions, rule/necessity review and the smallest confirmed repair. Runtime changes require bilingual review, regressions and a [CHANGELOG](CHANGELOG.md) update. v0.2-alpha.0 is an explicitly authorized constructive capability upgrade, not a confirmed failure repair.
 
 **版本治理：**失败驱动修复遵循 Test → Evidence → Failure Review → Minimal Revision → Regression → Version Update。没有可靠 failure 时，不虚构修复理由或新增无必要规则。
 
-也允许基于明确架构理由和可验证能力目标进行实验性能力升级。新版须通过可取得的既有正确性回归，并明确披露缺失的测试覆盖；不得降低原判据。没有独立对照证据，不得宣称发布版本已证明具有增量优势。实际运行行为修改才触发版本更新；增加报告或修改解释文档本身不触发。
+也允许基于明确架构理由和可验证能力目标进行实验性能力升级。新版须通过可取得的既有正确性回归，并明确披露缺失的测试覆盖；不得降低原判据。没有独立对照证据，不得宣称发布版本已证明具有增量优势。今后每次正式更新仓库 main 分支，无论修改运行规范、文档、测试、参考文件或科研记录，都必须同步递增项目版本号，并在 CHANGELOG 中记录。历史版本标识及其对应的验证证据保持不变。版本递增本身不代表运行能力提升。
 
 候选 failure 须保存可复现条件、核对现有规则及任务必要性，确认后优先最小修复。运行变更均须进行双语语义检查、回归与 [CHANGELOG](CHANGELOG.md) 更新。此次 v0.2-alpha.0 是明确授权的建设性能力升级，不是已确认 failure repair。
 
