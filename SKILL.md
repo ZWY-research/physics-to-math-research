@@ -5,10 +5,10 @@ description: >-
   develop task-relevant conditional results, and audit mathematical claims and
   physical applicability. Not an unrestricted theorem-proving or general research service.
 metadata:
-  version: "0.2.4"
+  version: "0.2.5"
 ---
 
-# physics-to-math-research — v0.2.4
+# physics-to-math-research — v0.2.5
 
 ## Purpose & Scope / 目的与范围
 
@@ -96,6 +96,23 @@ No exhaustive counterexample search. When relevant, test supplied or newly formu
 
 When an authorized, available, reliable tool can materially check a load-bearing mathematical result and the check could change the current conclusion, perform it. Do not treat numerical sampling as a general proof, invent unavailable verification, or use tool-call frequency as a capability metric. For verification limits when relevant, see [references/mathematical-verification.md](references/mathematical-verification.md).
 当已授权、可用且可靠的工具能够实质性核查关键数学结果，且核查可能改变当前结论时，应实际执行。不得将数值抽样当作一般性证明、虚构不可执行的验证，或以工具调用频率衡量能力。需要时参见[数学核查边界](references/mathematical-verification.md)。
+
+### Task Intent & Research Delivery / 任务意图与科研交付
+
+Adapt to the user's purpose: explain existing literature without forcing new research; for research requests, complete task-relevant constructions and feasible derivations supported by current evidence; respect audit-only requests without forcing new models. Explicit output requirements govern. These distinctions are not a fixed workflow; pure literature reviews and complete submission writing remain outside the Skill's independent core responsibilities.
+按用户用途交付：理解已有文献时不强制开展新研究；研究请求应完成当前证据支持、与任务相关的构造及可行推导；仅审查时不强制提出新模型。明确输出要求优先。这些区别不是固定流程；纯文献综述及完整投稿写作仍非本 Skill 的独立核心职责。
+
+Do not recommend local mathematics software merely because the Skill is invoked, or offer installation tutorials for reading-only tasks. Use authorized, available tools for consequential research checks under Conditional verification; existing-tool use does not require user installation. Only an explicit local-computation, deployment or installation request calls for a minimal task-relevant tool plan; local installation needs explicit authorization. Tools replace neither mathematical proof nor physical evidence.
+不因调用 Skill 而推荐本地数学软件，不对仅阅读任务主动提供安装教程。按条件性核查指引使用已授权、可用的工具核查关键研究结果；使用已有工具不要求用户安装。仅在明确提出本地计算、部署或安装需求时给出任务相关的最小工具方案；本地安装须明确授权。工具不替代数学证明或物理证据。
+
+For substantial research delivery, support a Research Explanation for university-level interdisciplinary readers and a Technical Research Account with necessary definitions, derivations, evidence and reproducibility information. Both must preserve the same conclusions, evidence strength and scope. Let the task and explicit delivery requirements determine length and files; do not automatically produce two long essays or two files.
+完整科研交付可支持面向大学水平跨学科读者的通俗解释版，以及提供必要定义、推导、证据和可复现信息的专业科研论证版。两层须保持相同结论、证据强度与适用范围。按任务及明确交付要求决定篇幅与文件，不自动输出两篇长文或两个文件。
+
+Only for requested research-result writing, academic paragraphs or professional academic argument without a specified style, default to Nature Portfolio-inspired expression: clear question, prominent results and significance, restrained terminology, mathematics serving scientific claims, evidence-matched conclusions and concise interdisciplinary prose. Briefly disclose: “Scientific writing defaults to a clear, concise, evidence-oriented Nature-style approach; please specify Nature Communications, Nature Physics, another journal or a different writing style if preferred.” User-specified journal, style, language and organization override this default; exact submission formatting follows the relevant official author guide. Do not impose this style on ordinary research explanations, automatically install or invoke third-party writing Skills, or invent data, citations, originality claims or experiments. This does not expand the Skill into a complete submission-writing system.
+仅在请求撰写科研成果、学术段落或专业学术论证且未指定风格时，默认采用 Nature Portfolio 类表达：问题清晰，结果与意义突出，术语适度，数学服务科学主张，结论匹配证据，面向跨学科读者简练表达。简短告知：“科研写作默认采用 Nature 类期刊的清晰、简洁、证据导向风格；如果需要 Nature Communications、Nature Physics、其他期刊或不同的写作风格，请直接指定。”用户指定的期刊、风格、语言及篇章组织优先；精确投稿格式遵循相应官方作者指南。不将此风格强加于普通科研解释，不自动安装或调用第三方写作 Skill，不虚构数据、引用、原创性声明或实验。本 Skill 不扩张为完整投稿写作系统。
+
+For substantive results or created files, close with a brief receipt: work actually completed and key result, support status, tools actually used and their roles, and actual file names, accurate locations and purposes. Do not invent files for dialogue-only answers or make the receipt a lengthy checklist. Read [research delivery guidance](references/research-deliverables.md) when useful.
+产出实质成果或文件时，最终简要回执说明实际工作及关键结论、支持状态、实际工具与作用，以及真实文件名称、准确位置和用途。纯对话回答不虚构文件，回执不写成冗长 checklist。需要时参见[科研交付说明](references/research-deliverables.md)。
 
 ### Prohibited defaults / 禁止的默认结构
 

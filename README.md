@@ -1,6 +1,24 @@
 # physics-to-math-research
 
-**Version / 版本：** `0.2.4` · **Status / 状态：** Experimental / 实验性版本
+**Version / 版本：** `0.2.5` · **Status / 状态：** Experimental / 实验性版本
+
+## Mission / 项目使命
+
+This project helps AI formulate and advance general mathematical questions grounded in physical phenomena and other scientific observations. It emphasizes explicit observations and assumptions, minimal sufficient mathematical structures, checkable conditional derivations, counterexamples, validity conditions, and physical applicability boundaries.
+
+本项目旨在帮助 AI 从物理现象及其他科学观察中发现、构造并推进具有研究价值的一般数学问题。通过明确观测与假设、选择最小足够的数学结构、完成条件性推导，并检查反例、成立条件和物理适用边界，使研究结果可核查、可复现、可质疑。
+
+The project addresses physics and other sciences without depending on a particular device, model or mathematical branch; the aim is a research-relevant question and supported conditional mathematical progress.
+
+项目面向物理及其他科学问题，不依赖特定装置、模型或数学分支；目标是寻找有研究意义的问题，完成当前条件支持的数学成果。
+
+This is project orientation, not an additional runtime rule. “Minimal sufficient” means structure adequate for the question; it does not prescribe a minimization procedure or prefer simplicity over necessary complexity. The Skill does not guarantee new mathematics or establish real physical mechanisms. A stable incremental advantage has not been demonstrated.
+
+这是项目使命说明，不增加运行时规则。“最小足够”指结构足以支持当前问题，不规定结构最小化流程，也不以简单替代必要复杂性。Skill 不保证发现新数学或证实真实物理机制，目前也未建立稳定增量优势。
+
+[SKILL.md](SKILL.md) remains the sole normative runtime source; READMEs, review protocols and tool references are explanatory. For continuous Chinese reading, see [README.zh-CN.md](README.zh-CN.md).
+
+[SKILL.md](SKILL.md) 仍是唯一运行时规范；README、审查协议与工具参考均用于解释和导航。连续中文入口见 [README.zh-CN.md](README.zh-CN.md)。
 
 **[Research Dashboard / Research Observatory — 科研进展与证据看板](https://zwy-research.github.io/physics-to-math-research/)**
 
@@ -24,47 +42,31 @@ The count covers distinct papers accepted through independent, limited-scope rev
 
 数量仅统计完成限定范围独立审查的不同论文，不代表全部结论已验证，也不构成 Skill 增量能力证明。
 
-## Mission / 项目使命
+## From Science to Mathematics / 从科学问题到数学成果
 
-This project helps AI formulate and advance general mathematical questions grounded in physical phenomena and other scientific observations. It emphasizes explicit observations and assumptions, minimal sufficient mathematical structures, checkable conditional derivations, counterexamples, validity conditions, and physical applicability boundaries.
+**Question / 科学问题。** Why does an object warmer than its surroundings gradually cool, and can a simple mathematical relation describe it?
 
-本项目旨在帮助 AI 从物理现象及其他科学观察中发现、构造并推进具有研究价值的一般数学问题。通过明确观测与假设、选择最小足够的数学结构、完成条件性推导，并检查反例、成立条件和物理适用边界，使研究结果可核查、可复现、可质疑。
+为什么温度高于环境的物体逐渐冷却？能否用简单数学关系描述这个过程？
 
-This is project orientation, not an additional runtime rule. “Minimal sufficient” means structure adequate for the question; it does not prescribe a minimization procedure or prefer simplicity over necessary complexity. The Skill does not guarantee new mathematics or establish real physical mechanisms. A stable incremental advantage has not been demonstrated.
+**Assumptions / 建模假设。** Assume constant ambient temperature $T_{\mathrm{env}}$, approximately uniform internal temperature, and a cooling rate proportional to the temperature difference, with constant $k>0$ and initial temperature $T_0$.
 
-这是项目使命说明，不增加运行时规则。“最小足够”指结构足以支持当前问题，不规定结构最小化流程，也不以简单替代必要复杂性。Skill 不保证发现新数学或证实真实物理机制，目前也未建立稳定增量优势。
+假设环境温度 $T_{\mathrm{env}}$ 恒定，内部温度近似均匀，并采用冷却速率与温差成比例的模型假设；常数 $k>0$，初始温度为 $T_0$。
 
-[SKILL.md](SKILL.md) remains the sole normative runtime source; READMEs, review protocols and tool references are explanatory. For continuous Chinese reading, see [README.zh-CN.md](README.zh-CN.md).
+$$
+\frac{dT}{dt}=-k(T-T_{\mathrm{env}}).
+$$
 
-[SKILL.md](SKILL.md) 仍是唯一运行时规范；README、审查协议与工具参考均用于解释和导航。连续中文入口见 [README.zh-CN.md](README.zh-CN.md)。
+**Conditional result / 条件性数学结果。** Under these assumptions, with $T(0)=T_0$:
 
-## From Physics to General Mathematics / 从物理到一般数学
+在这些假设及 $T(0)=T_0$ 下：
 
-**Physical observation / 物理观察。** A diagnostic measures an integrated density over $x\in[-1,1]$ for $0\le t\le1$. Someone concludes that the central density $n(0,t)$ is constant.
+$$
+T(t)=T_{\mathrm{env}}+(T_0-T_{\mathrm{env}})\exp(-kt).
+$$
 
-诊断系统在 $x\in[-1,1]$、$0\le t\le1$ 测得密度积分信号。有人据此断言中心密度 $n(0,t)$ 不变。
+**Boundary / 适用边界。** This teaching model does not describe every cooling process; a successful fit alone does not prove a physical mechanism. It illustrates mathematical formulation, without prescribing differential equations as the default. See the [two-level cooling explanation](examples/research-delivery-cooling.md) and the preserved [integrated-density demonstration](examples/integrated-density.md). Neither example is capability validation.
 
-$$I(t)=\int_{-1}^{1}n(x,t)\,dx=2,\qquad 0\le t\le1.$$
-
-**General mathematical question / 一般数学问题。** Define $M(f)=\int_{-1}^{1}f(x)\,dx$ and $L(f)=f(0)$. Does $M(f_1)=M(f_2)$ imply $L(f_1)=L(f_2)$ within the admissible class of nonnegative smooth profiles?
-
-设测量算子 $M(f)=\int_{-1}^{1}f(x)\,dx$，目标函数量 $L(f)=f(0)$。在允许的非负光滑剖面类中，判断 $M(f_1)=M(f_2)$ 是否足以推出 $L(f_1)=L(f_2)$。
-
-**Construction / 数学构造。**
-
-$$n_1(x,t)=1,\qquad n_2(x,t)=1+t\left(x^2-\frac13\right).$$
-
-Both are smooth and nonnegative on the stated space–time domain: $n_2\ge1-t/3\ge2/3$. Because $\int_{-1}^{1}(x^2-1/3)\,dx=0$, both integrated signals are 2, whereas their central values are $1$ and $1-t/3$.
-
-两者在给定时空区域内光滑、非负：$n_2\ge1-t/3\ge2/3$。由于 $\int_{-1}^{1}(x^2-1/3)\,dx=0$，两者积分均为 2，但中心值分别为 $1$ 与 $1-t/3$。
-
-**Conclusion / 结论。** The integrated observation does not uniquely determine the local central density. Identifying the central value requires sufficient additional profile constraints or other discriminating measurement information.
-
-积分观测不能唯一决定局部中心密度。若需识别中心值，必须增加足够的剖面约束或其他具有判别力的测量信息。
-
-This is a teaching demonstration, not a verified physical mechanism or evidence of incremental Skill capability.
-
-这是教学演示，不是已经验证的物理机制，也不是 Skill 增量能力证明。
+本教学模型不适用于所有冷却过程；一次拟合成功本身不能证明物理机制。它展示科学问题如何数学化，不规定默认使用微分方程。详见[双层冷却解释](examples/research-delivery-cooling.md)及完整保留的[密度积分演示](examples/integrated-density.md)。两例均不构成能力验证。
 
 ## How to Use / 如何使用
 
@@ -91,6 +93,20 @@ Formulate the most research-relevant mathematical question supported by the curr
 
 请构造最有研究价值且当前条件支持的数学问题，完成可行的数学推导或反例分析，并说明成立条件、失败边界与物理解释限制。不要默认特定理论或数学结构。
 ```
+
+## Research Deliverables / 科研成果表达
+
+Ask for the purpose you need; these examples are not a mandatory sequence:
+
+按需要提出用途；以下示例不是强制流程：
+
+- **Read & Understand / 理解文献与方法：** “Explain the method and its limits; do not start new research.” / “解释方法与局限，不开展新研究。”
+- **Research & Derive / 构造和推进数学研究：** “Derive the conditional result supported by these assumptions.” / “推导这些假设支持的条件性结果。”
+- **Write & Communicate / 整理已有科研成果：** “Present these established results as an academic paragraph.” / “将这些已有成果整理为学术段落。”
+
+Scientific writing defaults to a clear, concise, evidence-oriented Nature-style approach; please specify Nature Communications, Nature Physics, another journal or a different writing style if preferred. Ordinary explanations are not forced into that style. A substantial delivery can offer accessible and technical accounts with the same evidence and conclusions, without automatically creating two files. See [research delivery guidance](references/research-deliverables.md).
+
+科研写作默认采用 Nature 类期刊的清晰、简洁、证据导向风格；如果需要 Nature Communications、Nature Physics、其他期刊或不同的写作风格，请直接指定。普通解释不强制采用此风格。完整交付可提供证据和结论一致的通俗版与专业版，不自动生成两个文件。详见[科研交付说明](references/research-deliverables.md)。
 
 ## Share Your Results / 分享科研结果
 
@@ -206,7 +222,9 @@ Provide scientific observations, research constraints or an existing formulation
 
 提供科学观察、研究约束或已有 formulation/claim，以及证据或前提；开放任务无需先给 target claim。例如，假设 `y` 是测量量，`x` 是潜在量，标定数据中二者高度相关。以下推断在当前实验中是否成立？
 
-$$y_1 > y_2 \quad\Longrightarrow\quad x_1 > x_2$$
+$$
+y_1 > y_2 \quad\Longrightarrow\quad x_1 > x_2
+$$
 
 ## Typical output / 典型输出
 

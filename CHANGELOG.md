@@ -2,6 +2,20 @@
 
 ## Unreleased
 
+## 0.2.5
+
+- Added task-intent adaptation and optional accessible/technical research delivery with shared conclusions and evidence.
+- Added a Nature-inspired default only for requested academic writing, explicit style overrides, local-tool installation boundaries and truthful delivery receipts.
+- Reworked the general README introduction and cooling teaching example; preserved the integrated-density demonstration separately.
+- Added supporting delivery guidance and near-pair regression specifications (Specified — Not yet run).
+- Core/OAC remain unchanged. This delivery-behavior update does not claim measured incremental research capability.
+
+- 新增任务用途适配，以及结论与证据一致、按需采用的通俗版和专业版科研交付。
+- 新增仅用于明确学术写作请求的 Nature 类默认表达、指定风格覆盖、本地工具安装边界及真实成果回执。
+- 调整 README 通用入口与冷却教学案例，另行完整保留密度积分演示。
+- 新增交付支持说明与近邻回归规格（Specified — Not yet run，尚未执行）。
+- Core/OAC 保持不变；本次交付行为更新不宣称获得实测科研增量能力。
+
 ## 0.2.4
 
 - Added a bilingual academic Research Observatory for GitHub Pages, with a README dashboard entry.
