@@ -2,6 +2,22 @@
 
 ## Unreleased
 
+## 0.2.2
+
+- Published the first formal, limited-scope mathematical audit of a physics paper: Jarzynski (1997), accepted through independent mathematical review.
+- Organized reviewed papers by physics subdiscipline, beginning with statistical mechanics and nonequilibrium thermodynamics.
+- Added the reviewed-paper count and archive entry to both READMEs.
+- Preserved the reviewed derivations, counterexamples, discrete program verification and explicit review limitations; original first-stage evidence remains byte-identical.
+- No Core, OAC or mathematical research execution rule was changed; SKILL edits only update version metadata and title.
+- No new incremental Skill capability validation result is claimed; regression suggestions remain candidates without ON/OFF testing.
+
+- 正式归档第一篇物理论文的限定范围数学审查：Jarzynski (1997)，已通过独立数学审查。
+- 按物理子学科组织已审查论文目录，首先登记统计物理与非平衡热力学。
+- 在中英文首页增加已审查论文数量与档案入口。
+- 保存已审查的独立数学推导、反例、离散程序验证与明确的审查限制，第一阶段原始证据逐字节保留。
+- 未修改 Core、OAC 或数学研究执行规范，SKILL 仅更新版本元数据与标题。
+- 尚无新的 Skill 能力增量验证结果；回归建议仍是未经 ON/OFF 检验的候选。
+
 ## 0.2.1
 
 - Aligned the project version with the previously published bilingual research onboarding, community feedback, literature-audit navigation, and mathematical-tool guidance updates.

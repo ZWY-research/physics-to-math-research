@@ -1,0 +1,23 @@
+Command: ["D:\\Dev\\Miniconda3\\python.exe", "-X", "utf8", "D:\\OneDrive\\Multi_Skills\\physics-to-math-research\\revisions\\jarzynski-1997-review\\worktree\\revisions\\literature-audit-drafts\\jarzynski-1997\\two-state-check.py"]
+Started (Asia/Shanghai): 2026-10-12T17:41:41.646059+08:00
+Ended (Asia/Shanghai): 2026-10-12T17:41:41.737835+08:00
+Execution count: 1
+Return code: 0
+Status: PASS
+
+--- stdout (verbatim) ---
+beta = 1.0
+epsilon = ln(4) = 1.38629436111989
+exp(-beta*epsilon) = 0.25
+Z0 = 2; Z1 = 5/4; Z1/Z0 = 5/8 = 0.625
+canonical exponential mean = 5/8
+noncanonical exponential mean = 1
+delta_F = ln(8/5) = 0.470003629245736
+all-zero-work sample: N = 1; estimate = -0 < delta_F
+canonical mean work = 0.693147180559945 >= delta_F
+float tolerances: rel_tol = 1e-12; abs_tol = 1e-12
+PASS: all specified discrete-witness assertions passed.
+Scope: deterministic two-state checks; not a general theorem's machine proof.
+
+--- stderr (verbatim) ---
+Failed to find real location of D:\Dev\Miniconda3\python.exe

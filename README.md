@@ -1,6 +1,14 @@
 # physics-to-math-research
 
-**Version / 版本：** `0.2.1` · **Status / 状态：** Experimental / 实验性版本
+**Version / 版本：** `0.2.2` · **Status / 状态：** Experimental / 实验性版本
+
+[Reviewed Papers: 1](literature-audits/README.md)
+
+These reports record physical questions, mathematical mappings, decisive derivations, validity conditions, counterexamples, generalizations and candidate Skill improvements. The count includes distinct papers accepted through independent, limited-scope review; it does not mean every conclusion in those papers has been verified.
+
+[已审查论文：1 篇](literature-audits/README.md)
+
+这些报告记录物理问题、数学转换、关键推导、成立条件、反例、一般化及 Skill 改进候选。数量仅统计完成限定范围独立审查的不同论文，不代表论文全部结论均已验证。
 
 ## Mission / 项目使命
 
