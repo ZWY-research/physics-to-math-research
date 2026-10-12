@@ -455,6 +455,7 @@
     "E2/messages.jsonl": "09b53775b05285737e1e80c7f14bf4d461c98495c125f04ea2ccd452c8eab533",
     "E2/prompt.txt": "8ab98a69eddad6d73947331e8ff9f0ece1c976b1a74f6f82287ee7a7bcb8328c",
     "E2/record.json": "b03f2a9f561f8872989867eb6b2ab977e64193f24b74afbdf9a0a4c19e53fae7",
-    "E2/tools.jsonl": "af8a1a3d1dbd6f6a7561090008c79af9a10e56da19986d443be8ed0f1cd46cf0"
+    "E2/tools.jsonl": "af8a1a3d1dbd6f6a7561090008c79af9a10e56da19986d443be8ed0f1cd46cf0",
+    "permission-check.json": "2d11eecacc024b2586a7de1e0585abafdcf48fe2b59b87b91ebe410fe22b2b0f"
   }
 }

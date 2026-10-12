@@ -1,0 +1,56 @@
+{
+  "time": "Post-run ACL inspection",
+  "result": "Both E1 and E2 have actual Modify+Synchronize grants, no deny ACEs, and identical inherited permission masks. Same workspace-write and approval-never model configuration.",
+  "limitation": "SDDL and ACE counts differ: E2 acquired an additional Modify grant during its file tool execution. This is not an E1 read-only environment. No coordinator write probe or additional model call was used.",
+  "entries": [
+    {
+      "branch": "E1",
+      "explicit_allow_masks": [
+        "Modify, Synchronize"
+      ],
+      "deny_entries": 0,
+      "inherited_masks": [
+        "FullControl|Allow",
+        "FullControl|Allow",
+        "FullControl|Allow",
+        "Modify, Synchronize|Allow",
+        "Modify, Synchronize|Allow",
+        "Modify, Synchronize|Allow",
+        "Modify, Synchronize|Allow",
+        "Modify, Synchronize|Allow",
+        "Modify, Synchronize|Allow",
+        "Modify, Synchronize|Allow",
+        "Modify, Synchronize|Allow",
+        "Modify, Synchronize|Allow",
+        "Modify, Synchronize|Allow",
+        "Modify, Synchronize|Allow",
+        "Modify, Synchronize|Allow"
+      ]
+    },
+    {
+      "branch": "E2",
+      "explicit_allow_masks": [
+        "Modify, Synchronize",
+        "Modify, Synchronize"
+      ],
+      "deny_entries": 0,
+      "inherited_masks": [
+        "FullControl|Allow",
+        "FullControl|Allow",
+        "FullControl|Allow",
+        "Modify, Synchronize|Allow",
+        "Modify, Synchronize|Allow",
+        "Modify, Synchronize|Allow",
+        "Modify, Synchronize|Allow",
+        "Modify, Synchronize|Allow",
+        "Modify, Synchronize|Allow",
+        "Modify, Synchronize|Allow",
+        "Modify, Synchronize|Allow",
+        "Modify, Synchronize|Allow",
+        "Modify, Synchronize|Allow",
+        "Modify, Synchronize|Allow",
+        "Modify, Synchronize|Allow"
+      ]
+    }
+  ]
+}
