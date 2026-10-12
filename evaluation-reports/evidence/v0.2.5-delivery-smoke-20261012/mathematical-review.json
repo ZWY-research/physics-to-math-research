@@ -1,0 +1,24 @@
+{
+  "actor": "Engineering coordinator, not tested model",
+  "role": "Supplementary implementation check, not a general proof or empirical validation",
+  "B2_displayed_example": "PASS",
+  "B2_stdout": "t=1 s, T=74.29024508, residual=-9.048e-07\nt=10 s, T=42.07276647, residual=-3.679e-07\nt=50 s, T=20.40427682, residual=-6.738e-09\nPASS: initial condition and sampled ODE residual checks\n",
+  "sampled_initial_cases": [
+    {
+      "T0": 10.0,
+      "T_env": 20.0,
+      "status": "PASS"
+    },
+    {
+      "T0": 20.0,
+      "T_env": 20.0,
+      "status": "PASS"
+    },
+    {
+      "T0": 80.0,
+      "T_env": 20.0,
+      "status": "PASS"
+    }
+  ],
+  "analytic_review": "Integrating factor gives exp(k t)(T-Tenv)=T0-Tenv; differentiation and t=0 verify solution; difference of two solutions verifies uniqueness. Three initial-temperature cases follow sign of T0-Tenv. A2 residual bound follows variation of constants and triangle inequality; residual premises are explicitly additional and unmeasured."
+}

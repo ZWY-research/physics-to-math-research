@@ -1,0 +1,11 @@
+{
+  "candidate_version": "0.2.6",
+  "status": "Draft evidence publication candidate, not released",
+  "candidate_skill_sha256": "355c515b7ace5ffa3151713a7a2b8ab62dc967d448830becb3759a6dee9bd90c",
+  "tested_version": "0.2.5",
+  "tested_commit": "66230436b59d899ed924aaf4e93ef45a267d39a1",
+  "tested_skill_sha256": "3f72c7a402e18015b09685c565571303a881e91def04a24536352d41ff210f23",
+  "runtime_change_check": "Only metadata.version and title changed; all remaining Skill bytes identical",
+  "reviewed_papers": 1,
+  "research_gain": "Not established"
+}

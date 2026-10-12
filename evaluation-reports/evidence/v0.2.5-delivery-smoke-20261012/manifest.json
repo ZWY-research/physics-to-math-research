@@ -1,0 +1,460 @@
+{
+  "run_id": "physics-math-v025-run-20261012",
+  "prepared_utc": "2026-10-12T13:50:18.730951+00:00",
+  "tested_commit": "66230436b59d899ed924aaf4e93ef45a267d39a1",
+  "skill_version": "0.2.5",
+  "skill_sha256": "3f72c7a402e18015b09685c565571303a881e91def04a24536352d41ff210f23",
+  "spec_sha256": "1fce0a04b3d96eb64bf8b804e4a4e7d56ec8c933efe64b4fe0e9e7f0d634b78e",
+  "driver_sha256": "75de7b1fcd2db310a31a9c36c06051e9853b7200ea01d18a935dc0a0731fa4ac",
+  "model_requested": "gpt-6.1-sol",
+  "reasoning_requested": "medium",
+  "path_policy": "Private absolute paths replaced by <WORKDIR:branch>, <CODEX_HOME:branch>, <LOGDIR:branch>, <USER_HOME>. Existence and raw hashes checked locally before anonymization.",
+  "review": "Preliminary Codex engineering assessment, not independent human adjudication.",
+  "model_identity_limit": "CLI session metadata confirms configured model/provider/effort; backend weights and routing are not independently observable.",
+  "isolation_limit": "Fresh CODEX_HOME and unique cwd; built-in Codex instructions remain. workspace-write confines writes, but is not a filesystem read jail; no rubric/spec/other-answer reads observed in traces.",
+  "cost": null,
+  "branches": {
+    "A1": {
+      "record": "A1/record.json",
+      "assessment": "PASS",
+      "state": "EXECUTED",
+      "skill_loading": "CONFIRMED_FULL_SUCCESSFUL_READ",
+      "prompt_sha256": "407b41fee6698f8592181d180f18fb8dd82081daa03e8c506f38d580f9d100a8",
+      "usage": [
+        {
+          "input_tokens": 34840,
+          "cached_input_tokens": 27264,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 942,
+          "reasoning_output_tokens": 96
+        }
+      ],
+      "identity": {
+        "id": "01a13061-1100-7361-97ab-cbde11424a34",
+        "model_provider": "openai",
+        "cli_version": "0.162.0-alpha.17.2",
+        "source": "exec",
+        "base_instructions_sha256": "e1bdd4f8f0df4b20f4a0ffc8a861ce819df45325d8cecdfb92e80379cf8d142e",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "approval_policy": "never",
+        "sandbox_policy": {
+          "type": "workspace-write",
+          "network_access": false,
+          "exclude_tmpdir_env_var": false,
+          "exclude_slash_tmp": false
+        },
+        "developer_hashes_branch_normalized": [
+          "7403f630049edc7105a08f2b2ac3fce06ce9bfa92802a48c87fd1ac32574f0cc",
+          "3edd51083129388f52e881435e93e4b981e00c5ee3d62ab5d32e22c428fd504b",
+          "6ded806e3cdbb35599ecaf8742574bc5274908472b1729090010c404c2151e8e"
+        ]
+      }
+    },
+    "A2": {
+      "record": "A2/record.json",
+      "assessment": "PASS",
+      "state": "EXECUTED",
+      "skill_loading": "CONFIRMED_FULL_SUCCESSFUL_READ",
+      "prompt_sha256": "98e8a4b9adfed396f151c80d712e418e987cb527cdffd475add566c1151a447b",
+      "usage": [
+        {
+          "input_tokens": 34839,
+          "cached_input_tokens": 14720,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1838,
+          "reasoning_output_tokens": 299
+        }
+      ],
+      "identity": {
+        "id": "01a13063-12a2-74d2-a01f-a503899cc88b",
+        "model_provider": "openai",
+        "cli_version": "0.162.0-alpha.17.2",
+        "source": "exec",
+        "base_instructions_sha256": "e1bdd4f8f0df4b20f4a0ffc8a861ce819df45325d8cecdfb92e80379cf8d142e",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "approval_policy": "never",
+        "sandbox_policy": {
+          "type": "workspace-write",
+          "network_access": false,
+          "exclude_tmpdir_env_var": false,
+          "exclude_slash_tmp": false
+        },
+        "developer_hashes_branch_normalized": [
+          "7403f630049edc7105a08f2b2ac3fce06ce9bfa92802a48c87fd1ac32574f0cc",
+          "3edd51083129388f52e881435e93e4b981e00c5ee3d62ab5d32e22c428fd504b",
+          "6ded806e3cdbb35599ecaf8742574bc5274908472b1729090010c404c2151e8e"
+        ]
+      }
+    },
+    "B1": {
+      "record": "B1/record.json",
+      "assessment": "PASS",
+      "state": "EXECUTED",
+      "skill_loading": "CONFIRMED_FULL_SUCCESSFUL_READ",
+      "prompt_sha256": "263b823e33642b865df829869339ed436e3279e9502850a58d2dd2e7f9fc24ee",
+      "usage": [
+        {
+          "input_tokens": 34786,
+          "cached_input_tokens": 27264,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 659,
+          "reasoning_output_tokens": 0
+        }
+      ],
+      "identity": {
+        "id": "01a13064-b62b-7272-af44-4ea5d067a38f",
+        "model_provider": "openai",
+        "cli_version": "0.162.0-alpha.17.2",
+        "source": "exec",
+        "base_instructions_sha256": "e1bdd4f8f0df4b20f4a0ffc8a861ce819df45325d8cecdfb92e80379cf8d142e",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "approval_policy": "never",
+        "sandbox_policy": {
+          "type": "workspace-write",
+          "network_access": false,
+          "exclude_tmpdir_env_var": false,
+          "exclude_slash_tmp": false
+        },
+        "developer_hashes_branch_normalized": [
+          "7403f630049edc7105a08f2b2ac3fce06ce9bfa92802a48c87fd1ac32574f0cc",
+          "3edd51083129388f52e881435e93e4b981e00c5ee3d62ab5d32e22c428fd504b",
+          "6ded806e3cdbb35599ecaf8742574bc5274908472b1729090010c404c2151e8e"
+        ]
+      }
+    },
+    "B2": {
+      "record": "B2/record.json",
+      "assessment": "PASS",
+      "state": "EXECUTED",
+      "skill_loading": "CONFIRMED_FULL_SUCCESSFUL_READ",
+      "prompt_sha256": "512d6e2f45eefb589f4332378b517255c7f4c5ed132546730fe45bd063d8596e",
+      "usage": [
+        {
+          "input_tokens": 59255,
+          "cached_input_tokens": 46976,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1172,
+          "reasoning_output_tokens": 247
+        }
+      ],
+      "identity": {
+        "id": "01a13065-5d8d-7423-836f-7f61ad53b49c",
+        "model_provider": "openai",
+        "cli_version": "0.162.0-alpha.17.2",
+        "source": "exec",
+        "base_instructions_sha256": "e1bdd4f8f0df4b20f4a0ffc8a861ce819df45325d8cecdfb92e80379cf8d142e",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "approval_policy": "never",
+        "sandbox_policy": {
+          "type": "workspace-write",
+          "network_access": false,
+          "exclude_tmpdir_env_var": false,
+          "exclude_slash_tmp": false
+        },
+        "developer_hashes_branch_normalized": [
+          "7403f630049edc7105a08f2b2ac3fce06ce9bfa92802a48c87fd1ac32574f0cc",
+          "3edd51083129388f52e881435e93e4b981e00c5ee3d62ab5d32e22c428fd504b",
+          "6ded806e3cdbb35599ecaf8742574bc5274908472b1729090010c404c2151e8e"
+        ]
+      }
+    },
+    "C1": {
+      "record": "C1/record.json",
+      "assessment": "PASS",
+      "state": "EXECUTED",
+      "skill_loading": "CONFIRMED_FULL_SUCCESSFUL_READ",
+      "prompt_sha256": "d3495c59977b540da0d309637c396270c2b88539921b058df38b63c22e0db6ef",
+      "usage": [
+        {
+          "input_tokens": 34830,
+          "cached_input_tokens": 25088,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 695,
+          "reasoning_output_tokens": 0
+        }
+      ],
+      "identity": {
+        "id": "01a13066-6462-7252-8b89-a3732fa0dc62",
+        "model_provider": "openai",
+        "cli_version": "0.162.0-alpha.17.2",
+        "source": "exec",
+        "base_instructions_sha256": "e1bdd4f8f0df4b20f4a0ffc8a861ce819df45325d8cecdfb92e80379cf8d142e",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "approval_policy": "never",
+        "sandbox_policy": {
+          "type": "workspace-write",
+          "network_access": false,
+          "exclude_tmpdir_env_var": false,
+          "exclude_slash_tmp": false
+        },
+        "developer_hashes_branch_normalized": [
+          "7403f630049edc7105a08f2b2ac3fce06ce9bfa92802a48c87fd1ac32574f0cc",
+          "3edd51083129388f52e881435e93e4b981e00c5ee3d62ab5d32e22c428fd504b",
+          "6ded806e3cdbb35599ecaf8742574bc5274908472b1729090010c404c2151e8e"
+        ]
+      }
+    },
+    "C2": {
+      "record": "C2/record.json",
+      "assessment": "PASS",
+      "state": "EXECUTED",
+      "skill_loading": "CONFIRMED_FULL_SUCCESSFUL_READ",
+      "prompt_sha256": "75b425bbd4b8163083600a2da8af63382b5baa1176426a3c2a16c6b825c5b772",
+      "usage": [
+        {
+          "input_tokens": 34834,
+          "cached_input_tokens": 25088,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 555,
+          "reasoning_output_tokens": 131
+        }
+      ],
+      "identity": {
+        "id": "01a13067-1c53-78e0-9aa2-150ee9e17823",
+        "model_provider": "openai",
+        "cli_version": "0.162.0-alpha.17.2",
+        "source": "exec",
+        "base_instructions_sha256": "e1bdd4f8f0df4b20f4a0ffc8a861ce819df45325d8cecdfb92e80379cf8d142e",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "approval_policy": "never",
+        "sandbox_policy": {
+          "type": "workspace-write",
+          "network_access": false,
+          "exclude_tmpdir_env_var": false,
+          "exclude_slash_tmp": false
+        },
+        "developer_hashes_branch_normalized": [
+          "7403f630049edc7105a08f2b2ac3fce06ce9bfa92802a48c87fd1ac32574f0cc",
+          "3edd51083129388f52e881435e93e4b981e00c5ee3d62ab5d32e22c428fd504b",
+          "6ded806e3cdbb35599ecaf8742574bc5274908472b1729090010c404c2151e8e"
+        ]
+      }
+    },
+    "D1": {
+      "record": "D1/record.json",
+      "assessment": "PASS",
+      "state": "EXECUTED",
+      "skill_loading": "CONFIRMED_FULL_SUCCESSFUL_READ",
+      "prompt_sha256": "ddad05b10397e974190105e67e980cd446b789c9a2eeb04c94208d6e1d7ceb1e",
+      "usage": [
+        {
+          "input_tokens": 34796,
+          "cached_input_tokens": 25088,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 551,
+          "reasoning_output_tokens": 146
+        }
+      ],
+      "identity": {
+        "id": "01a13067-fc05-7392-b5b4-dfb8d46d2047",
+        "model_provider": "openai",
+        "cli_version": "0.162.0-alpha.17.2",
+        "source": "exec",
+        "base_instructions_sha256": "e1bdd4f8f0df4b20f4a0ffc8a861ce819df45325d8cecdfb92e80379cf8d142e",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "approval_policy": "never",
+        "sandbox_policy": {
+          "type": "workspace-write",
+          "network_access": false,
+          "exclude_tmpdir_env_var": false,
+          "exclude_slash_tmp": false
+        },
+        "developer_hashes_branch_normalized": [
+          "7403f630049edc7105a08f2b2ac3fce06ce9bfa92802a48c87fd1ac32574f0cc",
+          "3edd51083129388f52e881435e93e4b981e00c5ee3d62ab5d32e22c428fd504b",
+          "6ded806e3cdbb35599ecaf8742574bc5274908472b1729090010c404c2151e8e"
+        ]
+      }
+    },
+    "D2": {
+      "record": "D2/record.json",
+      "assessment": "PASS",
+      "state": "EXECUTED",
+      "skill_loading": "CONFIRMED_FULL_SUCCESSFUL_READ",
+      "prompt_sha256": "3985f51d7a757228baf034370d52d0dd36eb39c834c5a00b5d0acfe49fd27440",
+      "usage": [
+        {
+          "input_tokens": 34842,
+          "cached_input_tokens": 27264,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 795,
+          "reasoning_output_tokens": 84
+        }
+      ],
+      "identity": {
+        "id": "01a13068-cf8a-73a0-8973-2a16cdc9043b",
+        "model_provider": "openai",
+        "cli_version": "0.162.0-alpha.17.2",
+        "source": "exec",
+        "base_instructions_sha256": "e1bdd4f8f0df4b20f4a0ffc8a861ce819df45325d8cecdfb92e80379cf8d142e",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "approval_policy": "never",
+        "sandbox_policy": {
+          "type": "workspace-write",
+          "network_access": false,
+          "exclude_tmpdir_env_var": false,
+          "exclude_slash_tmp": false
+        },
+        "developer_hashes_branch_normalized": [
+          "7403f630049edc7105a08f2b2ac3fce06ce9bfa92802a48c87fd1ac32574f0cc",
+          "3edd51083129388f52e881435e93e4b981e00c5ee3d62ab5d32e22c428fd504b",
+          "6ded806e3cdbb35599ecaf8742574bc5274908472b1729090010c404c2151e8e"
+        ]
+      }
+    },
+    "E1": {
+      "record": "E1/record.json",
+      "assessment": "PASS",
+      "state": "EXECUTED",
+      "skill_loading": "CONFIRMED_FULL_SUCCESSFUL_READ",
+      "prompt_sha256": "2b4c88f8e6c1a4b526b943c8a112274161c362a20d54378199486c2bbe7157b8",
+      "usage": [
+        {
+          "input_tokens": 34835,
+          "cached_input_tokens": 25088,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1393,
+          "reasoning_output_tokens": 114
+        }
+      ],
+      "identity": {
+        "id": "01a13069-a3e1-7f92-80be-bc799cef47db",
+        "model_provider": "openai",
+        "cli_version": "0.162.0-alpha.17.2",
+        "source": "exec",
+        "base_instructions_sha256": "e1bdd4f8f0df4b20f4a0ffc8a861ce819df45325d8cecdfb92e80379cf8d142e",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "approval_policy": "never",
+        "sandbox_policy": {
+          "type": "workspace-write",
+          "network_access": false,
+          "exclude_tmpdir_env_var": false,
+          "exclude_slash_tmp": false
+        },
+        "developer_hashes_branch_normalized": [
+          "7403f630049edc7105a08f2b2ac3fce06ce9bfa92802a48c87fd1ac32574f0cc",
+          "3edd51083129388f52e881435e93e4b981e00c5ee3d62ab5d32e22c428fd504b",
+          "6ded806e3cdbb35599ecaf8742574bc5274908472b1729090010c404c2151e8e"
+        ]
+      }
+    },
+    "E2": {
+      "record": "E2/record.json",
+      "assessment": "PASS",
+      "state": "EXECUTED",
+      "skill_loading": "CONFIRMED_FULL_SUCCESSFUL_READ",
+      "prompt_sha256": "8ab98a69eddad6d73947331e8ff9f0ece1c976b1a74f6f82287ee7a7bcb8328c",
+      "usage": [
+        {
+          "input_tokens": 59162,
+          "cached_input_tokens": 47360,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 4088,
+          "reasoning_output_tokens": 47
+        }
+      ],
+      "identity": {
+        "id": "01a1306b-062b-7270-9666-12656e5bb3c1",
+        "model_provider": "openai",
+        "cli_version": "0.162.0-alpha.17.2",
+        "source": "exec",
+        "base_instructions_sha256": "e1bdd4f8f0df4b20f4a0ffc8a861ce819df45325d8cecdfb92e80379cf8d142e",
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "approval_policy": "never",
+        "sandbox_policy": {
+          "type": "workspace-write",
+          "network_access": false,
+          "exclude_tmpdir_env_var": false,
+          "exclude_slash_tmp": false
+        },
+        "developer_hashes_branch_normalized": [
+          "7403f630049edc7105a08f2b2ac3fce06ce9bfa92802a48c87fd1ac32574f0cc",
+          "3edd51083129388f52e881435e93e4b981e00c5ee3d62ab5d32e22c428fd504b",
+          "6ded806e3cdbb35599ecaf8742574bc5274908472b1729090010c404c2151e8e"
+        ]
+      }
+    }
+  },
+  "statistics": {
+    "PASS": 10,
+    "FAIL": 0,
+    "INCONCLUSIVE": 0,
+    "NOT RUN": 0,
+    "preregistered": 10,
+    "effective_execution": 10
+  },
+  "token_usage": {
+    "input_tokens": 397019,
+    "cached_input_tokens": 291200,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 12688,
+    "reasoning_output_tokens": 1164
+  },
+  "evidence_hashes": {
+    "candidate-artifact.json": "37067f3abc9fbbc9c0f7c53785d06bd890256250abc20034c01b43ff2c1a046a",
+    "mathematical-review.json": "24e7ba139a683ea50c185041d9cc3a0072b5f0688d218a93c3fc8dd7decc1265",
+    "publication-checks.json": "7e1c606998c0e5403b4eaef7d260a2a84b04b1b11bb955b8a4dc2f228714aa31",
+    "A1/answer.md": "e293530b9ec57ac1a1268fe493a75718d7e4b95753e044a57258f6f1442550da",
+    "A1/messages.jsonl": "7f037be7189664cf3f75f237e00d3df597443ee3a11b2f3dce47f442deefd274",
+    "A1/prompt.txt": "407b41fee6698f8592181d180f18fb8dd82081daa03e8c506f38d580f9d100a8",
+    "A1/record.json": "d1e69a7ab0cb686d230762f85c93bcf7d2495340a32118211cafb5df3d56d056",
+    "A1/tools.jsonl": "accb5ad4c8debecd818649a98a9a884909c191117b094277b4de9f66867cd9c0",
+    "A2/answer.md": "2ff87cc5886b4996cd2daf4d043eebd834600196de11cfc7b906ee79f8dbdbd9",
+    "A2/messages.jsonl": "e7a34d343f928c9626c52332d5a55aa82b30155401a17074d23285dc0b39582d",
+    "A2/prompt.txt": "98e8a4b9adfed396f151c80d712e418e987cb527cdffd475add566c1151a447b",
+    "A2/record.json": "75c6f0edd555d45bf546135c7379961284a0accb5804be72e60d196072a52176",
+    "A2/tools.jsonl": "34f771c949bb3a04716d9d445378e70bdf97d5ae61283d35291e1d7efc7b885b",
+    "B1/answer.md": "1c01fef26f827e3cf224e1961dc9cdb2d08d7f8ca8446e746f0019efbfa1be87",
+    "B1/messages.jsonl": "ebb43dd7fe4c627674e258777b7f14f456d821fb24b7bcf22b64a7487c04f33a",
+    "B1/prompt.txt": "263b823e33642b865df829869339ed436e3279e9502850a58d2dd2e7f9fc24ee",
+    "B1/record.json": "05378bce9701c792629460ee5ca39640cd28a39d4600de8c1011e5d4177f99d0",
+    "B1/tools.jsonl": "34f771c949bb3a04716d9d445378e70bdf97d5ae61283d35291e1d7efc7b885b",
+    "B2/answer.md": "2fa0c1366f26fead91b72b8ce203daa919773aca4ca1c43543dc299d5f1ab1a3",
+    "B2/messages.jsonl": "46fa2246651aab6441aa08540dc0178f6b6595e213381a52d333134eda9be6b3",
+    "B2/prompt.txt": "512d6e2f45eefb589f4332378b517255c7f4c5ed132546730fe45bd063d8596e",
+    "B2/record.json": "e6e4f026b8de1a52b93ac43e433bbea86f3d640139b22058d0f0eea15d3c88b6",
+    "B2/tools.jsonl": "682b93468bc5fa889bd2cee223e9e8944acb5667cb32828b069cf89c32f9d444",
+    "C1/answer.md": "edae7a847f8477721a489b2369fafad436863ea98b4a6fa52e65731e4ece7cb1",
+    "C1/messages.jsonl": "8b112502ce634ce7fb1bd5bdb60020bfef8592a9af04ccd497d5eb81d5d69a5d",
+    "C1/prompt.txt": "d3495c59977b540da0d309637c396270c2b88539921b058df38b63c22e0db6ef",
+    "C1/record.json": "3018c0bb4e713bcbf4331f5c61a1a5172ca067002d866ead9fbd5912aa4dba05",
+    "C1/tools.jsonl": "801adff2f8b8775a3573e6ed29bc6eff828f35ef4868cffdd586655cdfa87d03",
+    "C2/answer.md": "3df894c5a40be26809706b95d8aa6b97f1bb87bc34dc2342b1e8844d30a63ed4",
+    "C2/messages.jsonl": "df52aa9027f7e6cd94e1c6cdcf33964c016fc68b3e9ef613302a95b263b78edb",
+    "C2/prompt.txt": "75b425bbd4b8163083600a2da8af63382b5baa1176426a3c2a16c6b825c5b772",
+    "C2/record.json": "22a39491fb35f31d69b6f468ea5036ef2dcb97c0bd0a2311d587b1fb4a058c91",
+    "C2/tools.jsonl": "8ccc728282e87b0aa95c6f38eb4e2c10dfa9fe0a448630d124529d3ed6b46649",
+    "D1/answer.md": "68500ff49af23ddf761678c5e038e795f49e2a033e3c514b88779c0693ae361b",
+    "D1/messages.jsonl": "c32f0d8aa6a596273b9713eba2070719a353782f0ad400a0f74c95b7f59a35ca",
+    "D1/prompt.txt": "ddad05b10397e974190105e67e980cd446b789c9a2eeb04c94208d6e1d7ceb1e",
+    "D1/record.json": "35b9376ed2304d60e69d52e94fbb4f94e15da388cd374cb2d74c4cd4a19d31a0",
+    "D1/tools.jsonl": "34f771c949bb3a04716d9d445378e70bdf97d5ae61283d35291e1d7efc7b885b",
+    "D2/answer.md": "a66ccbaac502e76d67e462efa65be2caf22fd0bd7d33eb289b70d87ed659beeb",
+    "D2/messages.jsonl": "77f0ff1ffe34266e17c5f7380bb8f219352db0ee0cb8a08af23a64d124a88701",
+    "D2/prompt.txt": "3985f51d7a757228baf034370d52d0dd36eb39c834c5a00b5d0acfe49fd27440",
+    "D2/record.json": "576632fdc8afc8353ec4430ebfcdf8342dbc3dfc2461c242b5d0aa98793d8887",
+    "D2/tools.jsonl": "34f771c949bb3a04716d9d445378e70bdf97d5ae61283d35291e1d7efc7b885b",
+    "E1/answer.md": "1a388c9174d3b0bf37b7204adcb4559a438a8aef1ad8764c588c523a816ca2c2",
+    "E1/messages.jsonl": "cb0713d079dba144afab6b7dacbcf93ab1dee34edc4690f14adeb5bc25ce45d0",
+    "E1/prompt.txt": "2b4c88f8e6c1a4b526b943c8a112274161c362a20d54378199486c2bbe7157b8",
+    "E1/record.json": "5eeb6b18f1cd74eee2d7cddc4f16758eeea33d4d72cd25f3c0b700122ca0580a",
+    "E1/tools.jsonl": "34f771c949bb3a04716d9d445378e70bdf97d5ae61283d35291e1d7efc7b885b",
+    "E2/answer.md": "1d8a105318bbd4b78dfd7a36db81c63d13906a11156ccd841e4ddbe7529a0a44",
+    "E2/cooling-explanation.md": "adae3823d7bd404cd80c95016723ce64cfca67a6a0e52d805530ae8c0b6ae396",
+    "E2/cooling-technical.md": "4eda98c7a72b49533e13d5541f9c32e3c7b6e6e2084d8d31036384ee41806b23",
+    "E2/messages.jsonl": "09b53775b05285737e1e80c7f14bf4d461c98495c125f04ea2ccd452c8eab533",
+    "E2/prompt.txt": "8ab98a69eddad6d73947331e8ff9f0ece1c976b1a74f6f82287ee7a7bcb8328c",
+    "E2/record.json": "b03f2a9f561f8872989867eb6b2ab977e64193f24b74afbdf9a0a4c19e53fae7",
+    "E2/tools.jsonl": "af8a1a3d1dbd6f6a7561090008c79af9a10e56da19986d443be8ed0f1cd46cf0"
+  }
+}

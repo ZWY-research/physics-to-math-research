@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "original_files_unchanged": 1881,
+  "original_branch_unchanged": true,
+  "skill_changes": "Only version metadata/title; all other bytes unchanged",
+  "public_files_checked": 62,
+  "checks": [
+    "allowlist",
+    "secret/private-path scan",
+    "JSON/JSONL",
+    "Markdown local links/fences",
+    "evidence SHA-256",
+    "exact prompts",
+    "actual output existence",
+    "model configuration",
+    "normalized developer context",
+    "versions",
+    "git diff --check",
+    "Observatory",
+    "driver syntax"
+  ],
+  "whitespace_policy": "git -c core.whitespace=cr-at-eol diff --check: preserve existing committed CRLF READMEs while checking actual trailing spaces",
+  "scope": "Checks before adding this check record and candidate artifact; those files are hash checked again in the subsequent final check."
+}

@@ -2,6 +2,16 @@
 
 ## Unreleased
 
+## 0.2.6
+
+- Evidence publication candidate: ten isolated v0.2.5 research-delivery regression runs, preliminary engineering assessment, observable traces and file hashes.
+- No OFF/Short Prompt research gain established; independent human review remains pending.
+- SKILL changes only version metadata/title. Core/OAC and all other runtime rules remain byte-identical to v0.2.5.
+
+- 证据发布候选：公开十个独立 v0.2.5 科研交付回归分支的工程初评、可见事件及文件哈希。
+- 未建立相对 OFF/Short Prompt 的科研增量优势；仍待独立人工审查。
+- SKILL 仅更新版本元数据与标题；Core/OAC 和其余运行规则与 v0.2.5 逐字节相同。
+
 ## 0.2.5
 
 - Added task-intent adaptation and optional accessible/technical research delivery with shared conclusions and evidence.
