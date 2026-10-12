@@ -1,14 +1,22 @@
 # physics-to-math-research
 
-**Version / 版本：** `0.2.2` · **Status / 状态：** Experimental / 实验性版本
+**Version / 版本：** `0.2.3` · **Status / 状态：** Experimental / 实验性版本
 
-[Reviewed Papers: 1](literature-audits/README.md)
+**Selected Research & Constructive Mathematical Audits / 精选研究与建设性数学审查**
 
-These reports record physical questions, mathematical mappings, decisive derivations, validity conditions, counterexamples, generalizations and candidate Skill improvements. The count includes distinct papers accepted through independent, limited-scope review; it does not mean every conclusion in those papers has been verified.
+[Reviewed Papers: 1](literature-audits/README.md) / [已审查论文：1 篇](literature-audits/README.md)
 
-[已审查论文：1 篇](literature-audits/README.md)
+We select scientifically important or methodologically instructive studies for focused physical-to-mathematical reconstruction. Each audit explains why the work matters, identifies its original contribution, reconstructs selected mathematical claims, and explores their conditions, limitations and possible generalizations.
 
-这些报告记录物理问题、数学转换、关键推导、成立条件、反例、一般化及 Skill 改进候选。数量仅统计完成限定范围独立审查的不同论文，不代表论文全部结论均已验证。
+An audit is not a pass/fail verdict on the paper or its authors. Limited scope, unresolved scientific questions or untested extensions do not by themselves indicate an error. Genuine mathematical errors or unsupported physical extrapolations must still be recorded with evidence. Authors and researchers may voluntarily contribute clarifications, counterexamples, alternative formulations and new directions; this does not imply their awareness, endorsement or participation.
+
+我们精选具有重要科学贡献或方法论启发价值的研究，独立重建其中关键的物理—数学转换。每篇报告首先说明该研究为什么值得关注及其原创贡献，再记录明确数学命题的复现、成立条件、局限与可能的一般化。
+
+审查不是对论文或作者作通过／失败评定。审查范围有限、科学问题尚未解决或某些推广尚待验证，本身不代表原论文存在错误；真实数学错误或无根据的物理外推仍须按证据记录。欢迎作者与研究者自愿澄清物理前提、检验数学结论、提出反例及拓展新问题，不暗示作者已知晓、认可或参与审查。
+
+The count covers distinct papers accepted through independent, limited-scope review; it does not verify every conclusion or establish incremental Skill capability.
+
+数量仅统计完成限定范围独立审查的不同论文，不代表全部结论已验证，也不构成 Skill 增量能力证明。
 
 ## Mission / 项目使命
 
@@ -94,9 +102,9 @@ The email link only prefills the subject `physics-to-math-research feedback`; it
 
 ## Research Review / 研究审查
 
-Two independent archives serve different purposes: [evaluation-reports](evaluation-reports/README.md) records Skill behavior evaluations; [literature-audits](literature-audits/README.md) records mathematical reviews of journal papers and preprints under the [literature audit protocol](docs/literature-audit-protocol.md). A publication or successful mathematical review alone is not evidence of incremental Skill capability. Existing reports retain their original versions, conditions and limitations; this update performs no paper audit.
+Two independent archives serve different purposes: [evaluation-reports](evaluation-reports/README.md) records Skill behavior evaluations; [literature-audits](literature-audits/README.md) records mathematical reviews of journal papers and preprints under the [literature audit protocol](docs/literature-audit-protocol.md). A publication or successful mathematical review alone is not evidence of incremental Skill capability. Existing reports retain their original versions, conditions and limitations; each paper audit states its completed and unreviewed scope.
 
-两类档案相互独立：[evaluation-reports](evaluation-reports/README.md) 记录 Skill 自身行为评估；[literature-audits](literature-audits/README.md) 按[论文数学审查协议](docs/literature-audit-protocol.md)记录期刊论文及预印本的数学审查。论文发表或数学审查成功本身不是 Skill 增量能力证据。已有报告保留原始版本、测试条件及证据限制；本轮不开展论文审查。
+两类档案相互独立：[evaluation-reports](evaluation-reports/README.md) 记录 Skill 自身行为评估；[literature-audits](literature-audits/README.md) 按[论文数学审查协议](docs/literature-audit-protocol.md)记录期刊论文及预印本的数学审查。论文发表或数学审查成功本身不是 Skill 增量能力证据。已有报告保留原始版本、测试条件及证据限制；每篇论文审查分别声明已完成和未审查的范围。
 
 ## Mathematical Tools / 数学工具
 

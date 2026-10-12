@@ -2,6 +2,22 @@
 
 ## Unreleased
 
+## 0.2.3
+
+- Clarified selected research and constructive, claim-level mathematical audits, with scientific significance stated at report openings.
+- Encouraged voluntary author and community feedback without implying endorsement or weakening evidence standards.
+- Repaired all Jarzynski report math delimiters for GitHub Markdown and aligned its abstract with Reviewed status.
+- Standardized the reviewed-paper count at one and preserved scope, counterexamples and original execution evidence.
+- Added a reusable standard-library, whitelist-only SkillHub ZIP builder with deterministic entries and package-only LICENSE.md link conversion.
+- Core/OAC and research execution rules are unchanged; no new actual Skill ON/OFF capability evidence was obtained.
+
+- 明确精选研究与建设性命题级数学审查定位，报告开篇说明科学重要性与选文理由。
+- 鼓励作者与社区自愿反馈，不暗示作者认可，也不降低证据标准。
+- 全文修复 Jarzynski 报告的 GitHub 数学定界符，并使英文摘要与 Reviewed 状态一致。
+- 将已审查论文计数规范为 1 篇，保留适用边界、反例与原始执行证据。
+- 新增标准库白名单 SkillHub ZIP 构建脚本，采用确定排序与时间戳，仅在包内转换 LICENSE.md 链接。
+- 未修改科研 Core/OAC 或执行规则，没有新增实际 Skill ON/OFF 能力证明。
+
 ## 0.2.2
 
 - Published the first formal, limited-scope mathematical audit of a physics paper: Jarzynski (1997), accepted through independent mathematical review.

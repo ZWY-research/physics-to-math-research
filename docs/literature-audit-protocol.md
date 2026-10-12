@@ -1,14 +1,38 @@
 # Literature Audit Protocol / 论文数学审查协议
 
-This protocol specifies public archival records for completed paper audits. It is not a new runtime rule, a mandatory reasoning pipeline, or authority to audit papers automatically. [SKILL.md](../SKILL.md) remains the sole runtime specification. This update performs no literature audit.
+This protocol specifies public archival records for completed paper audits. It is not a new runtime rule, a mandatory reasoning pipeline, or authority to audit papers automatically. [SKILL.md](../SKILL.md) remains the sole runtime specification.
 
-本协议规定已完成论文审查的公开档案内容，不是新增运行规则、强制推理流水线或自动审查论文的授权。[SKILL.md](../SKILL.md) 仍是唯一运行时规范。本轮不开展文献审查。
+本协议规定已完成论文审查的公开档案内容，不是新增运行规则、强制推理流水线或自动审查论文的授权。[SKILL.md](../SKILL.md) 仍是唯一运行时规范。
 
 ## Scope / 范围
 
 Choose the mathematical claim that actually needs review; a full rederivation of every part of the paper is not required. Record what was and was not checked. Journal impact or reputation is not a mathematical warrant. Separate mathematical validity from empirical or physical validation.
 
 选择实际需要审查的数学 claim，不要求完整重做每篇论文。记录已经核查与未核查的范围，不能凭期刊影响力或声誉判定数学成立。数学有效性与经验、物理验证分别记录。
+
+### Paper Selection & Significance / 选文依据与科学意义
+
+Open each report with why this work was selected, its important contribution and supporting evidence. Selection should have real scientific or methodological value; neither a high-impact journal nor full-paper reproduction is required.
+
+每篇报告开篇说明选文理由、重要贡献及对应证据。选文须有实际科学或方法论价值，不要求高影响因子期刊，也不要求复现全文。
+
+### Constructive Claim-Level Review / 建设性的命题级审查
+
+Distinguish original claims, reviewer reconstructions, matters not determined by current evidence, counterexamples and additional research ideas. Judge mathematical validity, physical applicability and empirical validation separately. Unreviewed areas, unresolved questions and limited applicability are not automatically paper errors. Real counterexamples or explicit errors must not be softened into mere opportunities for refinement; preserve their evidence. Review concerns specific claims, not a pass/fail judgment on papers or authors.
+
+区分原论文结论、审查者复现、现有证据未判断事项、反例与额外研究设想；数学有效性、物理适用性与经验验证分开判断。未审查、暂不能判断或有限适用性不直接构成论文错误；真实反例或明确错误也不能改写为仅有待完善，必须保留证据。审查针对明确命题，不对论文或作者作通过／失败评定。
+
+### Scientific Generalization / 具有科学意义的一般化
+
+Record possible general mathematical structures and whether they go beyond an equivalent reformulation. State the physical semantics and validity conditions needed for transfer to another scientific system. A general restatement is not automatically an original theorem; wider scientific claims need additional correspondence and applicability evidence. “No valuable generalization identified at present” is an acceptable outcome.
+
+记录可能的一般数学结构，说明是否超越形式上的等价重述，以及迁移到其他科学系统需要的物理语义、成立条件与适用证据。一般数学重述不自动构成原创定理；允许结论为“目前没有有价值的一般化”。
+
+### Author & Community Participation / 作者和社区参与
+
+Welcome voluntary corrections, proofs, shareable evidence, counterexamples, alternative mathematical representations and new questions from authors or other researchers via [Discussions](https://github.com/ZWY-research/physics-to-math-research/discussions) and [Issues](https://github.com/ZWY-research/physics-to-math-research/issues). Preserve attribution in discussion and corrections; opinion counts, seniority and journal prestige do not replace mathematical evidence. Independent review using lawful public materials does not require prior author endorsement and does not imply author participation.
+
+欢迎原作者或其他研究者通过 [Discussions](https://github.com/ZWY-research/physics-to-math-research/discussions) 与 [Issues](https://github.com/ZWY-research/physics-to-math-research/issues)自愿提供纠正、证明、可公开证据、反例、替代数学表示和新问题。讨论与更正保留来源，不以意见数量、作者资历或期刊声誉替代数学证据。基于合法公开材料的独立审查无需作者事先认可，也不暗示作者已经参与。
 
 ## Required contents of a formal record / 正式记录必备内容
 
