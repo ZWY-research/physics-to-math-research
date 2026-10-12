@@ -1,30 +1,100 @@
 # physics-to-math-research
 
-**Version / 版本：** `0.2-alpha.0`
+**Version / 版本：** `0.2-alpha.0` · **Status / 状态：** Public alpha / 公开 Alpha 测试版
 
-**Status / 状态：** Public alpha / 公开 Alpha 测试版
+## Mission / 项目使命
 
-A bilingual Skill for constructive scientific-to-mathematical formulation, task-relevant derivation, and claim-integrity auditing.
+This project helps AI formulate and advance general mathematical questions grounded in physical phenomena and other scientific observations. It emphasizes explicit observations and assumptions, minimal sufficient mathematical structures, checkable conditional derivations, counterexamples, validity conditions, and physical applicability boundaries.
 
-一个面向建设性科学问题数学化、任务相关推导与 claim 完整性审查的中英双语 Skill。
+本项目旨在帮助 AI 从物理现象及其他科学观察中发现、构造并推进具有研究价值的一般数学问题。通过明确观测与假设、选择最小足够的数学结构、完成条件性推导，并检查反例、成立条件和物理适用边界，使研究结果可核查、可复现、可质疑。
 
-> Before solving a scientific problem mathematically, have we formulated the right mathematical problem, and does the resulting mathematics actually support the scientific claim being made?
->
-> 在开始用数学求解科学问题之前，我们是否构造了正确的数学问题？得到的数学结果是否真的支持研究者提出的科学 claim？
+This is project orientation, not an additional runtime rule. “Minimal sufficient” means structure adequate for the question; it does not prescribe a minimization procedure or prefer simplicity over necessary complexity. The Skill does not guarantee new mathematics or establish real physical mechanisms. A stable incremental advantage has not been demonstrated.
 
-## Overview / 项目简介
+这是项目使命说明，不增加运行时规则。“最小足够”指结构足以支持当前问题，不规定结构最小化流程，也不以简单替代必要复杂性。Skill 不保证发现新数学或证实真实物理机制，目前也未建立稳定增量优势。
 
-Use this Skill to formulate mathematical questions from scientific observations, complete feasible conditional derivations, and examine the bridge from mathematical results to physical conclusions. Alpha users are invited to try real problems and report reproducible failures; current validation is limited.
+[SKILL.md](SKILL.md) remains the sole normative runtime source; READMEs, review protocols and tool references are explanatory. For continuous Chinese reading, see [README.zh-CN.md](README.zh-CN.md).
 
-使用本 Skill 从科学观察构造数学问题、完成可行的条件性推导，并检查数学结果与物理结论之间的衔接。欢迎 alpha 用户用真实问题试用并报告可复现的失败；当前验证仍然有限。
+[SKILL.md](SKILL.md) 仍是唯一运行时规范；README、审查协议与工具参考均用于解释和导航。连续中文入口见 [README.zh-CN.md](README.zh-CN.md)。
 
-> Documentation is explanatory. [SKILL.md](SKILL.md) is the single normative runtime source for this version. If documentation conflicts with it, `SKILL.md` prevails.
->
-> 文档用于解释和导航。[SKILL.md](SKILL.md) 是当前版本唯一的运行时规范来源。如果文档与其冲突，以 `SKILL.md` 为准。
+## From Physics to General Mathematics / 从物理到一般数学
 
-For uninterrupted Chinese reading, see [README.zh-CN.md](README.zh-CN.md). Both views explain the same Skill.
+**Physical observation / 物理观察。** A diagnostic measures an integrated density over $x\in[-1,1]$ for $0\le t\le1$. Someone concludes that the central density $n(0,t)$ is constant.
 
-如偏好连续中文阅读，可使用 [README.zh-CN.md](README.zh-CN.md)。两个阅读入口解释的是同一个 Skill。
+诊断系统在 $x\in[-1,1]$、$0\le t\le1$ 测得密度积分信号。有人据此断言中心密度 $n(0,t)$ 不变。
+
+$$I(t)=\int_{-1}^{1}n(x,t)\,dx=2,\qquad 0\le t\le1.$$
+
+**General mathematical question / 一般数学问题。** Define $M(f)=\int_{-1}^{1}f(x)\,dx$ and $L(f)=f(0)$. Does $M(f_1)=M(f_2)$ imply $L(f_1)=L(f_2)$ within the admissible class of nonnegative smooth profiles?
+
+设测量算子 $M(f)=\int_{-1}^{1}f(x)\,dx$，目标函数量 $L(f)=f(0)$。在允许的非负光滑剖面类中，判断 $M(f_1)=M(f_2)$ 是否足以推出 $L(f_1)=L(f_2)$。
+
+**Construction / 数学构造。**
+
+$$n_1(x,t)=1,\qquad n_2(x,t)=1+t\left(x^2-\frac13\right).$$
+
+Both are smooth and nonnegative on the stated space–time domain: $n_2\ge1-t/3\ge2/3$. Because $\int_{-1}^{1}(x^2-1/3)\,dx=0$, both integrated signals are 2, whereas their central values are $1$ and $1-t/3$.
+
+两者在给定时空区域内光滑、非负：$n_2\ge1-t/3\ge2/3$。由于 $\int_{-1}^{1}(x^2-1/3)\,dx=0$，两者积分均为 2，但中心值分别为 $1$ 与 $1-t/3$。
+
+**Conclusion / 结论。** The integrated observation does not uniquely determine the local central density. Identifying the central value requires sufficient additional profile constraints or other discriminating measurement information.
+
+积分观测不能唯一决定局部中心密度。若需识别中心值，必须增加足够的剖面约束或其他具有判别力的测量信息。
+
+This is a teaching demonstration, not a verified physical mechanism or evidence of incremental Skill capability.
+
+这是教学演示，不是已经验证的物理机制，也不是 Skill 增量能力证明。
+
+## How to Use / 如何使用
+
+Copy and fill in either example. You do not need to know Core/OAC first; not every task needs a new theorem.
+
+复制并填写任一示例即可。无需预先了解 Core/OAC，也不强制所有任务产生新定理。
+
+```text
+Please use the physics-to-math-research Skill.
+
+My scientific observation is: [fill in observations]
+Known measurements and constraints: [fill in]
+The question I want to study: [fill in]
+
+Formulate the most research-relevant mathematical question supported by the current conditions. Complete feasible mathematical derivations or counterexample analysis, and state validity conditions, failure boundaries and limits of physical interpretation. Do not assume a particular theory or mathematical structure by default.
+```
+
+```text
+请使用 physics-to-math-research Skill。
+
+我的科学观察是：[填写观察]
+已知测量与约束：[填写]
+希望研究的问题：[填写]
+
+请构造最有研究价值且当前条件支持的数学问题，完成可行的数学推导或反例分析，并说明成立条件、失败边界与物理解释限制。不要默认特定理论或数学结构。
+```
+
+## Share Your Results / 分享科研结果
+
+Successes, failures, ties and uncertain outcomes are all welcome. Participation is entirely voluntary: no conversation is automatically read or sent; you decide whether and what to submit. Do not submit unauthorized papers, private research data, credentials or sensitive information. Either Chinese or English is sufficient; contributors need not provide both.
+
+欢迎成功、失败、持平及不确定的科研使用结果。反馈完全自愿；不会自动读取或发送对话，是否提交及提交什么由用户自主决定。请勿提交未经授权的论文、私人科研数据、凭证或敏感信息。可使用中文或英文，无需同时提供双语版本。
+
+- [GitHub Issues / 问题反馈](https://github.com/ZWY-research/physics-to-math-research/issues)
+- [GitHub Discussions / 科研讨论](https://github.com/ZWY-research/physics-to-math-research/discussions)
+- Public contact email / 公开联系邮箱：82787647@qq.com — [Draft feedback email / 撰写反馈邮件](mailto:82787647@qq.com?subject=physics-to-math-research%20feedback)
+
+The email link only prefills the subject `physics-to-math-research feedback`; it does not send email. Suggested feedback: scientific question, Skill version, model/environment, mathematical result, concrete reasons it helped or did not help, and the smallest reproduction information you permit to be public.
+
+邮件链接仅预填主题 `physics-to-math-research feedback`，不会发送邮件。建议包含：科学问题、Skill 版本、模型与环境、数学结果、有益或无益的具体原因，以及允许公开的最小复现信息。
+
+## Research Review / 研究审查
+
+Two independent archives serve different purposes: [evaluation-reports](evaluation-reports/README.md) records Skill behavior evaluations; [literature-audits](literature-audits/README.md) records mathematical reviews of journal papers and preprints under the [literature audit protocol](docs/literature-audit-protocol.md). A publication or successful mathematical review alone is not evidence of incremental Skill capability. Existing reports retain their original versions, conditions and limitations; this update performs no paper audit.
+
+两类档案相互独立：[evaluation-reports](evaluation-reports/README.md) 记录 Skill 自身行为评估；[literature-audits](literature-audits/README.md) 按[论文数学审查协议](docs/literature-audit-protocol.md)记录期刊论文及预印本的数学审查。论文发表或数学审查成功本身不是 Skill 增量能力证据。已有报告保留原始版本、测试条件及证据限制；本轮不开展论文审查。
+
+## Mathematical Tools / 数学工具
+
+Choose tools by mathematical task, rather than discipline labels; start with the [task-to-tool reference](references/tools/index.md) and optional [Python setup guide](references/tools/python-setup.md). Installing the Skill does not automatically install mathematical software. Use an appropriate tool only when the user's task needs it and its use is authorized. These references are read on demand and do not add runtime rules.
+
+按数学任务而非学科标签选择工具，见[数学任务与工具导航](references/tools/index.md)及按需使用的 [Python 环境配置说明](references/tools/python-setup.md)。安装 Skill 不会自动安装数学软件；只有用户任务需要且已授权时才使用相应工具。这些文档按需参考，不增加运行时规则。
 
 ## Discipline adapters (experimental) / 学科适配层（实验性）
 
@@ -288,9 +358,15 @@ physics-to-math-research/
 ├── README.zh-CN.md
 ├── RESEARCH_APPLICATIONS.md
 ├── evaluation-reports/
+│   ├── README.md
+│   ├── physics/plasma-and-fusion/README.md
 │   ├── 2026-10-09-can-calibration-evidence-identify-material-response.md
 │   ├── 2026-10-09-can-linear-stability-rule-out-sustained-tokamak-turbulence.md
 │   └── 2026-10-09-can-itg-gradient-scans-distinguish-turbulent-states.md
+├── literature-audits/README.md
+├── docs/
+│   ├── literature-audit-protocol.md
+│   └── decisions/2026-10-12-research-onboarding-and-tools.md
 ├── LICENSE
 ├── CHANGELOG.md
 ├── CONTRIBUTING.md
@@ -299,7 +375,11 @@ physics-to-math-research/
 ├── references/
 │   ├── core-principles.md
 │   ├── observable-audit-contract.md
-│   └── mathematical-verification.md
+│   ├── mathematical-verification.md
+│   ├── disciplines/physics.md
+│   └── tools/
+│       ├── index.md
+│       └── python-setup.md
 └── .github/
     ├── ISSUE_TEMPLATE/
     │   ├── skill-failure.yml
