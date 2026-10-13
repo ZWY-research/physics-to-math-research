@@ -16,6 +16,10 @@ This archive evaluates the Skill's behavior, not the validity of a published pap
 
 [等离子体与聚变导航](physics/plasma-and-fusion/README.md)。当前版本的 [v0.2-alpha.0 验证摘要](../docs/v0.2-alpha.0-validation.md)不改变上述历史报告的版本归属。
 
+## v0.2.5 behavior regression / 行为回归
+
+[v0.2.5 research-delivery regression](v0.2.5-research-delivery-smoke.md): ten isolated actual runs with observable evidence; preliminary engineering assessment, pending human review. This does not establish incremental research advantage. / 十个真实独立分支及可见证据，工程初评仍待人工复核，不证明科研增量优势。
+
 ## Classification and provenance / 分类与来源
 
 Physics is subdivided only as actual cases arrive: plasma and fusion, condensed matter, optics and photonics, fluids and continua, for example. Do not create empty subdiscipline folders. Cross-disciplinary cases may be cross-indexed; do not duplicate or move source reports. Existing public report paths remain stable.
