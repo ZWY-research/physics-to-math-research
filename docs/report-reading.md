@@ -20,3 +20,5 @@ Pages source remains main/docs. Generated output changes do not change the scien
 Historical ITG source has three closing code fences appended to the last prose line. The generator recognizes exactly these three boundaries in memory (fails if the layout changes); original source bytes stay unchanged. Full code bodies and source SHA-256 are checked independently. This is layout compatibility, not editing or rescoring original answers.
 
 .gitattributes fixes generated output to LF so Windows core.autocrlf does not create false stale-output failures; font files remain binary.
+
+source_sha256 and data-source-sha256 identify LF-normalized UTF-8 Markdown content for deterministic builds; they are not advertised as raw Git blob digests. Frozen evaluation manifest hashes retain their original identities. The generator rejects dependency versions other than the pinned versions.

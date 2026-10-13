@@ -1,6 +1,7 @@
 {
   "generator": "scripts/build-report-pages.cjs",
   "version": "0.2.7",
+  "source_hash_normalization": "UTF-8 Markdown with CRLF normalized to LF; original Git artifacts remain unchanged",
   "dependencies": {
     "markdown-it": "14.1.0",
     "katex": "0.16.22"

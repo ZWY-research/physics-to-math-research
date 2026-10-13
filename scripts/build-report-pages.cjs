@@ -11,6 +11,8 @@ const depsIndex = args.indexOf('--deps');
 const load = depsIndex >= 0 ? createRequire(path.resolve(args[depsIndex + 1], 'package.json')) : require;
 const MarkdownIt = load('markdown-it');
 const katex = load('katex');
+const actualVersions = {'markdown-it':load('markdown-it/package.json').version, katex:load('katex/package.json').version};
+if (actualVersions['markdown-it'] !== '14.1.0' || actualVersions.katex !== '0.16.22') throw new Error('Use pinned build dependencies from package-lock.json');
 const check = args.includes('--check');
 const docs = path.join(repo, 'docs');
 const github = 'https://github.com/ZWY-research/physics-to-math-research/blob/main/';
@@ -138,7 +140,7 @@ function shell(entry, body, digest, toc = '') {
   const assets = relative(entry.route,'assets/');
   return `<!doctype html>\n<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>${escape(entry.title)} · Research Observatory</title><link rel="stylesheet" href="${home}observatory.css"><link rel="stylesheet" href="${assets}report-reading.css"><link rel="stylesheet" href="${assets}vendor/katex/katex.min.css"></head><body><a class="skip-link" href="#report">跳至正文 / Skip to content</a><header class="site-header"><div class="container header-inner"><a class="brand" href="${home}index.html">Research Observatory<span lang="zh-CN">科研进展与证据看板</span></a><nav><a href="${home}research-audits/">Research Audits / 研究审查</a><a href="${home}skill-evaluations/">Skill Evaluations / 评估</a><a href="${home}methods-sources/">Methods &amp; Sources / 方法与来源</a></nav></div></header><main class="container reading" id="report"><header class="report-header"><p class="eyebrow">${escape(entry.group)}</p><h1>${escape(entry.title)}</h1><p class="review-badge">${escape(entry.status)}</p><p>${escape(entry.context)}</p>${entry.source ? `<p><a href="${github + entry.source}">Original Markdown / GitHub 原文 ↗</a> · <a href="${index}">返回分类目录 / Back to index</a></p>` : ''}</header>${toc ? `<details class="contents"><summary>目录 / Contents</summary><ul>${toc}</ul></details>` : ''}<article data-source="${escape(entry.source || '')}" data-source-sha256="${digest || ''}">${body}</article><p class="source-note">正文来自白名单公开 Markdown；公式静态渲染。本站阅读无需打开 GitHub，原始证据链接仍可指向外部。 / Full allowlisted source, statically rendered; no runtime document fetching.</p></main><footer class="site-footer"><div class="container footer-inner"><a href="${home}index.html">返回 Observatory</a><span>v${escape(version)} · <a href="${assets}third-party-notices.html">Third-party licenses / 依赖许可证</a></span></div></footer></body></html>\n`;
 }
-const manifest = {generator:'scripts/build-report-pages.cjs', version, dependencies:{'markdown-it':'14.1.0', katex:'0.16.22'}, documents:[], resources:[]};
+const manifest = {generator:'scripts/build-report-pages.cjs', version, source_hash_normalization:'UTF-8 Markdown with CRLF normalized to LF; original Git artifacts remain unchanged', dependencies:{'markdown-it':'14.1.0', katex:'0.16.22'}, documents:[], resources:[]};
 for (const entry of PUBLIC) {
   const source = normalized(fs.readFileSync(path.join(repo,entry.source),'utf8'));
   const rendered = render(source, entry); const destination = entry.route + 'index.html';
