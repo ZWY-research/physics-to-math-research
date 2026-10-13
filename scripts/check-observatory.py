@@ -69,6 +69,8 @@ def check(repo):
                     raise ValueError(f"Missing anchor: {target}")
             elif not urlsplit(target).scheme:
                 resource = (docs / unquote(urlsplit(target).path)).resolve()
+                if resource.is_dir():
+                    resource = resource / "index.html"
                 if not resource.is_relative_to(docs) or not resource.is_file():
                     raise ValueError(f"Missing/unsafe relative resource: {target}")
             elif target.startswith(GITHUB + "/blob/main/"):

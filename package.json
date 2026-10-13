@@ -1,0 +1,1 @@
+{"name":"physics-to-math-observatory-build","version":"0.2.7","private":true,"license":"Apache-2.0","engines":{"node":">=20"},"dependencies":{"markdown-it":"14.1.0","katex":"0.16.22"}}

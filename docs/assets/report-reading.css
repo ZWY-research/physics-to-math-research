@@ -1,0 +1,20 @@
+.reading { max-width: 1040px; padding-block: 40px; }
+.reading .report-header { border-bottom: 1px solid var(--line); margin-bottom: 24px; padding-bottom: 24px; }
+.reading h1 { font-size: clamp(25px, 3vw, 36px); line-height: 1.4; }
+.reading article { min-width: 0; overflow-wrap: anywhere; line-height: 1.8; }
+.reading article h2 { font-size: 24px; margin-top: 36px; }
+.reading article h3 { font-size: 19px; margin-top: 28px; }
+.reading pre { overflow-x: auto; background: var(--soft); border: 1px solid var(--line); padding: 18px; font-size: 13px; line-height: 1.7; }
+.reading code { font-family: Consolas, monospace; }
+.reading table { border-collapse: collapse; min-width: 100%; font-size: 14px; }
+.reading th, .reading td { border: 1px solid var(--line); padding: 10px 12px; vertical-align: top; }
+.table-scroll { overflow-x: auto; margin: 20px 0; }
+.formula-block { overflow-x: auto; overflow-y: hidden; padding: 8px 0; max-width: 100%; }
+.reading .katex { font-size: 1.05em; }
+.reading .katex-display { margin: 12px 0; }
+.reading details { border-left: 3px solid var(--line); padding-left: 16px; margin: 24px 0; }
+.reading summary { cursor: pointer; font-weight: 600; }
+.reading blockquote { border-left: 3px solid var(--line); padding-left: 18px; margin-left: 0; color: var(--muted); }
+.report-list { list-style: none; padding: 0; }
+.report-list li { border-bottom: 1px solid var(--line); padding-block: 20px; }
+@media (max-width: 650px) { .reading { padding-block: 24px; } .reading article h2 { font-size: 21px; } .reading .report-header h1 { font-size: 25px; } }

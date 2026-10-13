@@ -1,0 +1,557 @@
+{
+  "generator": "scripts/build-report-pages.cjs",
+  "version": "0.2.7",
+  "dependencies": {
+    "markdown-it": "14.1.0",
+    "katex": "0.16.22"
+  },
+  "documents": [
+    {
+      "source": "literature-audits/physics/statistical-mechanics/1997-jarzynski-nonequilibrium-free-energy.md",
+      "route": "research-audits/1997-jarzynski-nonequilibrium-free-energy/",
+      "group": "research-audits",
+      "title": "Jarzynski (1997): Exponential work equality / 指数功恒等式",
+      "status": "Reviewed — Limited-scope mathematical audit; not full-paper validation",
+      "context": "Canonical preparation, Hamiltonian volume preservation and conditional measure-space formulation. / 正则初态、保体积演化及其数学条件。",
+      "output": "research-audits/1997-jarzynski-nonequilibrium-free-energy/index.html",
+      "source_sha256": "13c0d36cb2dc49ff26444c9789e438d1428fa4422447b27e97377583d072c8ea",
+      "formula_count": 70,
+      "formulas": [
+        {
+          "tex": "\n\\langle e^{-\\beta W}\\rangle=e^{-\\beta\\Delta F},\n\\qquad \\Delta F=-\\beta^{-1}\\log\\langle e^{-\\beta W}\\rangle,\n\\qquad \\beta=(k_BT)^{-1}>0.\n",
+          "display": true
+        },
+        {
+          "tex": "\\lambda(t)",
+          "display": false
+        },
+        {
+          "tex": "t_s",
+          "display": false
+        },
+        {
+          "tex": "F_1-F_0",
+          "display": false
+        },
+        {
+          "tex": "F_1",
+          "display": false
+        },
+        {
+          "tex": "H_0",
+          "display": false
+        },
+        {
+          "tex": "Z_0^{-1}e^{-\\beta H_0}",
+          "display": false
+        },
+        {
+          "tex": "z=(q,p)",
+          "display": false
+        },
+        {
+          "tex": "H_{\\lambda(t)}",
+          "display": false
+        },
+        {
+          "tex": "W",
+          "display": false
+        },
+        {
+          "tex": "\\Delta F=-\\beta^{-1}\\log(Z_1/Z_0)",
+          "display": false
+        },
+        {
+          "tex": "\nW=\\int_0^{t_s}\\dot\\lambda(t)\n\\frac{\\partial H_\\lambda(z(t))}{\\partial\\lambda}\\,dt.\n",
+          "display": true
+        },
+        {
+          "tex": "\n\\frac{d}{dt}H_{\\lambda(t)}(z(t))\n=\\partial_z H_{\\lambda(t)}\\cdot\\dot z(t)\n+\\dot\\lambda\\,\\partial_\\lambda H_\\lambda\n=\\dot\\lambda\\,\\partial_\\lambda H_\\lambda.\n",
+          "display": true
+        },
+        {
+          "tex": "\nW=H_1(z(t_s))-H_0(z(0)).\n",
+          "display": true
+        },
+        {
+          "tex": "\\Gamma",
+          "display": false
+        },
+        {
+          "tex": "dz",
+          "display": false
+        },
+        {
+          "tex": "\\beta>0",
+          "display": false
+        },
+        {
+          "tex": "H_0,H_1",
+          "display": false
+        },
+        {
+          "tex": "\nZ_i=\\int_\\Gamma e^{-\\beta H_i(z)}\\,dz,\n\\qquad 0<Z_i<\\infty,\n\\qquad \\rho_0(z)=Z_0^{-1}e^{-\\beta H_0(z)}.\n",
+          "display": true
+        },
+        {
+          "tex": "\\Phi:\\Gamma\\to\\Gamma",
+          "display": false
+        },
+        {
+          "tex": "\nW(z)=H_1(\\Phi(z))-H_0(z).\n",
+          "display": true
+        },
+        {
+          "tex": "\n\\mathbb E_{\\rho_0}[e^{-\\beta W}]=\\frac{Z_1}{Z_0}.\n",
+          "display": true
+        },
+        {
+          "tex": "\\Gamma",
+          "display": false
+        },
+        {
+          "tex": "\\mathbb E|W|<\\infty",
+          "display": false
+        },
+        {
+          "tex": "\n\\begin{aligned}\n\\mathbb E_{\\rho_0}[e^{-\\beta W}]\n&=\\frac1{Z_0}\\int_\\Gamma\ne^{-\\beta H_0(z)}\ne^{-\\beta[H_1(\\Phi(z))-H_0(z)]}\\,dz\\\\\n&=\\frac1{Z_0}\\int_\\Gamma e^{-\\beta H_1(\\Phi(z))}\\,dz\\\\\n&=\\frac1{Z_0}\\int_\\Gamma e^{-\\beta H_1(y)}\\,dy\\\\\n&=\\frac{Z_1}{Z_0}\\\\\n&=e^{-\\beta\\Delta F}.\n\\end{aligned}\n",
+          "display": true
+        },
+        {
+          "tex": "y=\\Phi(z)",
+          "display": false
+        },
+        {
+          "tex": "H_0",
+          "display": false
+        },
+        {
+          "tex": "f(z,t_s)",
+          "display": false
+        },
+        {
+          "tex": "w(z,t_s)",
+          "display": false
+        },
+        {
+          "tex": "\nf(z,t)e^{-\\beta w(z,t)}=Z_0^{-1}e^{-\\beta H_{\\lambda(t)}(z)};\n",
+          "display": true
+        },
+        {
+          "tex": "Z_1/Z_0",
+          "display": false
+        },
+        {
+          "tex": "y=(z,z')",
+          "display": false
+        },
+        {
+          "tex": "G_\\lambda=H_\\lambda(z)+\\mathcal H(z')+h_{\\rm int}(z,z')",
+          "display": false
+        },
+        {
+          "tex": "G_0",
+          "display": false
+        },
+        {
+          "tex": "H_\\lambda",
+          "display": false
+        },
+        {
+          "tex": "\\langle e^{-\\beta W}\\rangle=Y_1/Y_0",
+          "display": false
+        },
+        {
+          "tex": "Z_1/Z_0",
+          "display": false
+        },
+        {
+          "tex": "\\mathbb E|W|<\\infty",
+          "display": false
+        },
+        {
+          "tex": "\ne^{-\\beta\\mathbb E W}\\leq\\mathbb E[e^{-\\beta W}]\n=e^{-\\beta\\Delta F},\n\\qquad \\mathbb E[W]\\geq\\Delta F.\n",
+          "display": true
+        },
+        {
+          "tex": "\nH_0=(0,0),\\qquad H_1=(0,\\varepsilon),\n\\qquad \\varepsilon>0,\\quad\\beta>0.\n",
+          "display": true
+        },
+        {
+          "tex": "0,\\varepsilon",
+          "display": false
+        },
+        {
+          "tex": "(1/2,1/2)",
+          "display": false
+        },
+        {
+          "tex": "\nZ_0=2,\\qquad Z_1=1+e^{-\\beta\\varepsilon},\n\\qquad \\mathbb E[e^{-\\beta W}]\n=\\frac{1+e^{-\\beta\\varepsilon}}2=\\frac{Z_1}{Z_0}.\n",
+          "display": true
+        },
+        {
+          "tex": "(1,0)",
+          "display": false
+        },
+        {
+          "tex": "\n\\mathbb E[e^{-\\beta W}]=1\\ne\\frac{Z_1}{Z_0}<1.\n",
+          "display": true
+        },
+        {
+          "tex": "W_i",
+          "display": false
+        },
+        {
+          "tex": "\nA_N=\\frac1N\\sum_{i=1}^N e^{-\\beta W_i},\n\\qquad \\widehat{\\Delta F}_N=-\\beta^{-1}\\log A_N.\n",
+          "display": true
+        },
+        {
+          "tex": "\\mathbb E|\\log A_N|<\\infty",
+          "display": false
+        },
+        {
+          "tex": "\\mathbb E A_N=e^{-\\beta\\Delta F}",
+          "display": false
+        },
+        {
+          "tex": "-\\log",
+          "display": false
+        },
+        {
+          "tex": "\n\\mathbb E[\\widehat{\\Delta F}_N]\n\\geq-\\beta^{-1}\\log\\mathbb E A_N=\\Delta F.\n",
+          "display": true
+        },
+        {
+          "tex": "\\widehat{\\Delta F}_N\\geq\\Delta F",
+          "display": false
+        },
+        {
+          "tex": "N",
+          "display": false
+        },
+        {
+          "tex": "2^{-N}>0",
+          "display": false
+        },
+        {
+          "tex": "\n\\widehat{\\Delta F}_N=0<\n-\\beta^{-1}\\log\\left(\\frac{1+e^{-\\beta\\varepsilon}}2\\right)=\\Delta F.\n",
+          "display": true
+        },
+        {
+          "tex": "\\beta=1,\\varepsilon=\\ln4",
+          "display": false
+        },
+        {
+          "tex": "\nZ_0=2,\\quad Z_1=\\frac54,\\quad Z_1/Z_0=\\frac58,\n\\quad\\Delta F=\\ln\\frac85>0.\n",
+          "display": true
+        },
+        {
+          "tex": "5/8",
+          "display": false
+        },
+        {
+          "tex": "\\ln4/2\\geq\\ln(8/5)",
+          "display": false
+        },
+        {
+          "tex": "(X,\\mu)",
+          "display": false
+        },
+        {
+          "tex": "\\Phi:X\\to X",
+          "display": false
+        },
+        {
+          "tex": "\\mu(\\Phi^{-1}A)=\\mu(A)",
+          "display": false
+        },
+        {
+          "tex": "A",
+          "display": false
+        },
+        {
+          "tex": "H_0,H_1",
+          "display": false
+        },
+        {
+          "tex": "\\beta>0",
+          "display": false
+        },
+        {
+          "tex": "\n0<Z_i=\\int_Xe^{-\\beta H_i}\\,d\\mu<\\infty.\n",
+          "display": true
+        },
+        {
+          "tex": "\ndP_0=Z_0^{-1}e^{-\\beta H_0}\\,d\\mu,\n\\qquad W(x)=H_1(\\Phi(x))-H_0(x).\n",
+          "display": true
+        },
+        {
+          "tex": "\n\\begin{aligned}\n\\mathbb E_{P_0}[e^{-\\beta W}]\n&=Z_0^{-1}\\int_X e^{-\\beta H_1\\circ\\Phi}\\,d\\mu\\\\\n&=Z_0^{-1}\\int_Xe^{-\\beta H_1}\\,d\\mu\n=Z_1/Z_0.\n\\end{aligned}\n",
+          "display": true
+        },
+        {
+          "tex": "\\Phi_*\\mu=\\mu",
+          "display": false
+        },
+        {
+          "tex": "Y_1/Y_0",
+          "display": false
+        }
+      ],
+      "in_memory_inline_fence_repairs": 0
+    },
+    {
+      "source": "evaluation-reports/v0.2.5-research-delivery-smoke.md",
+      "route": "skill-evaluations/v0.2.5-research-delivery-smoke/",
+      "group": "skill-evaluations",
+      "title": "v0.2.5 Research-delivery Regression / 科研交付行为回归",
+      "status": "v0.2.5 · gpt-6.1-sol / medium · PASS 10, FAIL 0, INCONCLUSIVE 0, NOT RUN 0; engineering assessment, no independent human adjudication",
+      "context": "Five near-pairs A1–E2: task purpose, installation boundaries, style and actual file delivery. No OFF / Short Prompt gain test.",
+      "output": "skill-evaluations/v0.2.5-research-delivery-smoke/index.html",
+      "source_sha256": "7125e4d25c0b7dc16b625e8f8b7fb96bb2094fe436ad87cb3ae2bfa04079a86a",
+      "formula_count": 8,
+      "formulas": [
+        {
+          "tex": "\\theta=T-T_{\\mathrm{env}}",
+          "display": false
+        },
+        {
+          "tex": "(e^{kt}\\theta)'=0",
+          "display": false
+        },
+        {
+          "tex": "T(t)=T_{\\mathrm{env}}+(T_0-T_{\\mathrm{env}})e^{-kt}",
+          "display": false
+        },
+        {
+          "tex": "t=0",
+          "display": false
+        },
+        {
+          "tex": "t\\ge0",
+          "display": false
+        },
+        {
+          "tex": "k",
+          "display": false
+        },
+        {
+          "tex": "t\\ge0",
+          "display": false
+        },
+        {
+          "tex": "T_0>T_{\\mathrm a}",
+          "display": false
+        }
+      ],
+      "in_memory_inline_fence_repairs": 0
+    },
+    {
+      "source": "evaluation-reports/2026-10-09-can-calibration-evidence-identify-material-response.md",
+      "route": "skill-evaluations/can-calibration-evidence-identify-material-response/",
+      "group": "skill-evaluations",
+      "title": "Can calibration evidence identify material response? / 材料响应可识别性",
+      "status": "v0.1-alpha.2 · GPT-6.1 Sol / High · internal comparison; no substantive ON/OFF advantage established",
+      "context": "Four-cell local affine constitutive response and calibration identifiability. / 本构响应与标定信息。",
+      "output": "skill-evaluations/can-calibration-evidence-identify-material-response/index.html",
+      "source_sha256": "3d0d155a4f2dda98714ee62bde23d19f739f9a81e5804a90defd297a45a305ae",
+      "formula_count": 0,
+      "formulas": [],
+      "in_memory_inline_fence_repairs": 0
+    },
+    {
+      "source": "evaluation-reports/2026-10-09-can-linear-stability-rule-out-sustained-tokamak-turbulence.md",
+      "route": "skill-evaluations/can-linear-stability-rule-out-sustained-tokamak-turbulence/",
+      "group": "skill-evaluations",
+      "title": "Can linear stability rule out sustained tokamak turbulence? / 线性稳定性与持续湍流",
+      "status": "v0.1-alpha.2 · GPT-6.1 Sol / High · internal comparison tied; incremental advantage not established",
+      "context": "Distinguishing linear decay, transient growth and finite-amplitude long-time behavior. / 线性衰减与非线性长期状态。",
+      "output": "skill-evaluations/can-linear-stability-rule-out-sustained-tokamak-turbulence/index.html",
+      "source_sha256": "b92454b1bd49749b1a446f7452cad183c12e8c625863c92b55b585597bbb02ee",
+      "formula_count": 0,
+      "formulas": [],
+      "in_memory_inline_fence_repairs": 0
+    },
+    {
+      "source": "evaluation-reports/2026-10-09-can-itg-gradient-scans-distinguish-turbulent-states.md",
+      "route": "skill-evaluations/can-itg-gradient-scans-distinguish-turbulent-states/",
+      "group": "skill-evaluations",
+      "title": "Can ITG gradient scans distinguish turbulent states? / ITG 湍流态判别",
+      "status": "v0.1-alpha.2 · GPT-6.1 Sol / High · narrow positive signal; reliable incremental value not established",
+      "context": "Coexisting attractors versus intermittency, transients and numerical selection. / 吸引态、间歇性与数值选择。",
+      "output": "skill-evaluations/can-itg-gradient-scans-distinguish-turbulent-states/index.html",
+      "source_sha256": "eb6284b9b3fc91b905969177e8bed4379fcbe5fb8efe355ddaa295613503b8b9",
+      "formula_count": 0,
+      "formulas": [],
+      "in_memory_inline_fence_repairs": 3
+    },
+    {
+      "source": "docs/research-method-sources.md",
+      "route": "methods-sources/",
+      "group": "methods-sources",
+      "title": "Methods & Sources / 方法与来源",
+      "status": "Reviewed public materials; method adoption under evaluation; none Adopted",
+      "context": "OpenAI Math, Mathlib4 and Physlib: attribution, reviewed materials, licenses and untested limits. No mathematical-method integration.",
+      "output": "methods-sources/index.html",
+      "source_sha256": "6be214c2c6bcb736647096dcd6a374416e7b4544cbe49d07e9d47c8b494ebf7d",
+      "formula_count": 0,
+      "formulas": [],
+      "in_memory_inline_fence_repairs": 0
+    },
+    {
+      "source": "docs/releases/v0.2.6-evidence-publication.md",
+      "route": "releases/v0.2.6/",
+      "group": "releases",
+      "title": "v0.2.6 Evidence Publication / 证据发布记录",
+      "status": "Released on main; original results remain preliminary engineering assessment",
+      "context": "Release identity, checks, evidence boundaries and pending independent human review.",
+      "output": "releases/v0.2.6/index.html",
+      "source_sha256": "32719e54f1f88019e5a6e0f4b5e4612bc7bfce260f4dc7f515550b1a52c1f9d0",
+      "formula_count": 0,
+      "formulas": [],
+      "in_memory_inline_fence_repairs": 0
+    }
+  ],
+  "resources": [
+    "assets/third-party-notices.html",
+    "assets/vendor/katex/LICENSE.txt",
+    "assets/vendor/katex/fonts/KaTeX_AMS-Regular.ttf",
+    "assets/vendor/katex/fonts/KaTeX_AMS-Regular.woff",
+    "assets/vendor/katex/fonts/KaTeX_AMS-Regular.woff2",
+    "assets/vendor/katex/fonts/KaTeX_Caligraphic-Bold.ttf",
+    "assets/vendor/katex/fonts/KaTeX_Caligraphic-Bold.woff",
+    "assets/vendor/katex/fonts/KaTeX_Caligraphic-Bold.woff2",
+    "assets/vendor/katex/fonts/KaTeX_Caligraphic-Regular.ttf",
+    "assets/vendor/katex/fonts/KaTeX_Caligraphic-Regular.woff",
+    "assets/vendor/katex/fonts/KaTeX_Caligraphic-Regular.woff2",
+    "assets/vendor/katex/fonts/KaTeX_Fraktur-Bold.ttf",
+    "assets/vendor/katex/fonts/KaTeX_Fraktur-Bold.woff",
+    "assets/vendor/katex/fonts/KaTeX_Fraktur-Bold.woff2",
+    "assets/vendor/katex/fonts/KaTeX_Fraktur-Regular.ttf",
+    "assets/vendor/katex/fonts/KaTeX_Fraktur-Regular.woff",
+    "assets/vendor/katex/fonts/KaTeX_Fraktur-Regular.woff2",
+    "assets/vendor/katex/fonts/KaTeX_Main-Bold.ttf",
+    "assets/vendor/katex/fonts/KaTeX_Main-Bold.woff",
+    "assets/vendor/katex/fonts/KaTeX_Main-Bold.woff2",
+    "assets/vendor/katex/fonts/KaTeX_Main-BoldItalic.ttf",
+    "assets/vendor/katex/fonts/KaTeX_Main-BoldItalic.woff",
+    "assets/vendor/katex/fonts/KaTeX_Main-BoldItalic.woff2",
+    "assets/vendor/katex/fonts/KaTeX_Main-Italic.ttf",
+    "assets/vendor/katex/fonts/KaTeX_Main-Italic.woff",
+    "assets/vendor/katex/fonts/KaTeX_Main-Italic.woff2",
+    "assets/vendor/katex/fonts/KaTeX_Main-Regular.ttf",
+    "assets/vendor/katex/fonts/KaTeX_Main-Regular.woff",
+    "assets/vendor/katex/fonts/KaTeX_Main-Regular.woff2",
+    "assets/vendor/katex/fonts/KaTeX_Math-BoldItalic.ttf",
+    "assets/vendor/katex/fonts/KaTeX_Math-BoldItalic.woff",
+    "assets/vendor/katex/fonts/KaTeX_Math-BoldItalic.woff2",
+    "assets/vendor/katex/fonts/KaTeX_Math-Italic.ttf",
+    "assets/vendor/katex/fonts/KaTeX_Math-Italic.woff",
+    "assets/vendor/katex/fonts/KaTeX_Math-Italic.woff2",
+    "assets/vendor/katex/fonts/KaTeX_SansSerif-Bold.ttf",
+    "assets/vendor/katex/fonts/KaTeX_SansSerif-Bold.woff",
+    "assets/vendor/katex/fonts/KaTeX_SansSerif-Bold.woff2",
+    "assets/vendor/katex/fonts/KaTeX_SansSerif-Italic.ttf",
+    "assets/vendor/katex/fonts/KaTeX_SansSerif-Italic.woff",
+    "assets/vendor/katex/fonts/KaTeX_SansSerif-Italic.woff2",
+    "assets/vendor/katex/fonts/KaTeX_SansSerif-Regular.ttf",
+    "assets/vendor/katex/fonts/KaTeX_SansSerif-Regular.woff",
+    "assets/vendor/katex/fonts/KaTeX_SansSerif-Regular.woff2",
+    "assets/vendor/katex/fonts/KaTeX_Script-Regular.ttf",
+    "assets/vendor/katex/fonts/KaTeX_Script-Regular.woff",
+    "assets/vendor/katex/fonts/KaTeX_Script-Regular.woff2",
+    "assets/vendor/katex/fonts/KaTeX_Size1-Regular.ttf",
+    "assets/vendor/katex/fonts/KaTeX_Size1-Regular.woff",
+    "assets/vendor/katex/fonts/KaTeX_Size1-Regular.woff2",
+    "assets/vendor/katex/fonts/KaTeX_Size2-Regular.ttf",
+    "assets/vendor/katex/fonts/KaTeX_Size2-Regular.woff",
+    "assets/vendor/katex/fonts/KaTeX_Size2-Regular.woff2",
+    "assets/vendor/katex/fonts/KaTeX_Size3-Regular.ttf",
+    "assets/vendor/katex/fonts/KaTeX_Size3-Regular.woff",
+    "assets/vendor/katex/fonts/KaTeX_Size3-Regular.woff2",
+    "assets/vendor/katex/fonts/KaTeX_Size4-Regular.ttf",
+    "assets/vendor/katex/fonts/KaTeX_Size4-Regular.woff",
+    "assets/vendor/katex/fonts/KaTeX_Size4-Regular.woff2",
+    "assets/vendor/katex/fonts/KaTeX_Typewriter-Regular.ttf",
+    "assets/vendor/katex/fonts/KaTeX_Typewriter-Regular.woff",
+    "assets/vendor/katex/fonts/KaTeX_Typewriter-Regular.woff2",
+    "assets/vendor/katex/katex.min.css",
+    "assets/vendor/markdown-it-LICENSE.txt"
+  ],
+  "output_hashes": {
+    "research-audits/1997-jarzynski-nonequilibrium-free-energy/index.html": "86219b8b6e6f313fc7c5b72cc7a0cd2c76ddb54b44e1a88160c490b8cf0a5e00",
+    "skill-evaluations/v0.2.5-research-delivery-smoke/index.html": "694ce78e326da2457a515582836d12109e576f29652c52b9b59718710b49e81e",
+    "skill-evaluations/can-calibration-evidence-identify-material-response/index.html": "ae543ede11c8e724168dd1c1102c8851e2e2b4410c644f8f500fa51c2793b2b0",
+    "skill-evaluations/can-linear-stability-rule-out-sustained-tokamak-turbulence/index.html": "e446f7144c73d7f08d53e7d2df885a49c1c6d2678690b02fa6593a7ff36ff442",
+    "skill-evaluations/can-itg-gradient-scans-distinguish-turbulent-states/index.html": "0e2c5fbbc4b62262230df1350e7f2057e518eed8990157e18e44c424a47eb9cf",
+    "methods-sources/index.html": "42e4704b259fe135c67dd021c37a9a6c351cecbc8cf7019e7328ae4c14f511d4",
+    "releases/v0.2.6/index.html": "5a8f3e78edd53479a2d5b94a968197377028b8b06958686cf0278ddb05843408",
+    "research-audits/index.html": "7a612e1cfb0736f3ea08c55c26ceb12ade4633badabd4526d90e586ba9f606ee",
+    "skill-evaluations/index.html": "3e225286cd0af9bc0b83f0e3d1efe8e4aa3f903392822c4a8fcc5cae15546900",
+    "releases/index.html": "9632cdb398bc4cee0e70d4f7ac747969c45ae24847e61d856ca9c1e5e6036e71",
+    "assets/vendor/katex/katex.min.css": "19095127357ed6d29fe0a63a6b000c913a89f7f1963b765dd3715e97c9852e75",
+    "assets/vendor/katex/fonts/KaTeX_AMS-Regular.ttf": "68534840bcfdd2bffb6f0e8deb48684dd01e7f04ea2813267577afb906de1d13",
+    "assets/vendor/katex/fonts/KaTeX_AMS-Regular.woff": "30da91e84c893f875e252689faebdc590b2871145e8adc7f9a9d4dbd8ce0b251",
+    "assets/vendor/katex/fonts/KaTeX_AMS-Regular.woff2": "0cdd387c9590a1a9f9794560022dbb59654a7d86f187aa0c81495ad42d3a7308",
+    "assets/vendor/katex/fonts/KaTeX_Caligraphic-Bold.ttf": "07d8e303ce4fc12b4bb54f1004170dd190a1f3db45d400fe68060df3e0897268",
+    "assets/vendor/katex/fonts/KaTeX_Caligraphic-Bold.woff": "1ae6bd7475590e97e7f145a89e09ccde322f7a6bc0b91607b1c8b8ee28290fed",
+    "assets/vendor/katex/fonts/KaTeX_Caligraphic-Bold.woff2": "de7701e42cf1f4cf0b766c03fb27977207eee2f4fd5d76fa82188406da43ea4c",
+    "assets/vendor/katex/fonts/KaTeX_Caligraphic-Regular.ttf": "ed0b74372feefcbb9c0666b2e210da37b7e49fa7fbbf3eeb11db5f693dacfbb7",
+    "assets/vendor/katex/fonts/KaTeX_Caligraphic-Regular.woff": "3398dd02302557a793f2863f88e02d96ce10df2abffa07c8e9fa90775116e65c",
+    "assets/vendor/katex/fonts/KaTeX_Caligraphic-Regular.woff2": "5d53e70ad607c2352162dec9e0923fb54ecdafaccbf604cd8dcf7d00facb989b",
+    "assets/vendor/katex/fonts/KaTeX_Fraktur-Bold.ttf": "9163df9c7122432e6495b4229fa9071cf9ae86a758ae5efc4924ec2e1a6dbce1",
+    "assets/vendor/katex/fonts/KaTeX_Fraktur-Bold.woff": "9be7ceb88004ab8ad124082246fbfcca4091e36385d4ec6ed1df67375dad50fb",
+    "assets/vendor/katex/fonts/KaTeX_Fraktur-Bold.woff2": "74444efd593c005e3f4573b44524704c0af0a937fe911cca9e94068d0d140d3f",
+    "assets/vendor/katex/fonts/KaTeX_Fraktur-Regular.ttf": "1e6f9579e90e2cac37f8f60a597c436e075c114385652b7cbeb0dec0421291b3",
+    "assets/vendor/katex/fonts/KaTeX_Fraktur-Regular.woff": "5e28753be717dac97f559f49bc10be9cf3c124ddcabda6659d11cb68febc6463",
+    "assets/vendor/katex/fonts/KaTeX_Fraktur-Regular.woff2": "51814d270d06ff0255dba0799994fa4d8c84d11f09951d47595f4abb1f3602dc",
+    "assets/vendor/katex/fonts/KaTeX_Main-Bold.ttf": "138ac28d1663b3037e9c5f52371fa5c63d8324f4a38d22cd573e6ea3a3fd0cf8",
+    "assets/vendor/katex/fonts/KaTeX_Main-Bold.woff": "c76c5d696297d51b9cb1639c7da4334f0e7dec81b42b11213b5e25ef671bb822",
+    "assets/vendor/katex/fonts/KaTeX_Main-Bold.woff2": "0f60d1b897938ec918c8ce073092411baf9438f6739465693ff18b0f9d20b021",
+    "assets/vendor/katex/fonts/KaTeX_Main-BoldItalic.ttf": "70ee1f64a20f2048c21940ef46d0144fd215baa953ca69afd1e31e98544f708f",
+    "assets/vendor/katex/fonts/KaTeX_Main-BoldItalic.woff": "a6f7ec0d846ac7ad975adb8959c37ed49b94acbc4ae436db9ce9e20287e4a64c",
+    "assets/vendor/katex/fonts/KaTeX_Main-BoldItalic.woff2": "99cd42a3c072d918f2f44984a807cf7aa16e13545fd0875fc07c6c65f99e715b",
+    "assets/vendor/katex/fonts/KaTeX_Main-Italic.ttf": "0d85ae7cc30f23790a7f1a58c4a112fdca8aae769b6ba11429af1d98b1b6cb3a",
+    "assets/vendor/katex/fonts/KaTeX_Main-Italic.woff": "f1d6ef86f3b11a528bd5185199bd2443ecb2b0dead96d88674b5a2c12be24bdf",
+    "assets/vendor/katex/fonts/KaTeX_Main-Italic.woff2": "97479ca6cce906abc961ecac96faa5f9ca2e61b8e7670d475826bcdee9a7c267",
+    "assets/vendor/katex/fonts/KaTeX_Main-Regular.ttf": "d0332f52868370fd83ae7fa46470f90c8f2eab2fcf12bc4f88080b340c95a830",
+    "assets/vendor/katex/fonts/KaTeX_Main-Regular.woff": "c6368d87e8a1a3a5d337623d83d8dc4b868f242a9ad476237d6f8d1e0f168cdc",
+    "assets/vendor/katex/fonts/KaTeX_Main-Regular.woff2": "c2342cd8b869e01752a9321dc17213fc40d4d04c79688c1d43f2cf316abd7866",
+    "assets/vendor/katex/fonts/KaTeX_Math-BoldItalic.ttf": "f9377ab0271cda59af24bcffbd46a4d0c8a3572ffafdbb38de2ad5ea7b0d5ee5",
+    "assets/vendor/katex/fonts/KaTeX_Math-BoldItalic.woff": "850c0af5c2238497febaf5e461d880bf458c341f42f4f330f1b1ab5698b1998e",
+    "assets/vendor/katex/fonts/KaTeX_Math-BoldItalic.woff2": "dc47344dbb6cb5b655c8460d561f4df5f501b90c804ad3c6cec65fe322351ab1",
+    "assets/vendor/katex/fonts/KaTeX_Math-Italic.ttf": "08ce98e51b04d58945a301e639e02b6998af29fdfd61a7b8afdd07bbfc479d4a",
+    "assets/vendor/katex/fonts/KaTeX_Math-Italic.woff": "8a8d244581371912b8f3f5a23e2437cb2a59cd9bcaebb0346e722c05737a2571",
+    "assets/vendor/katex/fonts/KaTeX_Math-Italic.woff2": "7af58c5ec8f132a2ddde9027c6d7814decce4d3b822a11192a42a20e2e973264",
+    "assets/vendor/katex/fonts/KaTeX_SansSerif-Bold.ttf": "1ece03f79f95277d57dc7f6b435a74e1379b0d46104a8530286b60ff49369ea0",
+    "assets/vendor/katex/fonts/KaTeX_SansSerif-Bold.woff": "ece03cfd83e22c212cdef66feb8442d25a083beb988db3f1883f3f9738d750ba",
+    "assets/vendor/katex/fonts/KaTeX_SansSerif-Bold.woff2": "e99ae51144bf1232efcc1bfe5add36262c6866b0faab24fa75740e1b98577a62",
+    "assets/vendor/katex/fonts/KaTeX_SansSerif-Italic.ttf": "3931dd81faed86ba021bb2bbdc36f5bed9a38d6b4f4077aca59b265aa1b02083",
+    "assets/vendor/katex/fonts/KaTeX_SansSerif-Italic.woff": "91ee67500cc0129aa0ace3ac5c61ff1692102f0f31d02b69347fba35dcb75bf2",
+    "assets/vendor/katex/fonts/KaTeX_SansSerif-Italic.woff2": "00b26ac825e2095056396e0553b8ac26d3f8ad158c3826e28b4c45b385c4714a",
+    "assets/vendor/katex/fonts/KaTeX_SansSerif-Regular.ttf": "f36ea897e19f4a2e571d1e900e4e3710e438deb05a842486045ba0a3e616a4ad",
+    "assets/vendor/katex/fonts/KaTeX_SansSerif-Regular.woff": "11e4dc8a6471ff6d6ee561d53d10fde8f7489e798257ff449c5d37c197435605",
+    "assets/vendor/katex/fonts/KaTeX_SansSerif-Regular.woff2": "68e8c73ef42afd3ccec58bf0fba302cce448938e7fc020a5e31f8a952eee1342",
+    "assets/vendor/katex/fonts/KaTeX_Script-Regular.ttf": "1c67f068fea8bb09bf099c088b1cf64bd27516a6e07f4684344873564bb66a67",
+    "assets/vendor/katex/fonts/KaTeX_Script-Regular.woff": "d96cdf2b3bdd4d64a8fd5f74a4c467f123a8a73931cd435889f08ffaf9bf947a",
+    "assets/vendor/katex/fonts/KaTeX_Script-Regular.woff2": "036d4e95149b69ff9bcc0cd55771efeb25ffa3947293e69acd78d5ac328c684b",
+    "assets/vendor/katex/fonts/KaTeX_Size1-Regular.ttf": "95b6d2f1a50173bfedb8c63e1d1c99b10427d0a4df4201cb44513b226951a22b",
+    "assets/vendor/katex/fonts/KaTeX_Size1-Regular.woff": "c943cc986384f59e86bea5fd7dc50a9c4dfe567a7c05eb40d6790720dead97c9",
+    "assets/vendor/katex/fonts/KaTeX_Size1-Regular.woff2": "6b47c40166b6dbe21a5dfca7718413f2147fd2399be1ba605d8ad39cedf25dfe",
+    "assets/vendor/katex/fonts/KaTeX_Size2-Regular.ttf": "a6b2099fb555c60e3a0db3a08842ebf1d732c6eb4e4bf44913613bed4fc4e39b",
+    "assets/vendor/katex/fonts/KaTeX_Size2-Regular.woff": "2014c523c3210bcc166648c4d4cc57f05b747df07a24277bf71c51e67dc79e3d",
+    "assets/vendor/katex/fonts/KaTeX_Size2-Regular.woff2": "d04c54219f9eaec6d4d4fd42dfb28785975a4794d6b2fc71e566b9cd6db842dd",
+    "assets/vendor/katex/fonts/KaTeX_Size3-Regular.ttf": "500e04d54f0d51666332c9d2089aa803be22aa878eca539e59fa53c6e522b082",
+    "assets/vendor/katex/fonts/KaTeX_Size3-Regular.woff": "6ab6b62e9b62dae2c00dd90f791bd10950be0ecc3490d7d6045f51c2e8fe0949",
+    "assets/vendor/katex/fonts/KaTeX_Size3-Regular.woff2": "73d591271b1604960cb10bb90fee021670af7297017e0e98480b332d11f51995",
+    "assets/vendor/katex/fonts/KaTeX_Size4-Regular.ttf": "c647367d1dd4e162468717d020e1fc0f1dc5c26ebfdffbe55261713bf88c5877",
+    "assets/vendor/katex/fonts/KaTeX_Size4-Regular.woff": "99f9c6750b489c9462bf04900bd3f939df9b829339daaaaa99ef5495cdddea58",
+    "assets/vendor/katex/fonts/KaTeX_Size4-Regular.woff2": "a4af7d414440a1c1790825cfb700cf9cf43b0f2c4b04f0ebc523011ad9853ec0",
+    "assets/vendor/katex/fonts/KaTeX_Typewriter-Regular.ttf": "f01f3e87d9c6a61c0c081ceb577abd864eb00a612f7ac1620dd6915fad2ef5aa",
+    "assets/vendor/katex/fonts/KaTeX_Typewriter-Regular.woff": "e14fed02b1aba7ce9f5afd5844b5d0321b22351febc720e0de8b8723527609f7",
+    "assets/vendor/katex/fonts/KaTeX_Typewriter-Regular.woff2": "71d517d67827787cfabdf186914cc3358eda539e37931941f2b2fd4a21f68c0b",
+    "assets/vendor/katex/LICENSE.txt": "766ccc1f306c885aa45542a9846bbd0a505b27a0374f146778171c2254ce18e3",
+    "assets/vendor/markdown-it-LICENSE.txt": "792c48c5a849a15fdf9e37e8bcf9e6d1dd13b32b46c642a748a0a46a9919d473",
+    "assets/third-party-notices.html": "0511f1bc7a9d66d327596bf5c71b2bf9864ede209d50ee8641b71b5d013c00de"
+  }
+}

@@ -1,0 +1,10 @@
+docs/research-audits/** text eol=lf
+docs/skill-evaluations/** text eol=lf
+docs/methods-sources/** text eol=lf
+docs/releases/** text eol=lf
+docs/assets/** text eol=lf
+docs/report-pages-manifest.json text eol=lf
+docs/index.html text eol=lf
+*.woff -text
+*.woff2 -text
+*.ttf -text

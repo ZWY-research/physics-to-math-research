@@ -1,6 +1,6 @@
 # physics-to-math-research
 
-**Version / 版本：** `0.2.6` · **Status / 状态：** Experimental / 实验性版本
+**Version / 版本：** `0.2.7` · **Status / 状态：** Experimental / 实验性版本
 
 ## Mission / 项目使命
 
@@ -427,3 +427,11 @@ physics-to-math-research/
     │   └── config.yml
     └── PULL_REQUEST_TEMPLATE.md
 ```
+
+## Research Inspirations & Attribution
+
+This project studies publicly available mathematical research and formalization practices from OpenAI Math, Mathlib4 and Physlib. The initial review covers documentation, artifact organization and verification conventions. It has not established independent replication of selected proofs, adoption of their reasoning methods, or measurable improvements to this Skill. These are external research references, not collaborators or endorsers.
+
+[OpenAI Math](https://github.com/openai/math) · [Mathlib4](https://github.com/leanprover-community/mathlib4) · [Physlib](https://github.com/leanprover-community/physlib).
+
+[Sources, licenses and review limits / 来源、许可证与查阅限制](docs/research-method-sources.md) · [Full report reader / 站内全文阅读](https://zwy-research.github.io/physics-to-math-research/skill-evaluations/).
