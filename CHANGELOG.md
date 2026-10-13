@@ -2,6 +2,20 @@
 
 ## Unreleased
 
+## 0.2.7
+
+- Added deterministic, allowlisted full-report pages, Research Audits / Skill Evaluations indexes and stable project-relative navigation in the existing Observatory.
+- Added build-time KaTeX mathematics, local CSS/fonts and retained MIT notices; pinned markdown-it/KaTeX with stale-output and content checks and fixed generated-output LF endings for Windows.
+- Added bilingual README attribution and a source record for reviewed OpenAI Math, Mathlib4 and Physlib materials, including licenses, commits and untested limits.
+- Recorded the actual v0.2.6 evidence merge; original reports and Regression evidence remain unchanged. Reviewed Papers remains 1; engineering PASS is not independent human adjudication or incremental gain.
+- Core/OAC and other runtime rules remain unchanged; SKILL changes only version/title. No new mathematical method integration, model tests or research-gain evidence.
+
+- 在既有看板新增白名单完整报告静态页面、分类索引和稳定站内导航。
+- 公式构建时渲染，CSS/字体本地提供并保留 MIT 许可；固定依赖并检查正文完整性与过期输出。
+- README 双语登记三项外部数学研究来源，记录实际资料、许可证、commit 和未验证边界。
+- 记录 v0.2.6 实际合并，原报告与 Regression 证据不变；已审查论文仍为 1，工程 PASS 不等于人类独立裁决或科研增量优势。
+- Core/OAC 及其余运行规则不变，SKILL 仅版本/标题更新；未集成新数学方法、未运行模型测试、未产生新增量科研证据。
+
 ## 0.2.6
 
 - Evidence publication candidate: ten isolated v0.2.5 research-delivery regression runs, preliminary engineering assessment, observable traces and file hashes.

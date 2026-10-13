@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Methods &amp; Sources / 方法与来源 · Research Observatory</title><link rel="stylesheet" href="../observatory.css"><link rel="stylesheet" href="../assets/report-reading.css"><link rel="stylesheet" href="../assets/vendor/katex/katex.min.css"></head><body><a class="skip-link" href="#report">跳至正文 / Skip to content</a><header class="site-header"><div class="container header-inner"><a class="brand" href="../index.html">Research Observatory<span lang="zh-CN">科研进展与证据看板</span></a><nav><a href="../research-audits/">Research Audits / 研究审查</a><a href="../skill-evaluations/">Skill Evaluations / 评估</a><a href="../methods-sources/">Methods &amp; Sources / 方法与来源</a></nav></div></header><main class="container reading" id="report"><header class="report-header"><p class="eyebrow">methods-sources</p><h1>Methods &amp; Sources / 方法与来源</h1><p class="review-badge">Reviewed public materials; method adoption under evaluation; none Adopted</p><p>OpenAI Math, Mathlib4 and Physlib: attribution, reviewed materials, licenses and untested limits. No mathematical-method integration.</p><p><a href="https://github.com/ZWY-research/physics-to-math-research/blob/main/docs/research-method-sources.md">Original Markdown / GitHub 原文 ↗</a> · <a href="./">返回分类目录 / Back to index</a></p></header><details class="contents"><summary>目录 / Contents</summary><ul><li><a href="#research-method-sources-研究参考与方法来源">Research Method Sources / 研究参考与方法来源</a></li><li><a href="#openai-math">OpenAI Math</a></li><li><a href="#实际查阅范围">实际查阅范围</a></li><li><a href="#候选价值及-coreoac-关系">候选价值及 Core/OAC 关系</a></li><li><a href="#未完成事项与不可直接迁移内容">未完成事项与不可直接迁移内容</a></li><li><a href="#未来验证要求">未来验证要求</a></li><li><a href="#mathlib4">Mathlib4</a></li><li><a href="#实际查阅范围-1">实际查阅范围</a></li><li><a href="#候选价值及-coreoac-关系-1">候选价值及 Core/OAC 关系</a></li><li><a href="#未完成事项与不可直接迁移内容-1">未完成事项与不可直接迁移内容</a></li><li><a href="#未来验证要求-1">未来验证要求</a></li><li><a href="#physlib">Physlib</a></li><li><a href="#实际查阅范围-2">实际查阅范围</a></li><li><a href="#候选价值及-coreoac-关系-2">候选价值及 Core/OAC 关系</a></li><li><a href="#未完成事项与不可直接迁移内容-2">未完成事项与不可直接迁移内容</a></li><li><a href="#未来验证要求-2">未来验证要求</a></li><li><a href="#网站构建依赖与许可与科研方法来源分开">网站构建依赖与许可（与科研方法来源分开）</a></li></ul></details><article data-source="docs/research-method-sources.md" data-source-sha256="6be214c2c6bcb736647096dcd6a374416e7b4544cbe49d07e9d47c8b494ebf7d"><h1 id="research-method-sources-研究参考与方法来源">Research Method Sources / 研究参考与方法来源</h1>
+<p>查阅日期：2026-10-13。此记录仅登记公开资料研究与可能的组织价值，不增加 SKILL.md 规则，不证明方法已有效吸收。三项均为 <strong>Reviewed / 已查阅</strong>，具体方法的迁移为 <strong>Under evaluation / 待评估</strong>；没有 <strong>Adopted / 已采用</strong> 项。<strong>Rejected / 不采用</strong>仅表示明确否定的具体方案，目前无该项裁决。</p>
+<p>README 的简要声明与本页一致：公开研究来源不构成合作、赞助、技术支持或认可关系。不用 Stars、知名度、形式化数量或形式证明来替代数学语义与物理适用性审查。</p>
+<h2 id="openai-math">OpenAI Math</h2>
+<ul>
+<li>官方仓库：<a href="https://github.com/openai/math">openai/math</a>。</li>
+<li>查阅 commit：<code>1581d4cbdd69a0faf34b2089614fe2a814316a6a</code>；查阅日期：2026-10-13。</li>
+<li>正式许可证：<strong>Apache-2.0</strong>，已读取该 commit 的 LICENSE；归属保留为官方项目及其贡献者（Physlib 的社区引用信息见 README）。这是来源事实，本轮不复制其源码或大段原创文档，也不重新许可第三方材料。</li>
+<li>资料状态：<strong>Reviewed / 已查阅</strong>。</li>
+<li>方法采用状态：<strong>Under evaluation / 待评估；Not adopted / 未采用</strong>。</li>
+</ul>
+<h3 id="实际查阅范围">实际查阅范围</h3>
+<p>README（成果 family/学科分类、手稿与证明产物入口、形式化覆盖和不确定性、简化推理摘要与证明材料的区别）；history.md（修订/撤稿与保留旧版）；lean/README.md 和 ComparatorChallenges/README.md（验证配置及支持结果不等于主要定理）；CONTENTS.md 的目录头和开头示例（仅浏览组织结构，未逐篇审定）。</p>
+<p>固定版本来源：</p>
+<ul>
+<li><a href="https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/README.md">README.md</a></li>
+<li><a href="https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/LICENSE">LICENSE</a></li>
+<li><a href="https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/history.md">history.md</a></li>
+<li><a href="https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/README.md">lean/README.md</a></li>
+<li><a href="https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/CONTENTS.md">CONTENTS.md</a></li>
+<li><a href="https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/ComparatorChallenges/README.md">lean/ComparatorChallenges/README.md</a></li>
+</ul>
+<h3 id="候选价值及-coreoac-关系">候选价值及 Core/OAC 关系</h3>
+<p>family 分类、产物映射、证明状态和修订追踪可帮助本项目维护可追溯档案。正式证明状态与数学/物理适用性不能混同。 与现有 Core 2 的依据、Core 4 的关键依赖及 OAC 的身份/语义/状态审计在概念上有可比较处；这是本项目的候选解释，不表示这些规则来源于该项目，也不构成新规则或已经验证的采用关系。</p>
+<h3 id="未完成事项与不可直接迁移内容">未完成事项与不可直接迁移内容</h3>
+<p>未独立复现任何选定定理；未逐篇核查其手稿或完整推理摘要，不将简化摘要当作完整证明。 形式化工程工具、证明自动化策略、庞大依赖、治理规则及公开推理材料不能不经适用性论证直接迁移为 Skill 的执行要求。没有执行新行为测试或科研增量比较。</p>
+<h3 id="未来验证要求">未来验证要求</h3>
+<p>如未来申请采用，先由独立数学审查确定具体可迁移目标，固定一个适合本任务的证明或组织机制，区分形式命题与科学语义，再预注册相应 Regression/对照及成功标准。未经该审查与授权，不安装工具、不改 Skill、不宣称能力增强。</p>
+<h2 id="mathlib4">Mathlib4</h2>
+<ul>
+<li>官方仓库：<a href="https://github.com/leanprover-community/mathlib4">leanprover-community/mathlib4</a>。</li>
+<li>查阅 commit：<code>105b9b1ce126e77b467aac6f6ba36b510ac57368</code>；查阅日期：2026-10-13。</li>
+<li>正式许可证：<strong>Apache-2.0</strong>，已读取该 commit 的 LICENSE；归属保留为官方项目及其贡献者（Physlib 的社区引用信息见 README）。这是来源事实，本轮不复制其源码或大段原创文档，也不重新许可第三方材料。</li>
+<li>资料状态：<strong>Reviewed / 已查阅</strong>。</li>
+<li>方法采用状态：<strong>Under evaluation / 待评估；Not adopted / 未采用</strong>。</li>
+</ul>
+<h3 id="实际查阅范围-1">实际查阅范围</h3>
+<p>README 的数学与程序基础设施、源文件生成文档、模块构建和贡献约定入口；根目录 Mathlib/Counterexamples/Archive 等结构清单；正式 LICENSE。未运行源码、下载库或完整查阅链接中的所有指南。</p>
+<p>固定版本来源：</p>
+<ul>
+<li><a href="https://github.com/leanprover-community/mathlib4/blob/105b9b1ce126e77b467aac6f6ba36b510ac57368/README.md">README.md</a></li>
+<li><a href="https://github.com/leanprover-community/mathlib4/blob/105b9b1ce126e77b467aac6f6ba36b510ac57368/LICENSE">LICENSE</a></li>
+</ul>
+<h3 id="候选价值及-coreoac-关系-1">候选价值及 Core/OAC 关系</h3>
+<p>可复用定义与引理、明确模块依赖和从源码生成文档的安排，可作为科研产物组织的候选参考。机器检查的是声明的形式命题，不能直接保证与科研语义的对应。 与现有 Core 2 的依据、Core 4 的关键依赖及 OAC 的身份/语义/状态审计在概念上有可比较处；这是本项目的候选解释，不表示这些规则来源于该项目，也不构成新规则或已经验证的采用关系。</p>
+<h3 id="未完成事项与不可直接迁移内容-1">未完成事项与不可直接迁移内容</h3>
+<p>未安装 Lean/Mathlib，未编译任何证明，未建立 Skill 与 Lean 的集成；尚无一般科研表现增量证据。 形式化工程工具、证明自动化策略、庞大依赖、治理规则及公开推理材料不能不经适用性论证直接迁移为 Skill 的执行要求。没有执行新行为测试或科研增量比较。</p>
+<h3 id="未来验证要求-1">未来验证要求</h3>
+<p>如未来申请采用，先由独立数学审查确定具体可迁移目标，固定一个适合本任务的证明或组织机制，区分形式命题与科学语义，再预注册相应 Regression/对照及成功标准。未经该审查与授权，不安装工具、不改 Skill、不宣称能力增强。</p>
+<h2 id="physlib">Physlib</h2>
+<ul>
+<li>官方仓库：<a href="https://github.com/leanprover-community/physlib">leanprover-community/physlib</a>。</li>
+<li>查阅 commit：<code>89d99e898104b7ffd93df322e0ab1ea999645116</code>；查阅日期：2026-10-13。</li>
+<li>正式许可证：<strong>Apache-2.0</strong>，已读取该 commit 的 LICENSE；归属保留为官方项目及其贡献者（Physlib 的社区引用信息见 README）。这是来源事实，本轮不复制其源码或大段原创文档，也不重新许可第三方材料。</li>
+<li>资料状态：<strong>Reviewed / 已查阅</strong>。</li>
+<li>方法采用状态：<strong>Under evaluation / 待评估；Not adopted / 未采用</strong>。</li>
+</ul>
+<h3 id="实际查阅范围-2">实际查阅范围</h3>
+<p>README 的物理结果数字化、物理导向定义/模块文档、Physlib 与 PhyslibAlpha 审查区别；docs/ReviewGuidelines.md 的定义/引理质量、Mathlib 复用、模块范围、文档和审查组织；正式 LICENSE。</p>
+<p>固定版本来源：</p>
+<ul>
+<li><a href="https://github.com/leanprover-community/physlib/blob/89d99e898104b7ffd93df322e0ab1ea999645116/README.md">README.md</a></li>
+<li><a href="https://github.com/leanprover-community/physlib/blob/89d99e898104b7ffd93df322e0ab1ea999645116/LICENSE">LICENSE</a></li>
+<li><a href="https://github.com/leanprover-community/physlib/blob/89d99e898104b7ffd93df322e0ab1ea999645116/docs/ReviewGuidelines.md">docs/ReviewGuidelines.md</a></li>
+</ul>
+<h3 id="候选价值及-coreoac-关系-2">候选价值及 Core/OAC 关系</h3>
+<p>物理语义文档与分层审查状态，可帮助区分本项目的正式审查与实验记录。Lean 形式证明和经验适用性审查各有责任，不能互相替代。 与现有 Core 2 的依据、Core 4 的关键依赖及 OAC 的身份/语义/状态审计在概念上有可比较处；这是本项目的候选解释，不表示这些规则来源于该项目，也不构成新规则或已经验证的采用关系。</p>
+<h3 id="未完成事项与不可直接迁移内容-2">未完成事项与不可直接迁移内容</h3>
+<p>未复制治理模型，未编译证明，也未检验其流程是否提高本 Skill 的科研行为。 形式化工程工具、证明自动化策略、庞大依赖、治理规则及公开推理材料不能不经适用性论证直接迁移为 Skill 的执行要求。没有执行新行为测试或科研增量比较。</p>
+<h3 id="未来验证要求-2">未来验证要求</h3>
+<p>如未来申请采用，先由独立数学审查确定具体可迁移目标，固定一个适合本任务的证明或组织机制，区分形式命题与科学语义，再预注册相应 Regression/对照及成功标准。未经该审查与授权，不安装工具、不改 Skill、不宣称能力增强。</p>
+<h2 id="网站构建依赖与许可与科研方法来源分开">网站构建依赖与许可（与科研方法来源分开）</h2>
+<p>静态全文生成使用 markdown-it <strong>14.1.0</strong>（MIT）处理 Markdown，使用 KaTeX <strong>0.16.22</strong>（MIT）在构建时输出 HTML/MathML。两者为工程依赖，<strong>不是数学研究方法集成</strong>。标准库没有可可靠保留表格、嵌套列表、代码和复杂 LaTeX 的完整渲染器，故采用这两个小型、固定版本库；没有大型网站框架。</p>
+<p><a href="https://github.com/markdown-it/markdown-it/tree/14.1.0">markdown-it 官方源码</a>与<a href="https://github.com/KaTeX/KaTeX/tree/v0.16.22">KaTeX 官方源码</a>。package-lock.json 固定传递依赖与 integrity。KaTeX 数学标记、CSS 和字体由本站提供，保留 Khan Academy 及贡献者 MIT 授权；markdown-it 的 MIT 授权亦保留于站内 third-party notices。本站不用第三方 CDN、正文运行时 fetch 或 GitHub iframe；没有复制三个数学项目的源码，也没有重新发布第三方论文全文。</p>
+</article><p class="source-note">正文来自白名单公开 Markdown；公式静态渲染。本站阅读无需打开 GitHub，原始证据链接仍可指向外部。 / Full allowlisted source, statically rendered; no runtime document fetching.</p></main><footer class="site-footer"><div class="container footer-inner"><a href="../index.html">返回 Observatory</a><span>v0.2.7 · <a href="../assets/third-party-notices.html">Third-party licenses / 依赖许可证</a></span></div></footer></body></html>

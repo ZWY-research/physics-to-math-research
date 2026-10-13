@@ -16,6 +16,9 @@
         <a href="#overview">Overview<span lang="zh-CN">概览</span></a>
         <a href="#reviewed-papers">Reviewed Papers<span lang="zh-CN">已审查论文</span></a>
         <a href="#evidence">Evidence<span lang="zh-CN">证据</span></a>
+        <a href="./research-audits/">Read Audits<span lang="zh-CN">完整审查</span></a>
+        <a href="./skill-evaluations/">Read Evaluations<span lang="zh-CN">完整评估</span></a>
+        <a href="./methods-sources/">Methods &amp; Sources<span lang="zh-CN">方法与来源</span></a>
         <a href="#contribute">Contribute<span lang="zh-CN">参与</span></a>
       </nav>
     </div>
@@ -73,7 +76,9 @@
           <p>Under specified assumptions, an exponential work average becomes a ratio of partition functions through canonical weighting and a measure-preserving transformation.</p><p lang="zh-CN">在明确假设下，初始正则权重与保测度变换，使指数功平均转化为配分函数之比。</p>
           <p class="scope-note">The audit covers selected claims, not the entire paper or all experiments. It is not evidence that the Skill independently solved an unguided research problem.<span lang="zh-CN">审查只覆盖指定命题，不代表全文或全部实验验证；也不说明 Skill 自主解决了一个未经指导的科研问题。</span></p>
           <div class="link-row">
-            <a href="https://github.com/ZWY-research/physics-to-math-research/blob/main/literature-audits/physics/statistical-mechanics/1997-jarzynski-nonequilibrium-free-energy.md">Read audit / 阅读报告 →</a>
+            <a href="./research-audits/1997-jarzynski-nonequilibrium-free-energy/">Read full audit / 站内完整报告 →</a>
+            <a href="https://github.com/ZWY-research/physics-to-math-research/blob/main/literature-audits/physics/statistical-mechanics/1997-jarzynski-nonequilibrium-free-energy.md">Original Markdown / 原始 Markdown ↗</a>
+            <a href="./research-audits/">Research Audits / 站内审查目录 →</a>
             <a href="https://doi.org/10.1103/PhysRevLett.78.2690">Original paper / 原论文 DOI ↗</a>
             <a href="https://github.com/ZWY-research/physics-to-math-research/blob/main/literature-audits/README.md">All audits / 全部审查</a>
           </div>
@@ -93,7 +98,13 @@
           <p class="status" data-comparison-status="not-established">Reliable incremental benefit not established<span lang="zh-CN">可靠增量收益尚未建立</span></p>
           <p>Historical controlled evaluations are documented; they do not yet support a reliable, generalizable improvement claim.</p><p lang="zh-CN">历史对照测试已有记录，但尚不能提供可靠、可泛化的能力改进结论。</p>
           <a href="https://github.com/ZWY-research/physics-to-math-research/blob/main/evaluation-reports/README.md">Evaluation records / 评估档案 →</a>
-          <p><a href="https://github.com/ZWY-research/physics-to-math-research/blob/main/evaluation-reports/v0.2.5-research-delivery-smoke.md">v0.2.5 behavior Regression / 行为 Regression →</a><br>Ten isolated runs; preliminary assessment pending human review. No incremental research gain established.<span lang="zh-CN">十个独立分支，工程初评待人工审查；未建立科研增量优势。</span></p>
+
+        </section>
+        <section class="evidence-panel" data-evidence-kind="behavior-regression">
+          <h3>Behavior Regression<span lang="zh-CN">交付行为回归</span></h3>
+          <p>v0.2.5: 10 independent branches; engineering PASS 10 / FAIL 0 / INCONCLUSIVE 0 / NOT RUN 0. Not a research-gain comparison.<span lang="zh-CN">十个独立分支的工程初评；没有 OFF / Short Prompt 对照，不证明科研增量。</span></p>
+          <a href="./skill-evaluations/v0.2.5-research-delivery-smoke/">Full Regression report / 站内完整报告 →</a>
+          <p><a href="./skill-evaluations/">All Skill Evaluations / 站内评估目录 →</a></p>
         </section>
         <section class="evidence-panel">
           <h3>Open Questions<span lang="zh-CN">开放问题</span></h3>
@@ -122,6 +133,11 @@
       <a href="https://github.com/ZWY-research/physics-to-math-research/blob/main/SKILL.md">Canonical Skill / 运行规范 →</a>
     </section>
 
+    <section class="purpose-section" aria-labelledby="sources-title">
+      <h2 id="sources-title">Methods &amp; Sources / 方法与来源</h2>
+      <p>Public materials from OpenAI Math, Mathlib4 and Physlib reviewed; method adoption remains under evaluation. No proof replication, method integration or measured Skill gain established.<span lang="zh-CN">已初步查阅公开资料，方法迁移待评估；未完成证明复现、方法集成或科研增量验证，不代表合作或背书。</span></p>
+      <a href="./methods-sources/">Read source records and limits / 阅读来源记录与限制 →</a>
+    </section>
     <section id="contribute" class="community-section" aria-labelledby="community-title">
       <div class="section-heading"><p class="eyebrow">Voluntary participation / 自愿参与</p><h2 id="community-title">Community Participation <span lang="zh-CN">社区参与</span></h2></div>
       <p>Share physical-to-mathematical cases, corrections to existing audits, counterexamples, unresolved propositions or reproducible Skill failures. Authors are welcome to join voluntarily; no author participation or endorsement is implied.</p><p lang="zh-CN">欢迎提供物理—数学转换案例、修正已有审查、提交反例或未解决的命题，以及可复现的 Skill 失败案例。欢迎原作者自愿参与，不暗示作者已经参加、赞同或认可。</p>
@@ -136,7 +152,7 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <p>Evidence-first · Reproducible records · No inflated capability claims<span lang="zh-CN">证据优先 · 可复现记录 · 不夸大能力</span></p>
-      <div><span data-project-version="0.2.6">v0.2.6</span> · <a href="https://github.com/ZWY-research/physics-to-math-research">GitHub project / 项目首页 ↗</a></div>
+      <div><span data-project-version="0.2.7">v0.2.7</span> · <a href="https://github.com/ZWY-research/physics-to-math-research">GitHub project / 项目首页 ↗</a></div>
     </div>
   </footer>
 </body>
