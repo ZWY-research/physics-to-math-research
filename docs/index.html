@@ -15,6 +15,7 @@
       <nav aria-label="Primary navigation / 主导航">
         <a href="#overview">Overview<span lang="zh-CN">概览</span></a>
         <a href="#reviewed-papers">Reviewed Papers<span lang="zh-CN">已审查论文</span></a>
+        <a href="#research-in-progress">In Progress<span lang="zh-CN">进行中案例</span></a>
         <a href="#evidence">Evidence<span lang="zh-CN">证据</span></a>
         <a href="./research-audits/">Read Audits<span lang="zh-CN">完整审查</span></a>
         <a href="./skill-evaluations/">Read Evaluations<span lang="zh-CN">完整评估</span></a>
@@ -118,6 +119,29 @@
       </aside>
     </div>
 
+    <section id="research-in-progress" class="purpose-section" aria-labelledby="progress-title">
+      <div class="section-heading"><p class="eyebrow">Source evidence &amp; conditional analysis / 原文证据与条件性分析</p><h2 id="progress-title">Research in Progress <span lang="zh-CN">进行中科研案例</span></h2></div>
+      <article class="paper-card">
+        <p class="paper-author">Angioni et al. · 2012</p>
+        <h3>Off-diagonal particle and toroidal momentum transport: a survey of experimental, theoretical and modelling aspects</h3>
+        <p class="journal">Nuclear Fusion 52, 114003 (2012)</p>
+        <p class="review-badge">Source evidence reviewed; conditional mathematical analysis recorded; Skill ON study pending.<span lang="zh-CN">已完成原文证据提取及限定范围数学评议；Skill ON 独立数学研究尚未执行。</span></p>
+        <h4>Physical question <span lang="zh-CN">物理问题</span></h4>
+        <p>Can observations separately identify viscosity, pinch and residual stress contributions to momentum transport?</p><p lang="zh-CN">动量输运的粘性、pinch 与 residual stress 贡献能否由观测分别识别？</p>
+        <h4>Source evidence &amp; attribution <span lang="zh-CN">原文证据与贡献来源</span></h4>
+        <p>Codex Stage A extracted five physical evidence items and five mathematical relations from the PDF. Some normalization and parameter definitions remain unresolved. The subsequent ChatGPT review accepted Stage A with limitations; it did not recheck the original PDF pages.</p><p lang="zh-CN">PDF 证据提取来自 Codex 阶段 A：五项物理证据、五项数学关系，部分归一化和参数定义尚待核实。后续 ChatGPT 评议对阶段 A 的内容判断为 ACCEPT WITH LIMITATIONS，未重新核查原始 PDF 页面。</p>
+        <h4>Conditional mathematical results <span lang="zh-CN">条件性数学结果</span></h4>
+        <p>The subsequent ChatGPT review records full-column-rank identifiability under explicit shared-parameter assumptions and least-squares parameter bias from an omitted residual term. The bias may vanish and has no fixed direction. These are conditional linear-algebra results, not Skill ON research achievements.</p><p lang="zh-CN">后续 ChatGPT 评议在明确共享参数假设下给出简化线性逆问题的满列秩可识别条件，以及遗漏 residual stress 的最小二乘参数偏差。偏差可能为零，方向不必固定；属于条件性线性代数结果，不是 Skill ON 科研成果。</p>
+        <p class="scope-note">No microscopic turbulent mechanism or complete original experimental dataset has been independently validated. Effective-parameter identification does not identify a unique mechanism. Skill ON independent research has not been performed; Skill incremental gain is not established. This case does not increase Reviewed Papers.<span lang="zh-CN">未证明真实湍流微观机制，也未独立核实全部原始实验数据；有效参数识别不等于唯一机制识别。Skill ON 独立研究未执行，科研能力增量尚未证明；本案例不增加正式审查论文数。</span></p>
+        <p><strong>Next / 下一步：</strong> Use frozen Skill v0.2.7 to independently study C1 and submit actual mathematical results for independent review.<span lang="zh-CN">使用冻结 v0.2.7 Skill 独立研究 C1，并将实际数学成果交给独立审查。</span></p>
+        <div class="link-row">
+          <a href="https://doi.org/10.1088/0029-5515/52/11/114003">Original paper / 原论文 DOI ↗</a>
+          <a href="https://github.com/ZWY-research/physics-to-math-research/blob/main/cases/angioni-2012/source-evidence.md">Codex Stage A / 原文证据 ↗</a>
+          <a href="https://github.com/ZWY-research/physics-to-math-research/blob/main/cases/angioni-2012/2026-10-15-angioni-2012-source-evidence-review.md">ChatGPT review / 条件性数学评议 ↗</a>
+        </div>
+      </article>
+    </section>
+
     <section class="purpose-section" aria-labelledby="purpose-title">
       <div class="section-heading"><p class="eyebrow">Research objective / 科研目标</p><h2 id="purpose-title">What This Skill Does <span lang="zh-CN">这个 Skill 做什么</span></h2></div>
       <ol class="flow research-flow">
@@ -152,7 +176,7 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <p>Evidence-first · Reproducible records · No inflated capability claims<span lang="zh-CN">证据优先 · 可复现记录 · 不夸大能力</span></p>
-      <div><span data-project-version="0.2.7">v0.2.7</span> · <a href="https://github.com/ZWY-research/physics-to-math-research">GitHub project / 项目首页 ↗</a></div>
+      <div><span data-project-version="0.2.8">v0.2.8</span> · <a href="https://github.com/ZWY-research/physics-to-math-research">GitHub project / 项目首页 ↗</a></div>
     </div>
   </footer>
 </body>

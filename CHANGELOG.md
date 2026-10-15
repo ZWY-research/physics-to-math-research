@@ -2,6 +2,18 @@
 
 ## Unreleased
 
+## 0.2.8
+
+- Archived Angioni (2012) source evidence extracted by Codex Stage A, with local PDF paths redacted and extraction limitations retained.
+- Published the subsequent ChatGPT review and conditional inverse-problem identifiability and omitted-residual-stress results; these are not Skill ON achievements.
+- Added Research in Progress to the Observatory. Reviewed Papers remains 1; independent Skill ON research is pending and incremental gain is not established.
+- Core/OAC and all runtime rules remain unchanged; only Skill version/title changed. No new model comparisons or research-gain evidence.
+
+- 归档 Codex 阶段 A 的 Angioni (2012) 原文证据，脱敏本地 PDF 路径并保留提取局限。
+- 发布后续 ChatGPT 评议、条件性逆问题可识别性与遗漏残余应力偏差结果；不将这些成果归功于 Skill ON。
+- 看板新增进行中科研案例；已审查论文仍为 1，Skill ON 独立研究尚未执行，科研增量尚未证明。
+- Core/OAC 及其余运行规则不变，Skill 仅版本和标题变化；无新模型对照或科研增量证据。
+
 ## 0.2.7
 
 - Added deterministic, allowlisted full-report pages, Research Audits / Skill Evaluations indexes and stable project-relative navigation in the existing Observatory.

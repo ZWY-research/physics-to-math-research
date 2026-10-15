@@ -1,6 +1,6 @@
 # physics-to-math-research
 
-**Version / 版本：** `0.2.7` · **Status / 状态：** Experimental / 实验性版本
+**Version / 版本：** `0.2.8` · **Status / 状态：** Experimental / 实验性版本
 
 ## Mission / 项目使命
 
@@ -41,6 +41,8 @@ An audit is not a pass/fail verdict on the paper or its authors. Limited scope, 
 The count covers distinct papers accepted through independent, limited-scope review; it does not verify every conclusion or establish incremental Skill capability.
 
 数量仅统计完成限定范围独立审查的不同论文，不代表全部结论已验证，也不构成 Skill 增量能力证明。
+
+Research in progress: **Angioni et al. (2012)** — [Codex Stage A source evidence](cases/angioni-2012/source-evidence.md) and [subsequent ChatGPT mathematical review](cases/angioni-2012/2026-10-15-angioni-2012-source-evidence-review.md). Source review accepted with limitations; conditional inverse-problem results are from ChatGPT, not Skill ON. Independent Skill ON research is pending; incremental gain is not established.
 
 ## From Science to Mathematics / 从科学问题到数学成果
 
