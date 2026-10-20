@@ -1,6 +1,6 @@
 # physics-to-math-research
 
-**版本：** `0.2.9` · **状态：** 实验性版本
+**版本：** `0.2.10` · **状态：** 实验性版本
 
 ## 项目使命
 
@@ -27,6 +27,8 @@
 数量仅统计完成限定范围独立审查的不同论文，不代表全部结论已验证，也不构成 Skill 增量能力证明。
 
 进行中科研案例：**Angioni et al. (2012)** — [阶段 A 原文证据](cases/angioni-2012/source-evidence.md)与[初步 ChatGPT 评议](cases/angioni-2012/2026-10-15-angioni-2012-source-evidence-review.md)保留原有历史归属。现已归档 [C1：动量输运可识别性](cases/angioni-2012/c1-skill-on-v0.2.7-research-result.md)、[C2：零通量密度梯度自洽性](cases/angioni-2012/c2-skill-on-v0.2.8-research-result.md)及 [ChatGPT 条件性数学审查结论](cases/angioni-2012/c1-c2-mathematical-review.md)：C1 附限制接受，C2 接受。两项研究均显式读取冻结 Git blob；C1 会话曾接触参考评议。没有可信 Skill OFF 对照，增量能力尚未证明。成果限于条件性数学分析，不是新物理机制或全文验证；Reviewed Papers 仍为 1。
+
+进行中科研案例：**Fable et al. (2010)** — [阶段 A 原文证据](cases/fable-2010/source-evidence.md)、[完整谱级条件响应报告](cases/fable-2010/skill-on-p1-v0.2.9/research-result.md)及 [ChatGPT 数学审查](cases/fable-2010/mathematical-review.md)：**附限制接受**。研究显式读取冻结 Skill v0.2.9 的 Git blob；实际 gyrokinetic 响应排序与 Skill 增量能力均尚未建立。Reviewed Papers 仍为 1。
 
 ## 从科学问题到数学成果
 

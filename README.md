@@ -1,6 +1,6 @@
 # physics-to-math-research
 
-**Version / 版本：** `0.2.9` · **Status / 状态：** Experimental / 实验性版本
+**Version / 版本：** `0.2.10` · **Status / 状态：** Experimental / 实验性版本
 
 ## Mission / 项目使命
 
@@ -43,6 +43,8 @@ The count covers distinct papers accepted through independent, limited-scope rev
 数量仅统计完成限定范围独立审查的不同论文，不代表全部结论已验证，也不构成 Skill 增量能力证明。
 
 Research in progress: **Angioni et al. (2012)** — [Stage A source evidence](cases/angioni-2012/source-evidence.md) and [initial ChatGPT review](cases/angioni-2012/2026-10-15-angioni-2012-source-evidence-review.md) retain their historical attribution. [C1: momentum-transport identifiability](cases/angioni-2012/c1-skill-on-v0.2.7-research-result.md) and [C2: zero-flux density-gradient self-consistency](cases/angioni-2012/c2-skill-on-v0.2.8-research-result.md) are now archived with [ChatGPT conditional mathematical review decisions](cases/angioni-2012/c1-c2-mathematical-review.md): C1 accepted with limitations; C2 accepted. Both read frozen Skill texts through explicit Git blobs; C1 had prior reference-review exposure. No credible Skill OFF control or incremental gain is established. These are conditional mathematical results, not new physical mechanisms or full-paper validation; Reviewed Papers remains 1.
+
+Research in progress: **Fable et al. (2010)** — [Stage A source evidence](cases/fable-2010/source-evidence.md), [complete spectral-response report](cases/fable-2010/skill-on-p1-v0.2.9/research-result.md), and [ChatGPT mathematical review](cases/fable-2010/mathematical-review.md): **ACCEPT WITH LIMITATIONS**. Explicit Git-blob loading of frozen Skill v0.2.9; actual gyrokinetic response ordering and incremental Skill gain are NOT ESTABLISHED. Reviewed Papers remains 1.
 
 ## From Science to Mathematics / 从科学问题到数学成果
 

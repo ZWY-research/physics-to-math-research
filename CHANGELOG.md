@@ -2,6 +2,18 @@
 
 ## Unreleased
 
+## 0.2.10 — Fable 2010 spectral-response research archive
+
+- Archived the Fable (2010) Stage A source evidence and complete Stage B spectral conditional-response report, preserving frozen v0.2.9 provenance, formulas, proofs and limitations; public copies only redact local machine paths.
+- Recorded the completed ChatGPT mathematical-content review: ACCEPT WITH LIMITATIONS. Updated Research Observatory with the Fable case and four source/report/review links; Reviewed Papers remains 1.
+- Synchronized release metadata and existing static outputs. Core/OAC and every runtime rule remain unchanged from v0.2.9; SKILL changes only version metadata and title.
+- No new Skill control evidence, incremental capability gain or actual gyrokinetic spectral validation. No new simulations or HL-3 data reanalysis. SkillHub synchronization is left to the user manually.
+
+- 归档 Fable (2010) 阶段 A 原文证据与完整阶段 B 谱级条件响应报告，保留冻结 v0.2.9 来源、公式、证明及限制；公开副本仅脱敏本地机器路径。
+- 记录已完成的 ChatGPT 数学内容审查：附限制接受；Observatory 新增 Fable 案例及四个原文/报告/审查链接，Reviewed Papers 仍为 1。
+- 同步发布元数据和既有静态页面；Core/OAC 及全部运行规则与 v0.2.9 一致，SKILL 只改版本元数据及标题。
+- 没有新的 Skill 对照能力证据、增量优势或实际 gyrokinetic 谱验证；未运行新模拟或重分析 HL-3 数据。SkillHub 由用户手动同步。
+
 ## 0.2.9 — Research results and review records update
 
 - Archived complete Angioni C1 (frozen Skill v0.2.7) and C2 (v0.2.8) mathematical reports, preserving explicit Git-blob loading, artifact hashes, assumptions, proofs, counterexamples and limitations; local absolute paths in the public C2 copy are redacted.
