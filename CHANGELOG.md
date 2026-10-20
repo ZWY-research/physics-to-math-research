@@ -2,6 +2,20 @@
 
 ## Unreleased
 
+## 0.2.11 — Mathematical research delivery and optional validation
+
+- Clarified mathematical research delivery and actionable research routes, including required inputs/assumptions and outcome discriminators.
+- Separated authorized mathematical verification from optional physical validation; scientific simulations and empirical validation are outside the Skill's execution responsibility.
+- Added supporting attribution guidance for author-suggested future methods and tools; updated Fable review attribution without changing Stage A/B reports or mathematical conclusions.
+- Clarified README/Observatory mission and added three focused regression specifications: **Specified — Not Yet Run**, not behavioral passes.
+- Core/OAC/Prohibited Defaults unchanged. No new claim of demonstrated incremental Skill advantage. SkillHub synchronization remains manual.
+
+- 澄清数学交付、可执行后续路径及所需输入/假设和结果判别条件。
+- 区分已授权数学核查与可选物理验证；不承担科学模拟或经验验证的执行。
+- 补充作者后续方法/工具的来源归属说明与 Fable 审查记录，未修改阶段 A/B 或数学结论。
+- 更新 README/首页使命，新增三个聚焦回归规格，状态为已制定、尚未运行，不记为行为通过。
+- Core/OAC/十五项 Prohibited Defaults 原文不变；没有新增已证实的 Skill 增量优势，SkillHub 由用户手动同步。
+
 ## 0.2.10 — Fable 2010 spectral-response research archive
 
 - Archived the Fable (2010) Stage A source evidence and complete Stage B spectral conditional-response report, preserving frozen v0.2.9 provenance, formulas, proofs and limitations; public copies only redact local machine paths.

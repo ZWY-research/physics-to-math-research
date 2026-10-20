@@ -1,6 +1,6 @@
 # physics-to-math-research
 
-**Version / 版本：** `0.2.10` · **Status / 状态：** Experimental / 实验性版本
+**Version / 版本：** `0.2.11` · **Status / 状态：** Experimental / 实验性版本
 
 ## Mission / 项目使命
 
@@ -11,6 +11,10 @@ This project helps AI formulate and advance general mathematical questions groun
 The project addresses physics and other sciences without depending on a particular device, model or mathematical branch; the aim is a research-relevant question and supported conditional mathematical progress.
 
 项目面向物理及其他科学问题，不依赖特定装置、模型或数学分支；目标是寻找有研究意义的问题，完成当前条件支持的数学成果。
+
+Researchers provide a scientific phenomenon, observations, a model or an unresolved question. The Skill helps formulate general mathematical questions, complete feasible analysis and identify actionable routes for unresolved parts. No experimental apparatus, scientific simulation software or ability to run simulations is required. Reports distinguish conditional mathematics from physical applicability that is not established and may describe optional validation routes.
+
+研究者提供科学现象、观测、模型或未解决问题；Skill 帮助构造一般数学问题，实际推进可行的数学分析，并指出未解决部分的可执行研究路径。使用 Skill 不要求拥有实验装置、数值模拟软件或运行模拟的能力。数学结论尚未经过物理验证时，应标明物理适用性仍未确立，并可说明可选验证途径。
 
 This is project orientation, not an additional runtime rule. “Minimal sufficient” means structure adequate for the question; it does not prescribe a minimization procedure or prefer simplicity over necessary complexity. The Skill does not guarantee new mathematics or establish real physical mechanisms. A stable incremental advantage has not been demonstrated.
 
@@ -306,6 +310,8 @@ See the [Research Applications & Validation register](RESEARCH_APPLICATIONS.md) 
 查看[科研应用与验证登记表](RESEARCH_APPLICATIONS.md)，持续记录科研问题、经作者确认使用 Skill 的论文及能力证据。背景参考文献单独登记。使用或发表本身不构成验证；HL-3 候选目前为 `planned`（计划中）。
 
 ## Evaluation Reports & Skill Improvement / 测试与能力改进档案
+
+Focused regression specifications: [Research routes and validation boundaries](tests/research-routes-and-validation.md) — three cases, **Specified — Not Yet Run**; not behavioral PASS or new capability evidence.
 
 The [evaluation reports](evaluation-reports/) archive records actual capability tests, ON/OFF comparisons, mathematical failures, paired regressions, behavior before/after repairs, and results with no reliable defect. Each test has one independent Markdown report; evidence already publicly accessible elsewhere is linked rather than duplicated. Incomplete public evidence must state reproduction limits.
 

@@ -57,3 +57,20 @@ Dialogue-only receipt example: “Under the stated constant-temperature and prop
 Repository teaching-artifact receipt example: “[research-delivery-cooling.md](../examples/research-delivery-cooling.md) contains accessible and technical accounts of the same analytic model. It documents assumptions and limits; it is not empirical validation.” This is an existing source-repository artifact, not a claim that an installed Skill package includes examples. For user-requested files, report their actual names, absolute locations and purposes after creating them.
 
 仓库教学产物回执示例：“[research-delivery-cooling.md](../examples/research-delivery-cooling.md) 提供同一解析模型的通俗版和专业版，记录假设与限制，不构成经验验证。”这是源码仓库中的现有产物，不表示安装包包含 examples。用户要求生成文件时，应创建后报告其真实名称、绝对位置和用途。
+
+## 6. Executable Research Route & Optional Validation / 可执行研究路径与可选物理验证
+
+Supporting guidance only; this section adds no Core rule, OAC requirement or fixed research template.
+本节仅为 Supporting Guidance，不增加 Core、OAC 或固定研究模板。
+
+For substantive open mathematical research, identify the most valuable next mathematical action, such as restricting the domain, checking a key assumption, deriving parameter bounds, constructing a counterexample or identifying missing data. Where possible, state the inputs needed and what result would change the current conclusion. If the question is complete within its stated scope, stop rather than manufacture another task.
+对实质性的开放数学研究，指出最有价值的下一数学动作，例如限定定义域、验证关键假设、推导参数界、构造反例或识别缺失数据。尽可能说明所需输入及什么结果会改变当前结论。若既定范围内的问题已完成，直接停止，不强制制造下一任务。
+
+A research route does not oblige readers or Skill users to perform experiments, numerical simulations or replication. Do not supply unrequested installation tutorials, simulation input files or experimental task lists.
+研究路径不要求论文读者或 Skill 使用者完成实验、数值模拟或复现。不提供未经请求的安装教程、模拟输入文件或实验任务清单。
+
+For paper-grounded reviews, record important limitations, next analyses and explicitly mentioned methods or tools identified by the authors, with original source locations. Separate quotations or faithful paraphrases from methods independently proposed by the review. Prior software use is not a future recommendation; do not invent author-recommended software, and retain a method category when no tool is named.
+对真实论文研究审查，记录作者指出的重要局限、后续分析方向及明确提及的方法或工具，附原文出处。严格区分作者原话或忠实概括与审查独立提出的方法建议。作者曾使用软件不等于未来推荐，不虚构作者推荐的软件；未明确工具名时保留方法类别。
+
+When physical applicability remains unverified and specifics can be determined, identify the pending claim, suitable tool or method category, what it could distinguish and whether it was actually run. These are optional validation routes, not execution instructions or prerequisites for mathematical delivery.
+真实物理适用性尚未验证且可明确判断时，说明待验证命题、适用的工具或方法类别、能判别什么以及是否实际运行。这些是可选验证途径，不是执行指令或数学交付的先决条件。

@@ -52,3 +52,27 @@ The electron temperature gradient has an explicit entry in electron dynamics, wh
 
 不宣称已经解释 HL-3 的响应、发现新的 ITG 机制或证明电子梯度实际主导。
 No explanation of HL-3 responses, new ITG mechanism or actual electron-gradient dominance is claimed.
+
+## Author-identified limitations and next analyses / 作者提出的局限与后续研究
+
+以下按已归档[阶段 A 证据](source-evidence.md) E6、§5.4 记录作者稿的原文定位；本次未重新开展论文研究。页码均为 26 页 1stRevision 作者稿，不混用期刊分页。
+The following faithfully summarizes author-identified directions using the archived Stage A evidence; this release did not conduct a new paper review.
+
+- 作者在 §3.8、PDF p.16 提出将低/中波数的实测湍流频率与代码预测比较，以检验实验依赖是否来自相应湍流背景；这本身不能决定两种独立梯度响应的排序。 / Section 3.8, PDF p.16 proposes comparing measured low/intermediate-wavenumber turbulent frequencies with code predictions to test the inferred turbulence-regime explanation, not to establish response ordering by frequency alone.
+- 作者在 §4、PDF p.18 指出，更定量的预言需要非线性模拟；p.17–18 也保留与具体实验及重要 ETG 情形进一步比较的需要。 / Section 4, PDF pp.17–18 retains further comparison with specific experiments and important ETG cases; p.18 states that more quantitative predictions require nonlinear simulations.
+
+这些建议没有明确要求未来必须使用某个指定软件。原文在 §3 使用 GS2，并在 §3.4.3 用 GYRO 做有限比较，是既有工作记录，不等于作者要求未来重复使用同一工具。
+No specific future software requirement is established by these passages. The paper's use of GS2 and its limited GYRO comparison are historical methods, not a mandate for future tool choice.
+
+## Optional physical validation methods / 可选物理验证方法
+
+以下来自本次独立数学研究的 [Stage B §8](skill-on-p1-v0.2.9/research-result.md)，不是原论文作者的工具推荐，也不是要求读者执行的任务。
+The following are optional proposals of the independent mathematical study, not author-attributed recommendations or user obligations.
+
+| 独立建议 / Independent proposal | 可判别内容 / Discriminator | 实际状态 / Execution |
+|---|---|---|
+| GS2 局域本征谱与梯度导数 / Local eigenspectra and gradient derivatives | 区分直接项、单模变化、谱重分配、密度反馈与 alpha 协议，判断真实谱是否满足排序充分条件 / Separate response contributions and test sufficient criteria under the stated controls | 未运行 / Not run |
+| GYRO 非线性响应对照 / Nonlinear response comparison | 判断准线性响应排序是否在非线性饱和及完整波数重分配后保持 / Check whether ordering survives nonlinear saturation and spectral redistribution | 未运行 / Not run |
+
+实际响应排序、三波数反例的真实本征谱可实现性仍未确立；上述建议不能自动证明任一具体装置机制。数学交付已完成其条件性范围，无需等待物理验证。未安装相关工具、未运行新模拟，也未进行实验或 HL-3 数据重分析。
+Actual ordering and eigenproblem realizability remain unestablished. Conditional mathematical delivery does not require completion of physical validation; no installation, new simulation, experiment or HL-3 reanalysis occurred.
