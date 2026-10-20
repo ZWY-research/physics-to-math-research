@@ -2,6 +2,20 @@
 
 ## Unreleased
 
+## 0.2.9 — Research results and review records update
+
+- Archived complete Angioni C1 (frozen Skill v0.2.7) and C2 (v0.2.8) mathematical reports, preserving explicit Git-blob loading, artifact hashes, assumptions, proofs, counterexamples and limitations; local absolute paths in the public C2 copy are redacted.
+- Recorded the project owner's ChatGPT conditional mathematical review: C1 ACCEPT WITH LIMITATIONS; C2 ACCEPT. C1 least-squares formulas are unconstrained; its session had reference-review exposure. This is neither journal peer review nor independent experimental reanalysis.
+- Updated Research Observatory with separate C1/C2 result summaries and source/report/review links; both exploratory studies are completed and conditionally reviewed. Angioni remains Research in Progress; Reviewed Papers stays 1.
+- Core/OAC and all other runtime text are unchanged from v0.2.8; SKILL changes only version metadata/title. Original Stage A evidence, initial review, historical Regression and Jarzynski materials remain unchanged.
+- Original experimental evidence was not revalidated. No credible Skill OFF control, incremental Skill capability gain, new scientific-agent tests, GENE/TGLF runs, new mathematical theorems or new physical mechanisms are claimed.
+
+- 完整归档 Angioni C1（冻结 v0.2.7）与 C2（v0.2.8）数学报告，保留显式 Git blob 加载、哈希、假设、证明、反例及局限；仅对 C2 公开副本的本地绝对路径脱敏。
+- 记录项目负责人在 ChatGPT 中完成的条件性数学审查：C1 附限制接受，C2 接受。C1 最小二乘公式为无约束估计，会话曾接触参考评议；不冒称期刊同行评审或独立原始实验复核。
+- 更新 Research Observatory，分别展示 C1/C2 成果和证据、报告、审查链接；两项探索性研究已完成并经条件性审查。Angioni 保留进行中分类，Reviewed Papers 仍为 1。
+- Core/OAC 及其余运行文字与 v0.2.8 一致，SKILL 仅修改版本元数据和标题；阶段 A 原文证据、初步评议、历史 Regression 和 Jarzynski 材料不变。
+- 未重新验证原始实验证据；没有可信 Skill OFF 对照、Skill 增量优势证据或新科研 Agent 测试，未运行 GENE/TGLF，不宣称新数学定理或新物理机制。
+
 ## 0.2.8
 
 - Archived Angioni (2012) source evidence extracted by Codex Stage A, with local PDF paths redacted and extraction limitations retained.

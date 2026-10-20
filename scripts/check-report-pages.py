@@ -77,7 +77,7 @@ def words(s):
 def check(repo):
     docs = repo / 'docs'
     manifest = json.loads((docs / 'report-pages-manifest.json').read_text(encoding='utf-8'))
-    assert manifest['version'] == '0.2.8'
+    assert manifest['version'] == '0.2.9'
     expected = set(manifest['output_hashes'])
     expected.add('report-pages-manifest.json')
     for name, digest in manifest['output_hashes'].items():

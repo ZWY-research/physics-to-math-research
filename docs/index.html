@@ -120,24 +120,37 @@
     </div>
 
     <section id="research-in-progress" class="purpose-section" aria-labelledby="progress-title">
-      <div class="section-heading"><p class="eyebrow">Source evidence &amp; conditional analysis / 原文证据与条件性分析</p><h2 id="progress-title">Research in Progress <span lang="zh-CN">进行中科研案例</span></h2></div>
+      <div class="section-heading"><p class="eyebrow">Conditional mathematical research / 条件性数学研究</p><h2 id="progress-title">Research in Progress <span lang="zh-CN">进行中科研案例</span></h2></div>
       <article class="paper-card">
         <p class="paper-author">Angioni et al. · 2012</p>
         <h3>Off-diagonal particle and toroidal momentum transport: a survey of experimental, theoretical and modelling aspects</h3>
         <p class="journal">Nuclear Fusion 52, 114003 (2012)</p>
-        <p class="review-badge">Source evidence reviewed; conditional mathematical analysis recorded; Skill ON study pending.<span lang="zh-CN">已完成原文证据提取及限定范围数学评议；Skill ON 独立数学研究尚未执行。</span></p>
-        <h4>Physical question <span lang="zh-CN">物理问题</span></h4>
-        <p>Can observations separately identify viscosity, pinch and residual stress contributions to momentum transport?</p><p lang="zh-CN">动量输运的粘性、pinch 与 residual stress 贡献能否由观测分别识别？</p>
+        <p class="review-badge">C1 and C2 exploratory mathematical studies completed and conditionally reviewed; incremental Skill capability gain not established.<span lang="zh-CN">C1、C2 探索性数学研究已完成并经条件性审查；Skill 增量能力尚未证明。</span></p>
         <h4>Source evidence &amp; attribution <span lang="zh-CN">原文证据与贡献来源</span></h4>
-        <p>Codex Stage A extracted five physical evidence items and five mathematical relations from the PDF. Some normalization and parameter definitions remain unresolved. The subsequent ChatGPT review accepted Stage A with limitations; it did not recheck the original PDF pages.</p><p lang="zh-CN">PDF 证据提取来自 Codex 阶段 A：五项物理证据、五项数学关系，部分归一化和参数定义尚待核实。后续 ChatGPT 评议对阶段 A 的内容判断为 ACCEPT WITH LIMITATIONS，未重新核查原始 PDF 页面。</p>
-        <h4>Conditional mathematical results <span lang="zh-CN">条件性数学结果</span></h4>
-        <p>The subsequent ChatGPT review records full-column-rank identifiability under explicit shared-parameter assumptions and least-squares parameter bias from an omitted residual term. The bias may vanish and has no fixed direction. These are conditional linear-algebra results, not Skill ON research achievements.</p><p lang="zh-CN">后续 ChatGPT 评议在明确共享参数假设下给出简化线性逆问题的满列秩可识别条件，以及遗漏 residual stress 的最小二乘参数偏差。偏差可能为零，方向不必固定；属于条件性线性代数结果，不是 Skill ON 科研成果。</p>
-        <p class="scope-note">No microscopic turbulent mechanism or complete original experimental dataset has been independently validated. Effective-parameter identification does not identify a unique mechanism. Skill ON independent research has not been performed; Skill incremental gain is not established. This case does not increase Reviewed Papers.<span lang="zh-CN">未证明真实湍流微观机制，也未独立核实全部原始实验数据；有效参数识别不等于唯一机制识别。Skill ON 独立研究未执行，科研能力增量尚未证明；本案例不增加正式审查论文数。</span></p>
-        <p><strong>Next / 下一步：</strong> Use frozen Skill v0.2.7 to independently study C1 and submit actual mathematical results for independent review.<span lang="zh-CN">使用冻结 v0.2.7 Skill 独立研究 C1，并将实际数学成果交给独立审查。</span></p>
+        <p>Codex Stage A extracted source evidence; the initial ChatGPT review retains its separate historical attribution. The later C1 and C2 reports used frozen Skill v0.2.7 and v0.2.8 through explicit Git-blob reads, not native Skill invocation. The project owner's subsequent ChatGPT mathematical-content decisions are recorded separately from engineering checks.</p>
+        <p lang="zh-CN">原文证据来自 Codex 阶段 A，初步 ChatGPT 评议保留独立历史归属。后续 C1、C2 报告分别显式读取冻结 Skill v0.2.7、v0.2.8 的 Git blob，非原生 Skill 调用。项目负责人在 ChatGPT 中完成的数学内容审查决策与工程检查分别记录。</p>
+        <section aria-labelledby="angioni-c1-title">
+          <h4 id="angioni-c1-title">C1 — Momentum Transport Identifiability <span lang="zh-CN">动量输运可识别性</span></h4>
+          <p>Can observations separate diffusion, pinch and residual stress? Explicit shared-parameter assumptions yield rank conditions and error bounds; arbitrary residual changes permit non-unique decompositions. The same rotation profile can arise from different cancelling contributions. Omitted-term bias may be zero or have either sign; zero fit residual does not ensure correct identification.</p>
+          <p lang="zh-CN">观测能否分离扩散、pinch 与 residual stress？明确共享参数条件下得到秩条件及误差界；允许残余项任意变化则分解不唯一。同一旋转剖面可由不同贡献抵消实现。遗漏项偏差可为零，方向不固定；零拟合残差不保证正确识别。</p>
+          <p class="review-badge">Conditional Mathematical Review — Accepted with Limitations<span lang="zh-CN">条件性数学审查：附限制接受</span></p>
+          <p class="scope-note">Least-squares formulas are unconstrained; positive estimated diffusion requires a separate constrained treatment. The C1 session had reference-review exposure.<span lang="zh-CN">最小二乘公式为无约束估计；估计扩散严格为正需另作约束处理。C1 会话曾接触参考评议。</span></p>
+        </section>
+        <section aria-labelledby="angioni-c2-title">
+          <h4 id="angioni-c2-title">C2 — Density Gradient Self-Consistency <span lang="zh-CN">密度梯度自洽性</span></h4>
+          <p>Does state-dependent particle transport admit a unique zero-flux density gradient? Conditional proofs give existence, uniqueness and root-perturbation bounds on a specified interval and state branch. Positive diffusion and inward non-diagonal drive still allow three distinct roots in a mathematical counterexample. A non-monotone peaking–frequency association does not prove multiple self-consistent roots under the same background.</p>
+          <p lang="zh-CN">状态依赖粒子输运是否存在唯一零通量密度梯度？条件性证明给出指定区间与状态分支上的存在性、唯一性和根扰动界。数学反例表明，正扩散与向内非对角驱动仍允许三个不同的根。非单调峰化—频率关联不能直接证明同一背景下存在自洽多解。</p>
+          <p class="review-badge">Conditional Mathematical Review — Accepted<span lang="zh-CN">条件性数学审查：接受</span></p>
+          <p class="scope-note">Artificial closures are not validated ITG/TEM models. Root-perturbation bounds do not establish dynamical stability or actual tokamak multiplicity.<span lang="zh-CN">人为闭合不是已验证的 ITG/TEM 模型；根扰动界不证明动力学稳定性或真实托卡马克多解。</span></p>
+        </section>
+        <p class="scope-note">No raw experimental reanalysis, full-paper validation, journal peer review or fully independent external refereeing is claimed. No credible Skill OFF control; Skill incremental gain: NOT ESTABLISHED. Physical closure and device validation remain open; Reviewed Papers stays 1.<span lang="zh-CN">未重新分析原始实验，不冒称全文验证、期刊同行评审或完全独立外审。没有可信 Skill OFF 对照，增量能力尚未证明。完整物理闭合与装置验证仍待完成；Reviewed Papers 仍为 1。</span></p>
         <div class="link-row">
           <a href="https://doi.org/10.1088/0029-5515/52/11/114003">Original paper / 原论文 DOI ↗</a>
-          <a href="https://github.com/ZWY-research/physics-to-math-research/blob/main/cases/angioni-2012/source-evidence.md">Codex Stage A / 原文证据 ↗</a>
-          <a href="https://github.com/ZWY-research/physics-to-math-research/blob/main/cases/angioni-2012/2026-10-15-angioni-2012-source-evidence-review.md">ChatGPT review / 条件性数学评议 ↗</a>
+          <a href="https://github.com/ZWY-research/physics-to-math-research/blob/main/cases/angioni-2012/source-evidence.md">Stage A source evidence / 原文证据 ↗</a>
+          <a href="https://github.com/ZWY-research/physics-to-math-research/blob/main/cases/angioni-2012/2026-10-15-angioni-2012-source-evidence-review.md">Initial ChatGPT review / 初步评议 ↗</a>
+          <a href="https://github.com/ZWY-research/physics-to-math-research/blob/main/cases/angioni-2012/c1-skill-on-v0.2.7-research-result.md">C1 complete report / 完整数学报告 ↗</a>
+          <a href="https://github.com/ZWY-research/physics-to-math-research/blob/main/cases/angioni-2012/c2-skill-on-v0.2.8-research-result.md">C2 complete report / 完整数学报告 ↗</a>
+          <a href="https://github.com/ZWY-research/physics-to-math-research/blob/main/cases/angioni-2012/c1-c2-mathematical-review.md">C1/C2 mathematical review / 数学审查结论 ↗</a>
         </div>
       </article>
     </section>
@@ -176,7 +189,7 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <p>Evidence-first · Reproducible records · No inflated capability claims<span lang="zh-CN">证据优先 · 可复现记录 · 不夸大能力</span></p>
-      <div><span data-project-version="0.2.8">v0.2.8</span> · <a href="https://github.com/ZWY-research/physics-to-math-research">GitHub project / 项目首页 ↗</a></div>
+      <div><span data-project-version="0.2.9">v0.2.9</span> · <a href="https://github.com/ZWY-research/physics-to-math-research">GitHub project / 项目首页 ↗</a></div>
     </div>
   </footer>
 </body>
