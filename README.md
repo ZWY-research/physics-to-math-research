@@ -1,6 +1,6 @@
 # physics-to-math-research
 
-**Version / 版本：** `0.2.11` · **Status / 状态：** Experimental / 实验性版本
+**Version / 版本：** `0.2.12` · **Status / 状态：** Experimental / 实验性版本
 
 ## Mission / 项目使命
 

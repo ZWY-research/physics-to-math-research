@@ -2,6 +2,18 @@
 
 ## Unreleased
 
+## 0.2.12 — Research discovery, development and continuation
+
+- Added three independently callable research capabilities: discover a scientific-to-mathematical question and obtain its first result; develop supplied equations into conditional results; continue established work without an unnecessary full re-audit.
+- Added on-demand research-workflow guidance with two executable mathematical examples, a continuation result and task-matched existing-tool choices. Research notes preserve results and provenance across tasks; no generic scripts or new dependencies were added.
+- Kept the four Core rules, OAC, Prohibited Defaults and scientific-simulation boundary unchanged. Reviewed Chinese–English equivalence of the changed normative text.
+- Explicitly authorized capability design, not a demonstrated failure repair. Only focused format/function checks were run; no new large-scale capability evaluation or measured research-gain claim.
+
+- 新增三种可独立调用的科研能力：从科学情境发现数学问题并取得首项成果；从已有方程推进条件性结果；继承已建立成果继续研究，不无故完整重审。
+- 新增按需科研工作流说明，包含两个可执行数学示例、一项续研结果及按任务选择现有工具的建议。研究记录支持跨任务保存成果与来源；未增加通用脚本或新依赖。
+- 四条 Core、OAC、禁止默认结构及科学模拟边界保持原文；已检查变更规范文本的中英文语义等价性。
+- 属于明确授权的能力设计，不是已确认的失败修复。仅做定向格式与功能检查，未开展新一轮大规模能力评估，不宣称实测科研增量优势。
+
 ## 0.2.11 — Mathematical research delivery and optional validation
 
 - Clarified mathematical research delivery and actionable research routes, including required inputs/assumptions and outcome discriminators.

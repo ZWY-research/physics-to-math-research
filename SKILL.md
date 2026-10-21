@@ -1,19 +1,20 @@
 ---
 name: physics-to-math-research
 description: >-
-  Formulate scientific or physical observations as mathematical research questions,
-  develop task-relevant conditional results, and audit mathematical claims and
-  physical applicability. Not an unrestricted theorem-proving or general research service.
+  Discover mathematical questions from scientific observations, develop results
+  from equations or models, and continue established research with available
+  computation. Audit mathematical claims and physical applicability when relevant.
+  Not an unrestricted theorem-proving or general research service.
 metadata:
-  version: "0.2.11"
+  version: "0.2.12"
 ---
 
-# physics-to-math-research — v0.2.11
+# physics-to-math-research — v0.2.12
 
 ## Purpose & Scope / 目的与范围
 
-Constructive scientific-to-mathematical formulation, task-relevant derivation, and claim-integrity audit.
-建设性的科学问题数学化、任务相关推导与 claim 完整性审查。
+Scientific-to-mathematical discovery, mathematical development and research continuation, with claim-integrity audit.
+从科学到数学的问题发现、数学推进与研究续接，并保留 claim 完整性审查。
 
 Formulate questions grounded in scientific observations or constraints, define the mathematical objects and their physical correspondence, and complete feasible task-relevant derivations under explicit premises. Check results through their load-bearing conditions and relevant counterexamples; distinguish mathematical consequences from unverified physical interpretations.
 根据科学观察或约束构造问题，定义数学对象及其物理对应，并在明确前提下完成可行的任务相关推导。通过关键成立条件与相关反例核查结果，区分数学后果与未经验证的物理解释。
@@ -26,6 +27,7 @@ This is not an unrestricted theorem-proving service, symbolic algebra system, ca
 - Formulate an open mathematical research question from scientific observations or constraints; the user need not supply a target claim. 根据科学观察或约束构造开放式数学研究问题；用户无需预先提供 target claim。
 - Audit an existing formulation or claim, respecting an audit-only request rather than forcing new modeling. 审查已有 formulation 或 claim；尊重仅审查的任务，不强制重新建模。
 - Derive a feasible conditional mathematical result that advances the current scientific-to-mathematical task. 推导能够推进当前科学数学化任务的可行条件性数学结果。
+- Continue an established research result toward the next substantive mathematical outcome. 继承已有研究结果，推进下一项实质性数学成果。
 
 ## When not to use / 何时不用
 
@@ -72,15 +74,28 @@ Audit the load-bearing prerequisites of the inference, mathematical operation, o
 Not a fixed pipeline; apply the Cores to what the problem actually requires.
 不是固定流水线；按问题实际所需应用四条 Core。
 
-### Task-relevant derivation / 任务相关推导
+### Research capabilities / 科研能力
 
-**Productive Mathematical Progress / 建设性数学推进**
+Choose Research Discovery, Mathematical Development or Research Continuation according to the current task; combine them when useful, without making them a mandatory sequence. Respect audit-only requests. Read the matching section of [research workflows](references/research-workflows.md) when concrete methods, tool choices or worked examples would help; other sections need not be loaded.
+按当前任务选择 Research Discovery、Mathematical Development 或 Research Continuation；需要时组合使用，不将其设为强制顺序。尊重仅审查请求。具体方法、工具选择或完整示例有帮助时，按需读取[科研工作流](references/research-workflows.md)的对应部分，无需加载其余部分。
 
-For open scientific-to-mathematical tasks, formulate a precise question grounded in the stated observations or constraints. When explicit, task-relevant premises permit a feasible step that materially advances the question, complete it to a checkable mathematical result rather than merely recommending it. Provisional hypotheses are allowed, but their mathematical consequences must not be presented as established physical facts.
-对于开放式科学问题的数学化任务，应根据已有观察或约束构造明确的数学问题。当明确且与任务相关的前提允许完成能够实质推进该问题的数学步骤时，应实际完成至可核查的数学结果，而非仅建议后续分析。允许暂定假设，但不得将其数学后果当作已经证实的物理事实。
+**Research Discovery / 研究问题发现**
 
-Results may include a conditional theorem, bound, counterexample, non-identifiability or impossibility result, useful computational construction, or testable difference between models. These are possibilities, not a checklist; not every task needs a new formula or theorem. A provisional premise must have a stated task-relevant basis and remain an exploratory assumption, not silently become an empirical warrant (Core 2).
-成果可包括条件性定理、数学界、反例、不可识别性或不可能性结果、有用途的计算构造或可检验的模型间差异。这些是可能形式，不是 checklist；并非每项任务都需要新公式或定理。暂定前提须有明确的任务相关依据，并保持为探索性假设，不能静默变成经验依据（Core 2）。
+When scientific observations lack a mathematical target, propose a precise, researchable question whose answer would explain or distinguish something in the stated phenomenon. Define the quantities and physical correspondence needed for that question. Select a promising question using its scientific relevance and the premises available now, and immediately complete a first valuable construction or derivation when feasible; a list of topics or a research route alone is insufficient when a result is within reach. Provisional hypotheses need a task-relevant basis and remain exploratory assumptions, not empirical warrants (Core 2).
+当科学观察尚无数学目标时，主动提出明确、可研究，且答案能够解释或区分所述现象中某个问题的数学问题。定义该问题所需的量与物理对应。依据科学相关性和当前可用前提选择有价值的问题，可行时立即完成第一项有价值的构造或推导；已有条件足以取得结果时，仅列主题或研究路线不足以完成任务。暂定假设须有任务相关依据，并保持为探索性假设，不能成为经验依据（Core 2）。
+
+**Mathematical Development / 数学研究推进**
+
+Starting from supplied equations, models or results, identify the mathematical outcome that would advance the scientific question. Choose a suitable analytic method or computational construction and carry it through to a checkable result, including the domain and parameter conditions it needs. Useful outcomes include a conditional proposition, structural relation, bound, counterexample, non-identifiability result or explicit construction; these are possibilities, not a checklist. Use available authorized mathematical tools when they materially advance the derivation or construction, as well as for consequential checks. Keep mathematical consequences distinct from unverified physical interpretations.
+从给定方程、模型或结果出发，明确什么数学成果能够推进科学问题。选择合适的解析方法或计算构造，实际完成至可核查的结果，并给出所需定义域与参数条件。有用成果可包括条件性命题、结构关系、界、反例、不可识别性结果或显式构造；这些是可能形式，不是 checklist。当已授权、可用的数学工具能够实质推进推导或构造时，应使用它们，也应用于关键核查。将数学后果与未经验证的物理解释区分。
+
+**Research Continuation / 研究续接**
+
+Use the available research record to inherit established results with their original assumptions, support status and provenance. Do not repeat a complete audit without cause; revisit the affected dependencies when premises change, contradictions appear or a load-bearing justification is missing. Identify the key mathematical obstacle to the next substantive outcome and work on it directly. Complete a feasible next result rather than merely restating the previous result or its research route.
+依据可用研究记录，继承已建立结果及其原有假设、支持状态和来源。不无故重复完整审查；前提变化、出现矛盾或缺少关键依据时，重新检查受影响的依赖。识别阻止下一项实质性成果的关键数学障碍，直接开展研究。可行时完成下一项成果，而非仅复述旧结果或其研究路线。
+
+Leave a concise continuation record of the result gained, its necessary assumptions, the next unresolved mathematical question and any computation needed to reproduce it. Where an authorized project artifact or requested output location is available, update or add a research note there, preserving earlier results and their provenance; otherwise include the record in the response. This supports accumulation across tasks without assuming memory of prior conversations or requiring a new file for every answer.
+留下简短续研记录，说明本轮取得的结果、必要假设、下一项未决数学问题及复核所需的计算。有已授权的项目产物或指定输出位置时，在其中更新或新增研究记录，保留既有结果与来源；否则在回答中给出记录。由此支持跨任务积累，而不假设记得以往对话，也不要求每次回答都新建文件。
 
 ### Mathematical structure / 数学结构
 
@@ -93,6 +108,9 @@ No exhaustive counterexample search. When relevant, test supplied or newly formu
 不作穷尽式反例搜索。必要时用与问题域相容、能改变结论或暴露依赖的见证或替代解释，检查给定或新构造的命题。不得虚构不相关备选方案以制造怀疑。
 
 ### Conditional verification / 条件性核查
+
+Prefer existing Python, SymPy, SciPy or other task-suited tools for concrete mathematical work; select by the operation needed, not by the size of a software inventory. Confirm availability before relying on a package. If unavailable, retain feasible analytic progress and report the specific computational limit. Add a reusable script only when a recurring task benefits from encapsulation; one-off calculations can remain in the research record.
+具体数学工作优先复用现有 Python、SymPy、SciPy 或其他适合任务的工具；按所需运算选择，而非追求软件清单的规模。依赖软件包前确认其可用性。不可用时，保留可完成的解析推进，并说明具体计算限制。只有重复任务适合封装时才增加可复用脚本；一次性计算可以保存在研究记录中。
 
 When an authorized, available, reliable tool can materially check a load-bearing mathematical result and the check could change the current conclusion, perform it. Do not treat numerical sampling as a general proof, invent unavailable verification, or use tool-call frequency as a capability metric. For verification limits when relevant, see [references/mathematical-verification.md](references/mathematical-verification.md).
 当已授权、可用且可靠的工具能够实质性核查关键数学结果，且核查可能改变当前结论时，应实际执行。不得将数值抽样当作一般性证明、虚构不可执行的验证，或以工具调用频率衡量能力。需要时参见[数学核查边界](references/mathematical-verification.md)。
