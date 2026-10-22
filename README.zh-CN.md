@@ -1,6 +1,6 @@
 # physics-to-math-research
 
-**版本：** `0.2.12` · **状态：** 实验性版本
+**版本：** `0.2.13` · **状态：** 实验性版本
 
 ## 项目使命
 
@@ -20,7 +20,7 @@
 
 **精选研究与建设性数学审查**
 
-[已审查论文：1 篇](literature-audits/README.md)
+[已审查论文：2 篇](literature-audits/README.md)
 
 我们精选具有重要科学贡献或方法论启发价值的研究，独立重建其中关键的物理—数学转换。每篇报告首先说明该研究为什么值得关注及其原创贡献，再记录明确数学命题的复现、成立条件、局限与可能的一般化。
 
@@ -28,9 +28,11 @@
 
 数量仅统计完成限定范围独立审查的不同论文，不代表全部结论已验证，也不构成 Skill 增量能力证明。
 
-进行中科研案例：**Angioni et al. (2012)** — [阶段 A 原文证据](cases/angioni-2012/source-evidence.md)与[初步 ChatGPT 评议](cases/angioni-2012/2026-10-15-angioni-2012-source-evidence-review.md)保留原有历史归属。现已归档 [C1：动量输运可识别性](cases/angioni-2012/c1-skill-on-v0.2.7-research-result.md)、[C2：零通量密度梯度自洽性](cases/angioni-2012/c2-skill-on-v0.2.8-research-result.md)及 [ChatGPT 条件性数学审查结论](cases/angioni-2012/c1-c2-mathematical-review.md)：C1 附限制接受，C2 接受。两项研究均显式读取冻结 Git blob；C1 会话曾接触参考评议。没有可信 Skill OFF 对照，增量能力尚未证明。成果限于条件性数学分析，不是新物理机制或全文验证；Reviewed Papers 仍为 1。
+已完成限定范围审查：**Ott–Antonsen (2008)** — [正式数学审查](literature-audits/physics/nonlinear-dynamics/2008-ott-antonsen-low-dimensional-behavior.md)、[原文证据与基线](cases/ott-antonsen-2008/source-and-baseline.md)、[完整数学成果](cases/ott-antonsen-2008/mathematical-result.md)及[数学交接](cases/ott-antonsen-2008/CONTINUATION.md)。指定正 Poisson 混合初态类的瞬时增长锐界、可达性和反例已完成独立重建，小修后接受。数学原创性、物理验证和 Skill 增量优势均尚未建立，不代表全文验证。
 
-进行中科研案例：**Fable et al. (2010)** — [阶段 A 原文证据](cases/fable-2010/source-evidence.md)、[完整谱级条件响应报告](cases/fable-2010/skill-on-p1-v0.2.9/research-result.md)及 [ChatGPT 数学审查](cases/fable-2010/mathematical-review.md)：**附限制接受**。研究显式读取冻结 Skill v0.2.9 的 Git blob；实际 gyrokinetic 响应排序与 Skill 增量能力均尚未建立。Reviewed Papers 仍为 1。
+进行中科研案例：**Angioni et al. (2012)** — [阶段 A 原文证据](cases/angioni-2012/source-evidence.md)与[初步 ChatGPT 评议](cases/angioni-2012/2026-10-15-angioni-2012-source-evidence-review.md)保留原有历史归属。现已归档 [C1：动量输运可识别性](cases/angioni-2012/c1-skill-on-v0.2.7-research-result.md)、[C2：零通量密度梯度自洽性](cases/angioni-2012/c2-skill-on-v0.2.8-research-result.md)及 [ChatGPT 条件性数学审查结论](cases/angioni-2012/c1-c2-mathematical-review.md)：C1 附限制接受，C2 接受。两项研究均显式读取冻结 Git blob；C1 会话曾接触参考评议。没有可信 Skill OFF 对照，增量能力尚未证明。成果限于条件性数学分析，不是新物理机制或全文验证；本案例不计入已审查论文数量。
+
+进行中科研案例：**Fable et al. (2010)** — [阶段 A 原文证据](cases/fable-2010/source-evidence.md)、[完整谱级条件响应报告](cases/fable-2010/skill-on-p1-v0.2.9/research-result.md)及 [ChatGPT 数学审查](cases/fable-2010/mathematical-review.md)：**附限制接受**。研究显式读取冻结 Skill v0.2.9 的 Git blob；实际 gyrokinetic 响应排序与 Skill 增量能力均尚未建立。本案例不计入已审查论文数量。
 
 ## 从科学问题到数学成果
 

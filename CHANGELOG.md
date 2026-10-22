@@ -2,6 +2,20 @@
 
 ## Unreleased
 
+## 0.2.13 — Ott–Antonsen 2008 limited-scope mathematical research audit and archive publication
+
+- Published the complete three-file Research Case 01 and its single formal mathematical audit, accepted after minor revisions within the stated scope.
+- Added Engelbrecht–Mirollo (2020) attribution and the finite-kernel ODE existence/invariance justification; preserved the sharp bounds, attainability proof, formula numbering and rational witnesses.
+- Updated the bilingual paper index and Research Observatory to two reviewed papers, with direct access to the source record, full proof and continuation.
+- Research was performed with v0.2.12; originality, empirical/physical validation and incremental Skill gain remain NOT ESTABLISHED. No new research, simulation or Regression was run.
+- SKILL.md changes only its version metadata/title. Core 4, OAC 6 and Prohibited Defaults 15 remain unchanged. SkillHub synchronization remains manual.
+
+- 公开完整三文件 Research Case 01 及唯一正式数学审查，限定范围独立重建小修后接受。
+- 补充 Engelbrecht–Mirollo (2020) 归属和有限核 ODE 的存在性/不变性依据；锐界、可达性证明、公式编号及有理数见证不变。
+- 双语目录与 Observatory 已审查论文数更新为2，可直达来源、完整证明与数学交接。
+- 实际研究版本保持 v0.2.12；原创性、经验物理验证和 Skill 增量优势均未建立；未开展新研究、模拟或 Regression。
+- SKILL.md 仅变更版本元数据与标题，四条 Core、六项 OAC、十五项 Prohibited Defaults 原文不变；SkillHub 由用户手动同步。
+
 ## 0.2.12 — Research discovery, development and continuation
 
 - Added three independently callable research capabilities: discover a scientific-to-mathematical question and obtain its first result; develop supplied equations into conditional results; continue established work without an unnecessary full re-audit.

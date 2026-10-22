@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Ott–Antonsen (2008): Research Continuation / 数学交接 · Research Observatory</title><link rel="stylesheet" href="../../observatory.css"><link rel="stylesheet" href="../../assets/report-reading.css"><link rel="stylesheet" href="../../assets/vendor/katex/katex.min.css"></head><body><a class="skip-link" href="#report">跳至正文 / Skip to content</a><header class="site-header"><div class="container header-inner"><a class="brand" href="../../index.html">Research Observatory<span lang="zh-CN">科研进展与证据看板</span></a><nav><a href="../../research-audits/">Research Audits / 研究审查</a><a href="../../skill-evaluations/">Skill Evaluations / 评估</a><a href="../../methods-sources/">Methods &amp; Sources / 方法与来源</a></nav></div></header><main class="container reading" id="report"><header class="report-header"><p class="eyebrow">research-audits</p><h1>Ott–Antonsen (2008): Research Continuation / 数学交接</h1><p class="review-badge">Completed node; next duration bound NOT EXECUTED</p><p>Established results, assumptions and the optional next analytic action; no simulation required.</p><p><a href="https://github.com/ZWY-research/physics-to-math-research/blob/main/cases/ott-antonsen-2008/CONTINUATION.md">Original Markdown / GitHub 原文 ↗</a> · <a href="../">返回分类目录 / Back to index</a></p></header><details class="contents"><summary>目录 / Contents</summary><ul><li><a href="#continuation-published-research-case-01">CONTINUATION — Published Research Case 01</a></li><li><a href="#当前已建立结果">当前已建立结果</a></li><li><a href="#关键假设">关键假设</a></li><li><a href="#结果来源和核查">结果来源和核查</a></li><li><a href="#尚未解决的同一数学问题">尚未解决的同一数学问题</a></li><li><a href="#下一项可直接执行的数学动作">下一项可直接执行的数学动作</a></li><li><a href="#继续研究所需的最少公开文件">继续研究所需的最少公开文件</a></li><li><a href="#归档小修与停止状态">归档小修与停止状态</a></li></ul></details><article data-source="cases/ott-antonsen-2008/CONTINUATION.md" data-source-sha256="988cc65657ccfa2790db62ff75088415a7f364eddb9ebabe035a4d67d0ddc6b3"><h1 id="continuation-published-research-case-01">CONTINUATION — Published Research Case 01</h1>
+<p>日期：2026-10-21。状态：已完成一个独立研究节点，等待用户授权后续；不要自动扩展。
+研究 Skill：physics-to-math-research v0.2.12。所有结论都是连续极限模型的条件性数学结论。</p>
+<h2 id="当前已建立结果">当前已建立结果</h2>
+<ol>
+<li>Lorentzian 频率、第一谐波自洽耦合、正有限 Poisson 核混合及频率解析/衰减条件下：
+z=Σwⱼuⱼ，dot uⱼ=−Δuⱼ+(K/2)(z−conj(z)uⱼ²)。
+这是已有混合核工具的独立重建。</li>
+<li>固定 z(0)=r∈(0,1)、K&gt;0，初始 dot R/r 的精确可达集合为
+(−Δ, −Δ+K(1−r²))。两端仅为下确界、上确界。
+存在增长初态当且仅当 K(1−r²)&gt;Δ；始终有衰减初态。</li>
+<li>以有理 q(ω)=λ/(λ+iω) 将极点状态提升为真实、正、光滑的相位—频率密度，
+避免只有形式矩而无合法密度的缺口。</li>
+<li>Δ=1、K=3/2、r=1/4 下，两核 G 初始 dot R=5/256，
+OA 对照为−19/256，两核 H 为−43/256；三者初始条件一阶 Fourier 函数均为
+a₁(ω)=5q(ω)/16，q=4/(4+iω)。
+G 的极点 u=1/4±i/√2，各半；H 的极点 ±3/4，权重2/3、1/3。</li>
+<li>原论文、后续结果与本轮推导严格分开；未认定数学原创性。
+未建立增长持续时间的显式下界、峰值或任何经验物理识别。</li>
+</ol>
+<h2 id="关键假设">关键假设</h2>
+<p>N→∞、无外驱/噪声/时延、K&gt;0、Δ&gt;0、Lorentzian 频率。
+固定正权重不依赖频率；全部核受同一平均场。
+αⱼ 的下半频率平面有界解析及大圆衰减支持留数运算，实频率 |αⱼ|&lt;1。
+定理对象限本轮 C 类；0&lt;r&lt;1；不能升级为任意初态或长期相变结论。</p>
+<h2 id="结果来源和核查">结果来源和核查</h2>
+<p>完整证明与提升公式在 mathematical-result.md 的第3–5节。
+2008原文提供 OA 不变流形与流形上闭合；2009后续提供带条件的宏观吸引性；
+2018文献已有圆累积量；2022文献已有流形外及混合核表述。
+定向核对详情与原始链接在 source-and-baseline.md。
+本轮的锐区间、可达性与具体同 a₁ 反例有独立解析证明，不声称首次发现。
+PowerShell/.NET Decimal 精确核对本例斜率，代码及输出内嵌数学文件；
+未用 Python/SymPy（环境未发现可用解释器），未模拟或安装软件。</p>
+<h2 id="尚未解决的同一数学问题">尚未解决的同一数学问题</h2>
+<p>本例 G 的初始增长能保证持续多长时间？
+严格正导数和连续性只给出某个存在的短区间，目前没有显式长度。
+不能把一阶瞬时反例解释为长期同步、反稳定性或新同步阈值。</p>
+<h2 id="下一项可直接执行的数学动作">下一项可直接执行的数学动作</h2>
+<p>保持完全相同模型和 G 初态，对两核精确系统求 dot z、ddot z，
+推导单位圆内的局部上界；先利用 |dot z| 保证 R≥1/8，
+再将其用于 ddot R 的有界性。
+以 dot R(0)=5/256 给出一个明确 t*&gt;0，使 0≤t≤t* 上 dot R&gt;0。
+优先解析估计，必要时核对精确代数；不运行时间积分或科学模拟。
+这一步尚未执行，不把此建议视为已完成成果。</p>
+<h2 id="继续研究所需的最少公开文件">继续研究所需的最少公开文件</h2>
+<ul>
+<li><a href="./">本交接</a></li>
+<li><a href="../ott-antonsen-2008-mathematical-result/">数学定义、完整证明及计算证据</a></li>
+<li><a href="../ott-antonsen-2008-source-and-baseline/">原始来源、版本与后续研究边界</a></li>
+<li><a href="../2008-ott-antonsen-low-dimensional-behavior/">正式限定范围数学审查</a></li>
+</ul>
+<h2 id="归档小修与停止状态">归档小修与停止状态</h2>
+<p>2026-10-22：补充 Engelbrecht–Mirollo (2020) 原始文献，区分有限频率群体与连续频率分布；
+补全有限核系统的局部唯一性、单位圆盘严格向内与全局正时间延拓依据。
+原始定理、公式编号及三个有理数见证保持不变。
+本研究使用 v0.2.12；公开归档随 v0.2.13 发布，不把旧研究升级为新版运行证据。
+限定范围独立数学重建：ACCEPTED AFTER MINOR REVISIONS。
+原创性、经验/物理验证及 Skill 增量优势均 NOT ESTABLISHED。
+增长持续时间的显式下界仍未执行；本次归档发布结束后停止，不自动开展续研。</p>
+</article><p class="source-note">正文来自白名单公开 Markdown；公式静态渲染。本站阅读无需打开 GitHub，原始证据链接仍可指向外部。 / Full allowlisted source, statically rendered; no runtime document fetching.</p></main><footer class="site-footer"><div class="container footer-inner"><a href="../../index.html">返回 Observatory</a><span>v0.2.13 · <a href="../../assets/third-party-notices.html">Third-party licenses / 依赖许可证</a></span></div></footer></body></html>

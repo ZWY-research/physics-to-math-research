@@ -6,7 +6,7 @@ This archive is for completed, claim-specific mathematical reviews of journal pa
 
 ## Current status / 当前状态
 
-Reviewed papers: **1** / 已完成限定范围独立审查：**1 篇**。
+Reviewed papers: **2** / 已完成限定范围独立审查：**2 篇**。
 
 The count covers distinct papers with accepted independent, limited-scope mathematical reviews, not every result in those papers. Skill behavior evaluations remain separate and are not automatically counted as paper audits.
 
@@ -40,6 +40,18 @@ Evidence / 原始证据：[script / 脚本](physics/statistical-mechanics/two-st
 The three original evidence files retain their exact reviewed bytes. The execution record's DRAFT status, local paths and relative `audit-draft.zh-CN.md` link describe the historical first-stage directory; that historical link is not a current archive navigation link. Use the formal report link above for the renamed report. The report's retained first-stage narrative is read together with its updated review status.
 
 三个原始证据文件保留已审查字节。执行记录中的 DRAFT 状态、本地路径及相对链接 `audit-draft.zh-CN.md` 属于第一阶段历史目录，不是当前归档导航链接；正式报告已改名，请使用上方正式报告入口。报告中保留的第一阶段叙述须结合更新后的审查状态阅读。
+
+### Nonlinear Dynamics / 非线性动力学与同步
+
+**E. Ott and T. M. Antonsen (2008), *Low dimensional behavior of large systems of globally coupled oscillators*, Chaos 18, 037113.**
+
+- Classification / 分类：Physics / Nonlinear Dynamics / Synchronization。
+- DOI：[10.1063/1.2930766](https://doi.org/10.1063/1.2930766)。
+- [Formal mathematical audit / 正式数学审查](physics/nonlinear-dynamics/2008-ott-antonsen-low-dimensional-behavior.md) — **Reviewed — Limited Scope**；限定范围独立数学重建：**ACCEPTED AFTER MINOR REVISIONS**，2026-10-22。
+- [Source evidence / 来源与基线](../cases/ott-antonsen-2008/source-and-baseline.md) · [Full proof / 完整数学成果](../cases/ott-antonsen-2008/mathematical-result.md) · [Continuation / 数学交接](../cases/ott-antonsen-2008/CONTINUATION.md)。
+- Reviewed / 已审查：finite positive Poisson mixtures, sharp initial-growth interval and attainability, analytic density lift and equal-first-harmonic counterexamples / 有限正混合、瞬时锐界与可达性、解析密度提升和同一阶信息反例。
+- Not established / 未建立：originality, empirical/physical validation or incremental Skill gain / 数学原创性、经验物理验证及 Skill 增量优势。
+- This accepts the specified independent reconstruction, not the paper or authors as a whole. No full-paper validation, new simulation or author endorsement is implied. / 接受的是指定独立数学重建，不是对论文或作者作整体裁决，不暗示全文验证、新模拟或作者认可。
 
 Only after a real audit is completed should its corresponding discipline record file be created. A paper not actually checked is a candidate, never a successful verification. Do not populate empty discipline folders. Cross-index interdisciplinary cases without duplicating records.
 

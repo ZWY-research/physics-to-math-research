@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Ott–Antonsen (2008): Complete mathematical result / 完整数学成果 · Research Observatory</title><link rel="stylesheet" href="../../observatory.css"><link rel="stylesheet" href="../../assets/report-reading.css"><link rel="stylesheet" href="../../assets/vendor/katex/katex.min.css"></head><body><a class="skip-link" href="#report">跳至正文 / Skip to content</a><header class="site-header"><div class="container header-inner"><a class="brand" href="../../index.html">Research Observatory<span lang="zh-CN">科研进展与证据看板</span></a><nav><a href="../../research-audits/">Research Audits / 研究审查</a><a href="../../skill-evaluations/">Skill Evaluations / 评估</a><a href="../../methods-sources/">Methods &amp; Sources / 方法与来源</a></nav></div></header><main class="container reading" id="report"><header class="report-header"><p class="eyebrow">research-audits</p><h1>Ott–Antonsen (2008): Complete mathematical result / 完整数学成果</h1><p class="review-badge">Conditional proof; originality and physical validation NOT ESTABLISHED</p><p>Sharp attainable interval, smooth density lift and exact rational witnesses; two archival minor revisions.</p><p><a href="https://github.com/ZWY-research/physics-to-math-research/blob/main/cases/ott-antonsen-2008/mathematical-result.md">Original Markdown / GitHub 原文 ↗</a> · <a href="../">返回分类目录 / Back to index</a></p></header><details class="contents"><summary>目录 / Contents</summary><ul><li><a href="#一个数学节点相同序参量能否决定初始同步趋势">一个数学节点：相同序参量能否决定初始同步趋势？</a></li><li><a href="#1-研究问题与科学意义">1. 研究问题与科学意义</a></li><li><a href="#2-定义与必要前提">2. 定义与必要前提</a></li><li><a href="#3-从输运方程到精确混合演化">3. 从输运方程到精确混合演化</a></li><li><a href="#有限维演化的正则性依据归档小修">有限维演化的正则性依据（归档小修）</a></li><li><a href="#4-命题固定初始幅值的增长率可达区间">4. 命题：固定初始幅值的增长率可达区间</a></li><li><a href="#证明第一步统一界">证明第一步：统一界</a></li><li><a href="#证明第二步构造逼近两端并填满区间">证明第二步：构造逼近两端并填满区间</a></li><li><a href="#证明第三步极点状态确实来自合法光滑密度">证明第三步：极点状态确实来自合法光滑密度</a></li><li><a href="#5-一组完全明确的反例">5. 一组完全明确的反例</a></li><li><a href="#6-实际计算核对与复现">6. 实际计算核对与复现</a></li><li><a href="#7-与已有结果的区别及边界">7. 与已有结果的区别及边界</a></li><li><a href="#8-唯一后续数学动作">8. 唯一后续数学动作</a></li></ul></details><article data-source="cases/ott-antonsen-2008/mathematical-result.md" data-source-sha256="2d3cb52f88b0b6382d20b35a3855adbcefa5d6ec78cb4a36faaf1c5d8c3dbb97"><h1 id="一个数学节点相同序参量能否决定初始同步趋势">一个数学节点：相同序参量能否决定初始同步趋势？</h1>
+<p>日期：2026-10-21。使用 physics-to-math-research v0.2.12。
+支持状态：下述命题在明确初态类内有解析证明，并有精确算术见证核对；
+不是模拟、实验验证或原创性认定。</p>
+<h2 id="1-研究问题与科学意义">1. 研究问题与科学意义</h2>
+<p>2008年 OA 降维在特定不变流形上精确成立。将它用于流形外初态时，
+即便频率分布仍是 Lorentzian，相同初始复序参量是否足以决定同步开始增长还是衰减？
+本轮求出一类光滑合法初态中增长率的精确可达区间，并构造方向相反的例子。
+这区分“流形上的精确演化”和“仅测得初始相干度就能预测瞬态”两种解释。</p>
+<h2 id="2-定义与必要前提">2. 定义与必要前提</h2>
+<p>无外驱、无时延、无噪声的连续极限 Kuramoto 模型；耦合 K&gt;0。
+在频率中心的旋转系内取</p>
+<pre><code class="language-math">g(ω)=Δ/[π(ω²+Δ²)],  Δ&gt;0,
+∂ₜf+∂θ{[ω+K Im(z e^(−iθ))]f}=0,
+Zₙ=∬e^(inθ)f(ω,θ,t)dθdω,   z=Z₁,   R=|z|.
+</code></pre>
+<p>f 是联合概率密度，∫f dθ=g(ω)。R 是第一谐波相干度，不等于所有高谐波的同步度。
+频率中心若非零，只增加整体相位旋转，不改变 R 的结论。</p>
+<p>限定初态类 C：有限正混合</p>
+<pre><code class="language-math">f=g(ω) Σⱼ wⱼ P[αⱼ(ω,t)](θ),
+P[α](θ)=(1−|α|²)/(2π |1−αe^(iθ)|²),
+wⱼ&gt;0,  Σⱼwⱼ=1.
+</code></pre>
+<p>各 αⱼ 在实频率上模小于1，可有界解析延拓至下半平面，且沿闭合大半圆
+充分衰减，使下面的留数积分成立。权重固定且不依赖频率。
+每个核承受同一个自洽平均场 z；没有将其解释为不同耦合常数的物理群体。
+这里“正混合”保证 f 真实、非负、归一；并非任意指定一列形式矩。
+本轮所有显式初态均为有理解析函数，衰减 O(1/|ω|)，不存在大圆积分歧义。</p>
+<h2 id="3-从输运方程到精确混合演化">3. 从输运方程到精确混合演化</h2>
+<p>Fourier 展开 P[α]=(2π)⁻¹[1+Σₙ≥1(αⁿe^(inθ)+c.c.)]。
+对输运方程分部积分，对 e^(−inθ) 的条件矩 aₙ 得到</p>
+<pre><code class="language-math">∂ₜaₙ=−inωaₙ+(nK/2)(conj(z)aₙ₋₁−z aₙ₊₁).
+</code></pre>
+<p>代入 aₙ=αⁿ，可逐项验证</p>
+<pre><code class="language-math">∂ₜα=−iωα+(K/2)(conj(z)−zα²).                         (1)
+</code></pre>
+<p>这一步对应2008年 (6) 的已有恒等式。输运方程在给定 z 下对 f 线性，
+故各核满足 (1)、并由混合密度确定 z，就构成精确自洽解，而非近似叠加。
+实频率上的单位圆边界不向外穿越；在下半平面，边界多出向内项。
+结合有界初始解析延拓，局部解及留数运算有保证；本轮结果只需初始时刻邻域。</p>
+<p>定义 uⱼ(t)=conj(αⱼ(−iΔ,t))。取 Lorentzian 下半平面留数并共轭得</p>
+<pre><code class="language-math">Zₙ=Σⱼwⱼuⱼⁿ,
+z=Σⱼwⱼuⱼ,
+dot uⱼ=−Δuⱼ+(K/2)(z−conj(z)uⱼ²),   |uⱼ|&lt;1.       (2)
+</code></pre>
+<h3 id="有限维演化的正则性依据归档小修">有限维演化的正则性依据（归档小修）</h3>
+<p>固定有限核数 m，将 uⱼ 写成实部和虚部，(2) 的右端是实变量上的多项式，
+因而为光滑、局部 Lipschitz 向量场。每个给定初态都有局部存在唯一解。</p>
+<p>由 (2) 直接计算，在 |uⱼ|=1 时，</p>
+<pre><code class="language-math">d|uⱼ|²/dt
+=−2Δ+K Re(conj(uⱼ)z−conj(z)uⱼ)
+=−2Δ&lt;0.
+</code></pre>
+<p>最后一项的两个复数互为共轭，其差的实部为零。
+故闭单位圆盘乘积的每个边界面均严格向内。
+若某个内部初态在有限正时间首次碰到边界，则该坐标的平方模首次到达1时
+左导数必须非负，与上式矛盾。因此内部初态在所有存在的有限正时间内仍满足 |uⱼ|&lt;1。
+解被限制在紧的闭单位圆盘乘积内，向量场在该区域有界；
+由有限维常微分方程的延拓定理，不存在有限时间爆破，解可唯一延拓至所有 t≥0。</p>
+<p>这为本轮有限维核演化、序参量及瞬时导数提供正则性依据。
+它不单独证明任意初态 PDE 解的存在性、长期物理吸引性或全局同步；
+频率解析条件、Poisson 密度提升及第2节的模型范围仍须分别保留。
+此处没有新增或更改编号公式。</p>
+<p>由此</p>
+<pre><code class="language-math">dot z=−Δz+(K/2)(z−conj(z)Z₂).                        (3)
+</code></pre>
+<p>相同 Lorentzian 分布和 z 并没有消除 Z₂ 的作用。
+在 z≠0 时令 ψ=arg z、D=Z₂−z²，</p>
+<pre><code class="language-math">dot R/R=−Δ+(K/2)[1−R²−Re(e^(−2iψ)D)].              (4)
+</code></pre>
+<p>OA 给出 D=0。因此同一 z 下真实瞬时导数与 OA 预测的差满足</p>
+<pre><code class="language-math">dot z−F_OA(z)=−(K/2)conj(z)D,
+F_OA(z)=[−Δ+(K/2)(1−|z|²)]z.                       (5)
+</code></pre>
+<p>(3)–(5) 是既有矩/圆累积量结构的直接特例，不据此宣称新理论。
+特别地 D=0 只保证当前一阶导数一致，不保证分布属于 OA 流形，也不保证以后一致。</p>
+<h2 id="4-命题固定初始幅值的增长率可达区间">4. 命题：固定初始幅值的增长率可达区间</h2>
+<p>对任意 0&lt;r&lt;1，在 C 中固定 z(0)=r（一般相位可整体旋转），
+所有可能的初始相对增长率恰构成</p>
+<pre><code class="language-math">{dot R(0)/r}= (−Δ, −Δ+K(1−r²)).                     (6)
+</code></pre>
+<p>这是开区间；两端是最优下确界和上确界，不声称光滑初态能达到端点。
+因而存在初始增长初态的充要参数条件是</p>
+<pre><code class="language-math">K(1−r²)&gt;Δ.                                          (7)
+</code></pre>
+<p>此条件仅在 C 内、固定非零 r、并针对瞬时增长；不是新的长期同步阈值。
+相同 r 下始终存在衰减初态。
+当 (7) 成立时，同一个 z(0) 可同时兼容两种相反的初始增长方向。</p>
+<h3 id="证明第一步统一界">证明第一步：统一界</h3>
+<p>由 (2) 和 z=r，</p>
+<pre><code class="language-math">D=Σⱼwⱼ(uⱼ−r)²,
+|D|≤Σⱼwⱼ|uⱼ−r|²
+   =Σⱼwⱼ|uⱼ|²−r² &lt;1−r².                           (8)
+</code></pre>
+<p>代入 (4) 得 (6) 的严格上下界。
+这是复二阶中心矩的三角不等式；对一般相位先将 uⱼ 旋转 −ψ 即可。</p>
+<h3 id="证明第二步构造逼近两端并填满区间">证明第二步：构造逼近两端并填满区间</h3>
+<p>给定 r&lt;a&lt;1，构造两种极点状态：</p>
+<p>增长侧 G：
+u₊=r+i√(a²−r²)，u₋=r−i√(a²−r²)，权重各1/2。
+于是 Z₂=2r²−a²，D=−(a²−r²)，</p>
+<pre><code class="language-math">L_G(a):=dot R/r=−Δ+(K/2)(1−2r²+a²).                 (9)
+</code></pre>
+<p>衰减侧 H：
+u₊=a，u₋=−a，权重分别 (1+r/a)/2、(1−r/a)/2。
+于是 Z₂=a²，D=a²−r²，</p>
+<pre><code class="language-math">L_H(a):=dot R/r=−Δ+(K/2)(1−a²).                     (10)
+</code></pre>
+<p>二者都有加权均值 r，且所有 |uⱼ|=a&lt;1。
+令 a↑1，L_H→−Δ，L_G→−Δ+K(1−r²)，故界不可收紧。
+对任意内部目标 L，取 a 足够接近1，使 L_H(a)&lt;L&lt;L_G(a)。
+将两个初态再以正权重 η、1−η 混合，仍有 z=r；
+(3) 对固定 z 的 Z₂ 线性，所以增长率也线性插值。
+取 η=(L−L_H)/(L_G−L_H) 即精确实现 L，至多四个核。
+因此不是仅给出了界，而是证明了整个区间可达。</p>
+<h3 id="证明第三步极点状态确实来自合法光滑密度">证明第三步：极点状态确实来自合法光滑密度</h3>
+<p>不能把任意指定的极点值直接当作真实初态。现给出提升：
+任取 s 满足 a&lt;s&lt;1，令 λ=Δs/(1−s)&gt;0，</p>
+<pre><code class="language-math">q(ω)=λ/(λ+iω),    q(−iΔ)=s,
+αⱼ(ω,0)=conj(uⱼ)q(ω)/s.                           (11)
+</code></pre>
+<p>q 的唯一极点为 iλ，在上半平面；
+下半平面 |q|≤1，实轴上 |αⱼ|≤a/s&lt;1，且 αⱼ=O(1/|ω|)。
+故每个 P[αⱼ] 都是真实、严格正、光滑、归一的相位密度。
+下半平面有界解析与衰减均满足，留数给出指定的 uⱼ。
+另外，对 G、H 及其混合，</p>
+<pre><code class="language-math">a₁(ω,0)=Σⱼwⱼαⱼ(ω,0)=r q(ω)/s.                    (12)
+</code></pre>
+<p>所以这些初态不仅具有相同 z(0)，还具有每一个实频率处相同的一阶条件 Fourier 系数。
+证明完成。</p>
+<h2 id="5-一组完全明确的反例">5. 一组完全明确的反例</h2>
+<p>取</p>
+<pre><code class="language-math">Δ=1, K=3/2, r=1/4, a=3/4, s=4/5, λ=4,
+q(ω)=4/(4+iω).
+</code></pre>
+<p>以 (11) 构造下表密度：</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>初态</th>
+<th>极点 u 及权重</th>
+<th style="text-align:right">Z₂(0)</th>
+<th style="text-align:right">dot R(0)/r</th>
+<th style="text-align:right">dot R(0)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>G</td>
+<td>u=1/4±i/√2；各1/2</td>
+<td style="text-align:right">−7/16</td>
+<td style="text-align:right">5/64</td>
+<td style="text-align:right">5/256</td>
+</tr>
+<tr>
+<td>OA 对照</td>
+<td>u=1/4；权重1</td>
+<td style="text-align:right">1/16</td>
+<td style="text-align:right">−19/64</td>
+<td style="text-align:right">−19/256</td>
+</tr>
+<tr>
+<td>H</td>
+<td>u=3/4、−3/4；权重2/3、1/3</td>
+<td style="text-align:right">9/16</td>
+<td style="text-align:right">−43/64</td>
+<td style="text-align:right">−43/256</td>
+</tr>
+</tbody>
+</table></div>
+<p>全部初态的 a₁(ω,0)=5q(ω)/16，故初始一阶相位—频率信息完全相同。
+G、H 中实轴 |αⱼ|≤15/16；OA 对照 ≤5/16。
+各初态非负性由正 Poisson 混合直接保证，不靠 Fourier 截断检验。</p>
+<p>K=3/2&lt;2Δ，OA 对照预测衰减，但 G 初始增长。
+因为有限维系统 (2) 的向量场光滑，导数连续，严格的正负号各会持续某个正时间；
+本轮未给出该时间区间的定量长度。
+G 和 H 为流形外初态：例如 a₂−a₁² 在实轴不恒为0。
+这不否定无相干态的线性稳定性：G 的高谐波不是相对均匀密度的小扰动。
+也不否定后续宏观吸引性定理；瞬时增长不等于长期有序或新相变。</p>
+<h2 id="6-实际计算核对与复现">6. 实际计算核对与复现</h2>
+<p>现有环境中 python/python3/py 不在 PATH；uv 的离线、无缓存已安装解释器查询无结果。
+没有安装解释器或包。使用已有 PowerShell/.NET Decimal 对关键有理数精确核对；
+无时间积分、振子模拟或科学模拟。以下是实际执行算术的等价紧凑记录，
+可复制到 PowerShell；没有创建通用脚本：</p>
+<pre><code class="language-powershell">[decimal]$delta = 1
+[decimal]$K = 1.5
+[decimal]$r = 0.25
+[decimal]$a = 0.75
+$rows = @(
+  @('G', 2*$r*$r-$a*$a, [decimal]5/64),
+  @('OA', $r*$r, -[decimal]19/64),
+  @('H', $a*$a, -[decimal]43/64)
+)
+foreach ($row in $rows) {
+  $rate = -$delta + ($K/2)*(1-[decimal]$row[1])
+  if ($rate -ne $row[2]) { throw 'Exact rate check failed' }
+  Write-Output ($row[0] + ': rate=' + $rate + ', slope=' + $r*$rate)
+}
+if ($a/[decimal]0.8 -ne [decimal]0.9375) { throw 'Kernel bound failed' }
+</code></pre>
+<p>实际输出：G rate=0.078125, slope=0.01953125；
+OA rate=−0.296875, slope=−0.07421875；
+H rate=−0.671875, slope=−0.16796875；a/s=0.9375；全部 PASS。
+这些值分母均为2的幂，Decimal 可精确表示；2/3权重的解析值用于证明，
+不以其有限小数输出作为精确性依据。一般参数命题由上文解析证明支持。</p>
+<h2 id="7-与已有结果的区别及边界">7. 与已有结果的区别及边界</h2>
+<ul>
+<li>2008原文提供流形上闭合。本轮 (6)–(12) 求的是流形外合法初态在固定 r 下的
+初始增长率范围，并完成密度提升；不是重排原文 (10)。</li>
+<li>二阶误差 D、矩层级、混合 Poisson 核和多核共同平均场演化均为已有工具，
+已按 <a href="../ott-antonsen-2008-source-and-baseline/">source-and-baseline.md</a> 定向核对2018、2020与2022研究。</li>
+<li>锐区间、其可达性证明及这组同 a₁ 反例是本轮实际独立推导；
+定向检索不能排除已有相同或等价结果，不声明原创、首次或突破。</li>
+<li>本命题未覆盖所有光滑初态、非 Lorentzian 频率、非解析频率依赖、
+频率相关混合权重、噪声、时延、有限 N 或高谐波耦合。
+删除解析/衰减条件可能使频率项不能化为 −Δz，故不能照用 (3)。</li>
+<li>R=0 时不定义相对增长率；边界 r=1 和奇异相位原子不属于本命题。</li>
+<li>未证明真实装置、神经系统或其他经验现象由该构造实现；
+核标签只是密度分解，不代表已识别的物理亚群。</li>
+<li>未计算增长总量、峰值、衰减时间、全局吸引盆或一般初态的精确闭合。</li>
+</ul>
+<p>主要来源：
+<a href="https://terpconnect.umd.edu/~antonsen/PublicationsTMA/Synchronization/037113_1_online.pdf">OA2008全文</a>，
+<a href="https://user.eng.umd.edu/~antonsen/PublicationsTMA/Synchronization/023117_1_online.pdf">OA2009后续吸引性</a>，
+<a href="https://arxiv.org/pdf/1804.05326">Tyulkina等2018矩和圆累积量</a>，
+<a href="https://arxiv.org/html/2207.02302v2">Cestnik–Pikovsky2022流形外瞬态与混合核</a>。
+页码、公式位置与阅读范围见同目录 <a href="../ott-antonsen-2008-source-and-baseline/">source-and-baseline.md</a>。</p>
+<h2 id="8-唯一后续数学动作">8. 唯一后续数学动作</h2>
+<p>在同一节点继续：对本例的两核精确系统 (2)，解析估计 G 的 dot R&gt;0
+能保证持续多久。先对 (3) 再求一次时间导数，用 (2) 在单位圆内的有界向量场
+给出 |ddot R| 的局部上界，再由 dot R(0)=5/256 推出一个明确正时间下界。
+需要处理 R 分母，先用 |dot z| 的界保证 R≥r/2。
+本轮未执行此续步，不扩展新模型；无须模拟或新增文献研究任务。</p>
+</article><p class="source-note">正文来自白名单公开 Markdown；公式静态渲染。本站阅读无需打开 GitHub，原始证据链接仍可指向外部。 / Full allowlisted source, statically rendered; no runtime document fetching.</p></main><footer class="site-footer"><div class="container footer-inner"><a href="../../index.html">返回 Observatory</a><span>v0.2.13 · <a href="../../assets/third-party-notices.html">Third-party licenses / 依赖许可证</a></span></div></footer></body></html>

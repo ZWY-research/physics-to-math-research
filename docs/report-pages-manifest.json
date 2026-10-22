@@ -1,6 +1,6 @@
 {
   "generator": "scripts/build-report-pages.cjs",
-  "version": "0.2.11",
+  "version": "0.2.13",
   "source_hash_normalization": "UTF-8 Markdown with CRLF normalized to LF; original Git artifacts remain unchanged",
   "dependencies": {
     "markdown-it": "14.1.0",
@@ -302,6 +302,127 @@
       "in_memory_inline_fence_repairs": 0
     },
     {
+      "source": "literature-audits/physics/nonlinear-dynamics/2008-ott-antonsen-low-dimensional-behavior.md",
+      "route": "research-audits/2008-ott-antonsen-low-dimensional-behavior/",
+      "group": "research-audits",
+      "title": "Ott–Antonsen (2008): Limited-scope mathematical audit / 限定范围数学审查",
+      "status": "Reviewed — Limited Scope; independent reconstruction ACCEPTED AFTER MINOR REVISIONS",
+      "context": "Sharp initial-growth bounds for a specified positive Poisson-mixture class; not full-paper validation.",
+      "output": "research-audits/2008-ott-antonsen-low-dimensional-behavior/index.html",
+      "source_sha256": "6a3b200807ed7a28c9a84479e8f2f59a8e8fd5ef23bee82709bed516a26f4267",
+      "formula_count": 17,
+      "formulas": [
+        {
+          "tex": "\\Delta>0",
+          "display": false
+        },
+        {
+          "tex": "K>0",
+          "display": false
+        },
+        {
+          "tex": "R=|z|",
+          "display": false
+        },
+        {
+          "tex": "z(0)=r\\in(0,1)",
+          "display": false
+        },
+        {
+          "tex": "\n-\\Delta<\\frac{\\dot R(0)}r<-\\Delta+K(1-r^2).\n",
+          "display": true
+        },
+        {
+          "tex": "\nK(1-r^2)>\\Delta.\n",
+          "display": true
+        },
+        {
+          "tex": "\\Delta=1",
+          "display": false
+        },
+        {
+          "tex": "K=3/2",
+          "display": false
+        },
+        {
+          "tex": "r=1/4",
+          "display": false
+        },
+        {
+          "tex": "\\dot R(0)",
+          "display": false
+        },
+        {
+          "tex": "5/256",
+          "display": false
+        },
+        {
+          "tex": "-19/256",
+          "display": false
+        },
+        {
+          "tex": "-43/256",
+          "display": false
+        },
+        {
+          "tex": "|u_j|=1",
+          "display": false
+        },
+        {
+          "tex": "d|u_j|^2/dt=-2\\Delta<0",
+          "display": false
+        },
+        {
+          "tex": "R=0",
+          "display": false
+        },
+        {
+          "tex": "r=1",
+          "display": false
+        }
+      ],
+      "in_memory_inline_fence_repairs": 0
+    },
+    {
+      "source": "cases/ott-antonsen-2008/source-and-baseline.md",
+      "route": "research-audits/ott-antonsen-2008-source-and-baseline/",
+      "group": "research-audits",
+      "title": "Ott–Antonsen (2008): Sources and baseline / 来源与基线",
+      "status": "Supporting source record for Research Case 01",
+      "context": "Original paper locations, v0.2.12 provenance and directly related later research.",
+      "output": "research-audits/ott-antonsen-2008-source-and-baseline/index.html",
+      "source_sha256": "accb668236fa880d6a946e4dd4101e556c688d44f3095e61e6437cd369681154",
+      "formula_count": 0,
+      "formulas": [],
+      "in_memory_inline_fence_repairs": 0
+    },
+    {
+      "source": "cases/ott-antonsen-2008/mathematical-result.md",
+      "route": "research-audits/ott-antonsen-2008-mathematical-result/",
+      "group": "research-audits",
+      "title": "Ott–Antonsen (2008): Complete mathematical result / 完整数学成果",
+      "status": "Conditional proof; originality and physical validation NOT ESTABLISHED",
+      "context": "Sharp attainable interval, smooth density lift and exact rational witnesses; two archival minor revisions.",
+      "output": "research-audits/ott-antonsen-2008-mathematical-result/index.html",
+      "source_sha256": "2d3cb52f88b0b6382d20b35a3855adbcefa5d6ec78cb4a36faaf1c5d8c3dbb97",
+      "formula_count": 0,
+      "formulas": [],
+      "in_memory_inline_fence_repairs": 0
+    },
+    {
+      "source": "cases/ott-antonsen-2008/CONTINUATION.md",
+      "route": "research-audits/ott-antonsen-2008-continuation/",
+      "group": "research-audits",
+      "title": "Ott–Antonsen (2008): Research Continuation / 数学交接",
+      "status": "Completed node; next duration bound NOT EXECUTED",
+      "context": "Established results, assumptions and the optional next analytic action; no simulation required.",
+      "output": "research-audits/ott-antonsen-2008-continuation/index.html",
+      "source_sha256": "988cc65657ccfa2790db62ff75088415a7f364eddb9ebabe035a4d67d0ddc6b3",
+      "formula_count": 0,
+      "formulas": [],
+      "in_memory_inline_fence_repairs": 0
+    },
+    {
       "source": "evaluation-reports/v0.2.5-research-delivery-smoke.md",
       "route": "skill-evaluations/v0.2.5-research-delivery-smoke/",
       "group": "skill-evaluations",
@@ -480,16 +601,20 @@
     "assets/vendor/markdown-it-LICENSE.txt"
   ],
   "output_hashes": {
-    "research-audits/1997-jarzynski-nonequilibrium-free-energy/index.html": "419c52ba7eee9b84da004cdf86474bec19e12e274a958ca80c55af629cb255e6",
-    "skill-evaluations/v0.2.5-research-delivery-smoke/index.html": "a300c5f19516100c1f1576aca9852be41889872afd1b2c383065ef3a2eaee798",
-    "skill-evaluations/can-calibration-evidence-identify-material-response/index.html": "b373c871ca3777b9c725de231b41817da54223f1c4b5d3ba234e230d5eaf201b",
-    "skill-evaluations/can-linear-stability-rule-out-sustained-tokamak-turbulence/index.html": "9b267462e28dccd889ac7a2b28b1dcf2bc804bdc4a354970911b79af5e5596d6",
-    "skill-evaluations/can-itg-gradient-scans-distinguish-turbulent-states/index.html": "01a27c20b955f3c4fb78c9fb2b25a26bedb51fc7cc08c67bdeafc78c7fc609fe",
-    "methods-sources/index.html": "5613b221d5f4ea49d1b1e384b02a2560f53173479deb14bf1d9ed68eac918306",
-    "releases/v0.2.6/index.html": "e13a628c63decb3867004597bfcc5bdbc6ee14899aa15d7be14e175cc0cfa149",
-    "research-audits/index.html": "838b3709bcacad97746849e02d3cab8e00218d26094d900202de38725ad10d96",
-    "skill-evaluations/index.html": "61d80405c50c91b96ef1391938b6ef820686652a5cd3ad23f19b6de4ad4d9e2c",
-    "releases/index.html": "e7fc275f79c672e335ddc2fccd90f027f0a56308ce94b8fed539b0a04539eb32",
+    "research-audits/1997-jarzynski-nonequilibrium-free-energy/index.html": "943f000f73a6b60f0c7ab995f7239af39ffb38e09cac19126812255ebcf97ee9",
+    "research-audits/2008-ott-antonsen-low-dimensional-behavior/index.html": "31d8c290127787862fc54cab09c755d46067323e1a245bc60f6bf5cdcbdbba0e",
+    "research-audits/ott-antonsen-2008-source-and-baseline/index.html": "512fd67eeb9d3432b158a3003e5e35e5a9640bcedc3ac336f5edd7af75d8ebbe",
+    "research-audits/ott-antonsen-2008-mathematical-result/index.html": "260876c803fd33d7d82790d7406e26a254ae7bd17f24627467a1616d39469e64",
+    "research-audits/ott-antonsen-2008-continuation/index.html": "7b5ade631719381e4e81b08b335cf4d1c503bf84f487a2b358bc0b6e4c02f17a",
+    "skill-evaluations/v0.2.5-research-delivery-smoke/index.html": "16befaa7b1dbb60c38ef8ea3f0801fd0cd5264aafe17a8d72cc505a4b31ac176",
+    "skill-evaluations/can-calibration-evidence-identify-material-response/index.html": "eef8778659c1d15519990296849368ad8d79d270ffd7046c9e8a6b4dcaefa4a1",
+    "skill-evaluations/can-linear-stability-rule-out-sustained-tokamak-turbulence/index.html": "c3553d18f3b9ddb334a827c06c085c047a0ed252f6d1e815e7f778897377000f",
+    "skill-evaluations/can-itg-gradient-scans-distinguish-turbulent-states/index.html": "ff722f247f109e71a7c9f57b2ee787cd7165de141c06b4716a3c689b6dc40370",
+    "methods-sources/index.html": "3216f79cc95c3fbce1c97361f2d4971d84da625f6f6805c8e6487f979f66e5a1",
+    "releases/v0.2.6/index.html": "e19f2e9889388633df082be21e4258964789d3b9d8786c29d8e8216b16cec24f",
+    "research-audits/index.html": "d3b4d911f3d0ddd5503082e9668cb65394c64f20b0ccfafe7830f1e4030d9274",
+    "skill-evaluations/index.html": "3e808eb4cfd1cb31a18686024d8225deefa2eeb955f382a1117317ecbeada79e",
+    "releases/index.html": "60895db41476de7dcd9c1d9aa72f2a5be7d3a13e965c3cc8018368c252b70341",
     "assets/vendor/katex/katex.min.css": "19095127357ed6d29fe0a63a6b000c913a89f7f1963b765dd3715e97c9852e75",
     "assets/vendor/katex/fonts/KaTeX_AMS-Regular.ttf": "68534840bcfdd2bffb6f0e8deb48684dd01e7f04ea2813267577afb906de1d13",
     "assets/vendor/katex/fonts/KaTeX_AMS-Regular.woff": "30da91e84c893f875e252689faebdc590b2871145e8adc7f9a9d4dbd8ce0b251",

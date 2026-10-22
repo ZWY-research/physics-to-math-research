@@ -6,10 +6,10 @@ description: >-
   computation. Audit mathematical claims and physical applicability when relevant.
   Not an unrestricted theorem-proving or general research service.
 metadata:
-  version: "0.2.12"
+  version: "0.2.13"
 ---
 
-# physics-to-math-research — v0.2.12
+# physics-to-math-research — v0.2.13
 
 ## Purpose & Scope / 目的与范围
 
